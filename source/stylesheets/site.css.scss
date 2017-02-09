@@ -14,6 +14,11 @@ body {
   padding: 0.5em 1.5em;
   margin-bottom: 0.5em;
   width: 65%;
+
+}
+
+.attribution {
+  text-align: right;
 }
 
 .question {
@@ -23,5 +28,7 @@ body {
 }
 
 .learning {
-  color: purple;
+  .lede {
+    font-size: 2em;
+  }
 }
