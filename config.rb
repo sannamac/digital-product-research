@@ -26,6 +26,8 @@ end
 activate :relative_assets
 set :relative_links, true
 
+activate :directory_indexes
+
 ###
 # Helpers
 ###
