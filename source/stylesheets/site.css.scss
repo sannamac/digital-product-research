@@ -32,3 +32,19 @@ body {
     font-size: 2em;
   }
 }
+
+#scaled-frame { height: 650px; width: 142.8%; border: 0; margin-bottom: -180px;}
+#scaled-frame {
+zoom: 0.70;
+-moz-transform: scale(0.70);
+-moz-transform-origin: 0 0;
+-o-transform: scale(0.70);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.70);
+-webkit-transform-origin: 0 0;
+outline: 1px solid black;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#scaled-frame  { zoom: 1;  }
+}
