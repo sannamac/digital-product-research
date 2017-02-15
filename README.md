@@ -1,9 +1,17 @@
 # Digital Product Research showcase
 
+https://coopdigital.github.io/digital-product-research
+
 ## Develop
 
 Run middleman with live reload:
 
 ```
-middleman server
+bundle exec middleman server
+```
+
+## Deploy
+
+```
+make deploy
 ```
