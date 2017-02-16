@@ -367,6 +367,29 @@ textarea {
 body {
   margin: 2em; }
 
+section > section {
+  padding: 0; }
+
+.situation {
+  outline: 1px solid black;
+  padding: 0.5em 1.5em;
+  margin-bottom: 0.5em;
+  width: 65%; }
+
+.complication {
+  color: red; }
+
+.attribution {
+  text-align: right; }
+
+.question {
+  font-size: 1.25em;
+  font-style: italic;
+  color: blue; }
+
+.answer {
+  color: green; }
+
 .observation {
   color: red; }
 
