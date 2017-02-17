@@ -8,13 +8,20 @@ title:
 </header>
 <article>
   <section>
+
     <section class="situation">
+      [situation]
+    </section>
+
+    <section class="complication">
       <h2>A lack of trust has broken insurance</h2>
       <p>
         People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to. There’s space for Co-op to try some radically new approaches to insurance: local, mutual, community focused and owned by members.
       </p>
     </section>
-    <section class="complication">
+
+
+    <section class="what-we-did">
       <p>
         In collaboration with colleagues in Co-op insurance, we explored an alternative model based on trust. If people with similar risks could formed groups and insured each other, they might be  more likely to trust one another.
         <%= partial("partials/annotations/_sidenote",
@@ -25,11 +32,13 @@ title:
         </p>
       </p>
     </section>
-    <section class="question">
-      <p>
+
+    <section class="question-and-answer">
+      <h2 class="question">
         How might we create an insurance model where everyone trusts everyone else, and where members felt confident about making a claim?
-      </p>
+      </h2>
     </section>
+
     <section class="what-we-did">
       <h2>Small groups with something in common</h2>
       <p>
@@ -43,129 +52,132 @@ title:
 </p>
       </p>
     </section>
-    <section class="question">
-      <p>
+
+    <section class="question-and-answer">
+      <h2 class="question">
         Could we explain the concept?
-      </p>
+      </h2>
+
+      <section class="answer">
+        <h3 class="answer">A new model of insurance needs a new way to explain it</h3><!-- TODO: is this really an answer? -->
+        <p>
+          The Protect Together home page did a poor job of explaining what the service was at a glance. While all respondents recognised it was something to do with insurance, none were entirely clear with how it worked.
+        </p>
+
+        <blockquote>
+          <p>
+            “I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.”
+          </p>
+        </blockquote>
+
+        <p>
+          Having started to sign up and clicked through a few of the screens, respondents then understood more clearly what Protect Together was. They all felt it aligned with the Co-op’s overall values.
+        </p>
+
+        <blockquote>
+          <p>
+            “I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.”
+          </p>
+        </blockquote>
+
+        <p>
+          Respondents did think it was different from traditional insurance.
+        </p>
+
+        <blockquote>
+          <p>
+            “It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.”
+          </p>
+        </blockquote>
+
+      </section>
     </section>
-    <section class="answer">
-      <h2>A new model of insurance needs a new way to explain it</h2>
-      <p>
-        The Protect Together home page did a poor job of explaining what the service was at a glance. While all respondents recognised it was something to do with insurance, none were entirely clear with how it worked.
-      </p>
 
-      <blockquote>
-        <p>
-          “I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.”
-        </p>
-      </blockquote>
-
-      <p>
-        Having started to sign up and clicked through a few of the screens, respondents then understood more clearly what Protect Together was. They all felt it aligned with the Co-op’s overall values.
-      </p>
-
-      <blockquote>
-        <p>
-          “I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.”
-        </p>
-      </blockquote>
-
-      <p>
-        Respondents did think it was different from traditional insurance.
-      </p>
-
-      <blockquote>
-        <p>
-          “It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.”
-        </p>
-      </blockquote>
-
-    </section>
-
-    <section class="question">
-      <p>
+    <section class="question-and-answer">
+      <h2 class="question">
         Could we create trust? How do we define communities and groups?
-      </p>
-    </section>
-    <section class="answer">
+      </h2>
+      <section class="answer">
 
-      <h2>Living close to someone isn’t a strong enough reason to trust them</h2>
+        <h3 class="answer">Living close to someone isn’t a strong enough reason to trust them</h3>
 
-      <p>
-        Despite living in the same area, none of the respondents felt a particular affinity with our example group (people renting flats in the Green Quarter, Manchester). They either felt that they didn’t know their neighbours, or that the age group wasn’t right for them.
-      </p>
-
-      <blockquote>
         <p>
-          “I wouldn’t trust my neighbours because I don’t know them.”
+          Despite living in the same area, none of the respondents felt a particular affinity with our example group (people renting flats in the Green Quarter, Manchester). They either felt that they didn’t know their neighbours, or that the age group wasn’t right for them.
         </p>
-      </blockquote>
 
-      <blockquote>
-        <p>
-          “I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!”
-        </p>
-      </blockquote>
+        <blockquote>
+          <p>
+            “I wouldn’t trust my neighbours because I don’t know them.”
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            “I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!”
+          </p>
+        </blockquote>
+      </section>
     </section>
 
-    <section class="question">
-      <p>
+    <section class="question-and-answer">
+      <h2 class="question">
         Is there a need for this type of insurance?
-      </p>
-    </section>
-    <section class="answer">
+      </h2>
+      <section class="answer">
 
-      <h2>Renters don’t feel that they have a lot that’s worth insuring</h2>
+        <h3 class="answer">Renters don’t feel that they have a lot that’s worth insuring</h3>
 
-      <p>
-        We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
-        <%= partial("partials/annotations/_margin_image",
-            :locals => {
-              :imagePath => 'Assets/Protect/image05.png',
-              :uniqueId => 'protect-1',
-              :caption => "In our experiment we focused on people living in the same area, and not on different types of possessions"
-            }) %>
-      </p>
-
-      <blockquote>
         <p>
-          “TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.”
+          We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
+          <%= partial("partials/annotations/_margin_image",
+              :locals => {
+                :imagePath => 'Assets/Protect/image05.png',
+                :uniqueId => 'protect-1',
+                :caption => "In our experiment we focused on people living in the same area, and not on different types of possessions"
+              }) %>
         </p>
-      </blockquote>
 
+        <blockquote>
+          <p>
+            “TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.”
+          </p>
+        </blockquote>
+
+      </section>
     </section>
 
-    <section class="question">
-      <p>
+    <section class="question-and-answer">
+      <h2 class="question">
         Should members of the group be visible to each other? Is transparency better than anonymity?
-      </p>
-    </section>
-    <section class="answer">
+      </h2>
+      <section class="answer">
 
-      <h2>People felt they’d need to talk to the group</h2>
+        <h3 class="answer">People felt they’d need to talk to the group</h3>
 
-      <p>
-        When presented with the emails explaining a vote or action was required, four respondents weren’t comfortable with voting. They indicated they’d want to sound out the group in advance, or talk to people before making a decision. They seemed to assume the group was about 10 - 15 people strong.
-      </p>
-
-      <blockquote>
         <p>
-          “You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion”
+          When presented with the emails explaining a vote or action was required, four respondents weren’t comfortable with voting. They indicated they’d want to sound out the group in advance, or talk to people before making a decision. They seemed to assume the group was about 10 - 15 people strong.
         </p>
-      </blockquote>
 
-      <h2>The perceived effort of participating in a group can be off putting</h2>
+        <blockquote>
+          <p>
+            “You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion”
+          </p>
+        </blockquote>
 
-      <p>
-        One participant was concerned that there might be a significant overhead in managing a group, and that it might involve meeting up or other commitments.
-      </p>
+        <h3 class="answer">The perceived effort of participating in a group can be off putting</h3>
 
-      <blockquote>
         <p>
-          “For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.”
+          One participant was concerned that there might be a significant overhead in managing a group, and that it might involve meeting up or other commitments.
         </p>
-      </blockquote>
+
+        <blockquote>
+          <p>
+            “For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.”
+          </p>
+        </blockquote>
+      </section>
     </section>
+
     <section class="next-steps">
 
       <h2>Things we'd like to try next</h2>
