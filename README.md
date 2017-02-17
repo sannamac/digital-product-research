@@ -50,3 +50,21 @@ The `label for="..."` and `input id="..."` must match.
 </p>
 
 ```
+
+
+## Partials
+
+Insert this in page:
+```html
+<%= partial("partials/annotations/sidenote", locals => {:sidenote_content => "<%= partial("partials/beliefs/work_together") %>"})  %>
+```
+
+_sidenote.erb contains:
+```html
+<label for="locally-description" class="margin-toggle sidenote-number"></label>
+  
+<input type="checkbox" id="locally-description" class="margin-toggle">
+<span class="sidenote">
+  <%= sidenote_content %>
+</span>
+```
