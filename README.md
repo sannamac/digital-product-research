@@ -16,55 +16,31 @@ bundle exec middleman server
 make deploy
 ```
 
-## Example of side note
+## Using partials
 
-The `label for="..."` and `input id="..."` must match.
+### Side note with belief statement
 
 ```html
-<p>
-  We showed 6 independent retailers in Chorlton a prototype of Locally
-  ``
-  <label for="locally-description" class="margin-toggle sidenote-number"></label>
-  ``
-
-  <input type="checkbox" id="locally-description" class="margin-toggle">
-
-
-  <span class="sidenote">
-    Locally is a loyalty scheme
-  </span>
-
-
-  , a scheme that earns shoppers ‘perks’, redeemable in any participating business, when they shop with local independent retailers.
-</p>
+<%= partial("partials/annotations/sidenote", 
+  :locals => { :sidenoteContent => partial("partials/beliefs/technology_should_work_for_people") }) %>
 ```
-## Example of margin note
+Where `sidenoteContent` 
 
-```
-<p>If you want a sidenote without footnote-style numberings, then you want a margin note.
-  <label for="mn-demo" class="margin-toggle">⊕</label>
-  <input type="checkbox" id="mn-demo" class="margin-toggle">
-  <span class="marginnote">
-    This is a margin note. Notice there isn’t a number preceding the note.
-  </span> On large screens, a margin note is just a sidenote that omits the reference number. This lessens the distracting effect taking away from the flow of the main text, but can increase the cognitive load of matching a margin note to its referent text. However, on small screens, a margin note is like a sidenote except its viewability-toggle is a symbol rather than a reference number.
-</p>
+### Sidenote with asset
 
-```
-
-
-## Partials
-
-Insert this in page:
 ```html
-<%= partial("partials/annotations/sidenote", locals => {:sidenote_content => "<%= partial("partials/beliefs/work_together") %>"})  %>
+<%= partial("partials/annotations/sidenote", 
+  :locals => { :sidenoteContent => partial("partials/assets/locally-logo") }) %>
 ```
 
-_sidenote.erb contains:
+### Sidenote with just text
+
 ```html
-<label for="locally-description" class="margin-toggle sidenote-number"></label>
-  
-<input type="checkbox" id="locally-description" class="margin-toggle">
-<span class="sidenote">
-  <%= sidenote_content %>
-</span>
+<%= partial("partials/annotations/sidenote", 
+  :locals => { :sidenoteContent => "w" }) %>
+```
+
+```html
+<%= partial("partials/annotations/sidenote",
+  :locals => { :sidenoteId => "SomethingUnique", :sidenoteContent => partial("partials/assets/locally-logo") }) %>
 ```
