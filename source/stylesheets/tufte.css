@@ -1,12 +1,13 @@
 /* Tufte CSS styles */
 html { font-size: 15px; }
 
-body { width: 87.5%;
-       margin-left: auto;
-       margin-right: auto;
-       padding-left: 12.5%;
-       max-width: 1400px;
-       counter-reset: sidenote-counter; }
+body > .wrap { 
+      width: 87.5%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 12.5%;
+      counter-reset: sidenote-counter;
+     }
 
 h1 { font-weight: 400;
      margin-top: 4rem;
@@ -198,7 +199,7 @@ label.sidenote-number { display: inline; }
 
 label.margin-toggle:not(.sidenote-number) { display: none; }
 
-@media (max-width: 760px) { body { width: 84%;
+@media (max-width: 760px) { body > .wrap { width: 84%;
                                    padding-left: 8%;
                                    padding-right: 8%; }
                             p, footer { width: 100%; }
