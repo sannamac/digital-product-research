@@ -20,7 +20,7 @@ make deploy
 
 The `label for="..."` and `input id="..."` must match.
 
-```
+```html
 <p>
   We showed 6 independent retailers in Chorlton a prototype of Locally
   ``
