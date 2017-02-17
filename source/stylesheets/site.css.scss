@@ -1,48 +1,72 @@
 @charset "utf-8";
 @import "normalize";
 
-body {
-  margin: 2em;
+body { 
+  counter-reset: sidenote-counter; 
 }
 
-section {
+
+body > .wrap {
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5%;
+  &:first-of-type {
+    background: #d9e0db;
+    padding-top: 4rem;
+    @media (min-width: 760px) {
+      padding-bottom: 6rem;
+      margin-bottom: 6rem; 
+    }
+  }
+}
+
+
+body > section {
   > section {
     padding: 0;
+    margin-bottom: 4rem;
+  }
+}
+
+h2 {
+  @media (min-width: 760px) {
+    width: 55%;
+    line-height: 2.8;
   }
 }
 
 // Narriative structure
 .situation {
-  outline: 1px solid black;
-  padding: 0.5em 1.5em;
-  margin-bottom: 0.5em;
-  width: 65%;
+  p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
 }
 
 .complication {
-  color: red;
 }
 
 
 .attribution {
-  text-align: right;
+ 
 }
 
 .question {
-  font-size: 1.25em;
-  font-style: italic;
-  color: blue;
+
 }
 
 .answer {
-  color: green;
+  > p {
+
+  }
+
 }
 
-// END Narriative structure
+.learning {
 
-.observation {
-  color: red;
 }
+
 
 .quote {
   outline: 1px solid black;
@@ -56,17 +80,45 @@ section {
   text-align: right;
 }
 
-.question {
-  font-size: 1.25em;
-  font-style: italic;
-  color: blue;
-}
 
-.learning {
-  .lede {
-    font-size: 2em;
+
+
+span.sidenote.belief-aside {
+  float: left;
+  width: 20%;
+  left: -20%;
+  span {
+    background: #ffffcd;
+    color: black;
+    text-decoration: underline;
+    line-height: 1.8;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+blockquote {
+  p {
+    display: inline;
+  }
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+// END Narriative structure
+
+
 
 #scaled-frame { height: 650px; width: 142.8%; border: 0; margin-bottom: -180px;}
 #scaled-frame {
