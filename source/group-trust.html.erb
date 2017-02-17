@@ -1,49 +1,185 @@
 ---
-title: 
+title:
 ---
 
 <header>
   <%= partial("partials/global_nav") %>
-  <h1>[group-trust]</h1>
+  <h1>Protecting your stuff</h1>
 </header>
 <article>
   <section>
-    <section class="belief-statement">
-      <ul>
-        <li>
-          <%= partial("partials/beliefs/work_together") %>
-        </li>
-        <li>
-          <%= partial("partials/beliefs/technology_should_work_for_people") %>
-        </li>
-      </ul>
-    </section>
     <section class="situation">
+      <h2>A lack of trust has broken insurance</h2>
       <p>
-        [need to add]
+        People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to. There’s space for Co-op to try some radically new approaches to insurance: local, mutual, community focused and owned by members.
       </p>
     </section>
     <section class="complication">
       <p>
-        A lack of trust has broken insurance. Lots of people make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to. There’s space for Co-op to try some radically new approaches to insurance: local, mutual, community focused and owned by members. 
+        In collaboration with colleagues in Co-op insurance, we explored an alternative model based on trust. If people with similar risks could formed groups and insured each other, they might be  more likely to trust one another.
+        <%= partial("partials/annotations/_sidenote",
+                            :locals => {
+                              :uniqueId: "working-together-0",
+                              :sidenoteContent => partial("partials/beliefs/work_together"),
+                            }) %>
+        </p>
       </p>
     </section>
     <section class="question">
       <p>
-        How might we create an insurance model where everyone trusted everyone else, and where members felt confident about making a claim?
+        How might we create an insurance model where everyone trusts everyone else, and where members felt confident about making a claim?
+      </p>
+    </section>
+    <section class="what-we-did">
+      <h2>Small groups with something in common</h2>
+      <p>
+        We created a prototype of <a href="https://coop-protect.herokuapp.com">Protect Together</a>. Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to X people who fit the requirements for our example group.
+        <%= partial("partials/annotations/_margin_image",
+            :locals => {
+              :imagePath => 'Assets/Protect/image00.png',
+              :uniqueId => 'protect-0',
+              :caption => "Protect Together: insurance for small groups of people with something in common"
+            }) %>
+</p>
+      </p>
+    </section>
+    <section class="question">
+      <p>
+        Could we explain the concept?
       </p>
     </section>
     <section class="answer">
+      <h2>A new model of insurance needs a new way to explain it</h2>
       <p>
-        We created a prototype of a new type of insurance scheme, where small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low.
+        The Protect Together home page did a poor job of explaining what the service was at a glance. While all respondents recognised it was something to do with insurance, none were entirely clear with how it worked.
+      </p>
+
+      <blockquote>
+        <p>
+          “I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.”
+        </p>
+      </blockquote>
+
+      <p>
+        Having started to sign up and clicked through a few of the screens, respondents then understood more clearly what Protect Together was. They all felt it aligned with the Co-op’s overall values.
+      </p>
+
+      <blockquote>
+        <p>
+          “I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.”
+        </p>
+      </blockquote>
+
+      <p>
+        Respondents did think it was different from traditional insurance.
+      </p>
+
+      <blockquote>
+        <p>
+          “It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.”
+        </p>
+      </blockquote>
+
+    </section>
+
+    <section class="question">
+      <p>
+        Could we create trust? How do we define communities and groups?
       </p>
     </section>
-    <section class="learning">
+    <section class="answer">
+
+      <h2>Living close to someone isn’t a strong enough reason to trust them</h2>
+
       <p>
-        We showed the prototype to X people who fit the requirements for our example group. However, the concept of a group based purely on location and accommodation type did not go down well. The people we spoke to did not necessarily know or trust their neighbours. However, the overall concept was well received. We should revisit our prototype, and make it possible for people to join a group based on other attributes - such as owners of expensive bikes.
+        Despite living in the same area, none of the respondents felt a particular affinity with our example group (people renting flats in the Green Quarter, Manchester). They either felt that they didn’t know their neighbours, or that the age group wasn’t right for them.
       </p>
+
+      <blockquote>
+        <p>
+          “I wouldn’t trust my neighbours because I don’t know them.”
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          “I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!”
+        </p>
+      </blockquote>
+    </section>
+
+    <section class="question">
       <p>
-        <a href="https://coop-protect.herokuapp.com">https://coop-protect.herokuapp.com</a>
+        Is there a need for this type of insurance?
+      </p>
+    </section>
+    <section class="answer">
+
+      <h2>Renters don’t feel that they have a lot that’s worth insuring</h2>
+
+      <p>
+        We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
+        <%= partial("partials/annotations/_margin_image",
+            :locals => {
+              :imagePath => 'Assets/Protect/image05.png',
+              :uniqueId => 'protect-1',
+              :caption => "In our experiment we focused on people living in the same area, and not on different types of possessions"
+            }) %>
+      </p>
+
+      <blockquote>
+        <p>
+          “TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.”
+        </p>
+      </blockquote>
+
+    </section>
+
+    <section class="question">
+      <p>
+        Should members of the group be visible to each other? Is transparency better than anonymity?
+      </p>
+    </section>
+    <section class="answer">
+
+      <h2>People felt they’d need to talk to the group</h2>
+
+      <p>
+        When presented with the emails explaining a vote or action was required, four respondents weren’t comfortable with voting. They indicated they’d want to sound out the group in advance, or talk to people before making a decision. They seemed to assume the group was about 10 - 15 people strong.
+      </p>
+
+      <blockquote>
+        <p>
+          “You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion”
+        </p>
+      </blockquote>
+
+      <h2>The perceived effort of participating in a group can be off putting</h2>
+
+      <p>
+        One participant was concerned that there might be a significant overhead in managing a group, and that it might involve meeting up or other commitments.
+      </p>
+
+      <blockquote>
+        <p>
+          “For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.”
+        </p>
+      </blockquote>
+    </section>
+    <section class="next-steps">
+
+      <h2>Things we'd like to try next</h2>
+
+      <p>
+        Experiment with other ways of communicating the concept. A short 1 minute animation explaining Protect Together might be more effective at communicating the various parts to it. For a good example, see https://vimeo.com/62806565
+      </p>
+
+      <p>
+        Explore different types of groups that people might associate with. We should experiment whether individuals associate and trust other people based on age, salary, job, interests. We could also look at whether it makes a difference if the group already know each other in another context or come together specifically to take part in the scheme.
+      </p>
+
+      <p>
+        Explore different sizes of groups that people might join. We didn’t explicitly show the size of the Green Quarter group. A future design sprint might present respondents with different size groups to better understand how they feel about this and how they might communicate.
       </p>
     </section>
   </section>
