@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -365,33 +366,33 @@ textarea {
   /* 2 */ }
 
 body {
-  margin: 2em; }
+  counter-reset: sidenote-counter; }
 
-section > section {
-  padding: 0; }
+body > .wrap {
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5%; }
+  body > .wrap:first-of-type {
+    background: #ebebeb;
+    padding-top: 4rem; }
+    @media (min-width: 760px) {
+      body > .wrap:first-of-type {
+        padding-bottom: 6rem;
+        margin-bottom: 6rem; } }
 
-.situation {
-  outline: 1px solid black;
-  padding: 0.5em 1.5em;
-  margin-bottom: 0.5em;
-  width: 65%; }
+body > section > section {
+  padding: 0;
+  margin-bottom: 4rem; }
 
-.complication {
-  color: red; }
+@media (min-width: 760px) {
+  h2 {
+    width: 55%;
+    line-height: 2.8; } }
 
-.attribution {
-  text-align: right; }
-
-.question {
-  font-size: 1.25em;
-  font-style: italic;
-  color: blue; }
-
-.answer {
-  color: green; }
-
-.observation {
-  color: red; }
+.situation p {
+  font-size: 1.6rem;
+  line-height: 2.2rem; }
 
 .quote {
   outline: 1px solid black;
@@ -402,13 +403,24 @@ section > section {
 .attribution {
   text-align: right; }
 
-.question {
-  font-size: 1.25em;
-  font-style: italic;
-  color: blue; }
+span.sidenote.belief-aside {
+  float: left;
+  width: 20%;
+  left: -20%; }
+  span.sidenote.belief-aside span {
+    background: #ffffcd;
+    color: black;
+    text-decoration: underline;
+    line-height: 1.8; }
 
-.learning .lede {
-  font-size: 2em; }
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’"; }
+  blockquote p {
+    display: inline; }
 
 #scaled-frame {
   height: 650px;
