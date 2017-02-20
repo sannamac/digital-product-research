@@ -42,16 +42,28 @@ title:
     <section class="what-we-did">
       <h2>Small groups with something in common</h2>
       <p>
-        We created a prototype of <a href="https://coop-protect.herokuapp.com">Protect Together</a>. Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to X people who fit the requirements for our example group.
+        We created a prototype of <a href="https://coop-protect.herokuapp.com">Protect Together</a>.
+        <%= partial("partials/annotations/_margin_image",
+            :locals => {
+              :imagePath => 'Assets/Protect/image03.png',
+              :uniqueId => 'protect-0',
+              :caption => "An early paper prototype of Protect Together",
+              :alt => 'A pen sketch of an early design for Protect Together showing an input field and results page'
+            }) %>
+             Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to X people who fit the requirements for our example group.
         <%= partial("partials/annotations/_margin_image",
             :locals => {
               :imagePath => 'Assets/Protect/image00.png',
-              :uniqueId => 'protect-0',
-              :caption => "Protect Together: insurance for small groups of people with something in common"
+              :uniqueId => 'protect-1',
+              :caption => "Protect Together: insurance for small groups of people with something in common",
+              :alt => 'A screenshot of the homepage of the Protect Together website'
             }) %>
 </p>
       </p>
     </section>
+    <figure>
+      <%= image_tag="Assets/Protect/image01.png", {:alt => 'A woman tests out the Protct Together prototype on a laptop guided by one of our team'}%>
+    </figure>
 
     <section class="question-and-answer">
       <h2 class="question">
