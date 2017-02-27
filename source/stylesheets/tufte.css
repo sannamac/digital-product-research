@@ -1,7 +1,7 @@
 /* Tufte CSS styles */
 html { font-size: 15px; }
 
-body > .wrap { 
+body > .wrap {
       width: 87.5%;
       margin-left: auto;
       margin-right: auto;
@@ -158,7 +158,7 @@ img { max-width: 100%; }
 
 blockquote .sidenote, blockquote .marginnote { margin-right: -82%;
                                                min-width: 59%;
-                                               text-align: left; }    
+                                               text-align: left; }
 
 p, footer, table { width: 55%; }
 

@@ -1,8 +1,8 @@
 @charset "utf-8";
 @import "normalize";
 
-body { 
-  counter-reset: sidenote-counter; 
+body {
+  counter-reset: sidenote-counter;
 }
 
 
@@ -16,7 +16,7 @@ body > .wrap {
     padding-top: 4rem;
     @media (min-width: 760px) {
       padding-bottom: 6rem;
-      margin-bottom: 6rem; 
+      margin-bottom: 6rem;
     }
   }
 }
@@ -32,7 +32,7 @@ body > section {
 h2 {
   @media (min-width: 760px) {
     width: 55%;
-    line-height: 2.8;
+    line-height: 2.2rem;
   }
 }
 
@@ -49,7 +49,7 @@ h2 {
 
 
 .attribution {
- 
+
 }
 
 .question {

@@ -9,7 +9,13 @@ title:
   </header>
 
   <section class="situation">
-    [situation]
+    <h2>A lack of trust has broken insurance</h2>
+    <p>
+      People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to.
+    </p>
+    <p>
+      Insurers don't trust customers. Customers don't trust insurers. Insurers collude to raise prices and don't trust each another... And the regulators don't trust the insurers.
+    </p>
   </section>
 
 </div>
@@ -18,16 +24,21 @@ title:
 
   <article>
     <section class="complication">
-      <h2>A lack of trust has broken insurance</h2>
       <p>
-        People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to. There’s space for Co-op to try some radically new approaches to insurance: local, mutual, community focused and owned by members.
+        There’s space for Co-op to take a radically new approach to insurance: local, mutual, community focused and owned by members.
+        <%= partial("partials/annotations/_margin_image",
+              :locals => {
+                :imagePath => 'Assets/Protect/llyods-coffee-shop.png',
+                :uniqueId => 'protect-coffeeshop',
+                :caption => 'Insurance like it used to, 50 people in a coffee shop, working to protect each other’s interests.'
+              }) %>
       </p>
     </section>
 
 
     <section class="what-we-did">
       <p>
-        In collaboration with colleagues in Co-op insurance, we explored an alternative model based on trust. If people with similar risks could formed groups and insured each other, they might be  more likely to trust one another.
+        In collaboration with colleagues in Co-op insurance, we explored this alternative model built on trust. If people with similar risks could formed groups and insure each other, they might be more likely to trust one another.
         <%= partial("partials/annotations/_sidenote",
                             :locals => {
                               :uniqueId => "working-together-0",
@@ -39,7 +50,7 @@ title:
 
     <section class="question-and-answer">
       <h2 class="question">
-        How might we create an insurance model where everyone trusts everyone else, and where members felt confident about making a claim?
+        How might we create an insurance model where people trust each other, and where members feel confident making claims?
       </h2>
     </section>
 
@@ -54,7 +65,7 @@ title:
               :caption => "An early paper prototype of Protect Together",
               :alt => 'A pen sketch of an early design for Protect Together showing an input field and results page'
             }) %>
-             Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to X people who fit the requirements for our example group.
+             Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to 6 people who fit the requirements for our example group.
         <%= partial("partials/annotations/_margin_image",
             :locals => {
               :imagePath => 'Assets/Protect/image00.png',
@@ -97,7 +108,7 @@ title:
         </blockquote>
 
         <p>
-          Respondents did think it was different from traditional insurance.
+          Respondents saw the difference from traditional insurance.
         </p>
 
         <blockquote>
