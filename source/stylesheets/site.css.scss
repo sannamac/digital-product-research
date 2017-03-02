@@ -129,7 +129,7 @@ body:not(.index) {
 
   $connected-devices-primary: #303832;
   $connected-devices-secondary: darken($connected-devices-primary, 5%);
-  $connected-devices-reverse: #ffffff;
+  $connected-devices-reverse: #d3e4d7;
 
   font-family: 'Source Code Pro', monospace;
   font-size: 1.4rem;
@@ -165,7 +165,6 @@ body:not(.index) {
     }
     figure {
       &.alt {
-        mix-blend-mode: lighten;
         position: relative;
         &::after {
           content: '02/04/2016';
@@ -179,6 +178,10 @@ body:not(.index) {
         img {
           margin-left: -4rem;
         }
+      }
+      img {
+        mix-blend-mode: difference;
+        opacity: 0.8;
       }
       figcaption {
         margin: 0.6rem 0 0 0;
