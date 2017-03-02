@@ -14,57 +14,56 @@ html {
   height: 100%;
 }
 
-.projects {
+#projects {
   display: table;
   width: auto;
   overflow: hidden;
   background: red;
-
+  @media screen and (max-width: 767px) {
+    overflow: visible;
+    height: auto;
+  }
   .project {
     display: table-cell;
     width: 330px;
     min-width: 330px;
     max-width: 330px;
-  }
-
-  .scroll-container {
-    height: 100%;
-    display: block;
-    overflow: hidden;
-    overflow-y: scroll;
-    position: relative;
-    text-decoration: none;
-  }
-
-  .scroll-container:hover {
-    article {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  article {
-    padding: 28px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .projects {
-    overflow: visible;
-    height: auto;
-
-    .project {
+    @media screen and (max-width: 767px) {
       display: block;
       width: inherit;
       max-width: inherit;
     }
+  }
 
-    .scroll-container {
-      overflow-y: hidden;
-      height: inherit;
+  a {
+    &.scroll-container {
+      color: inherit;
+      height: 100%;
       display: block;
+      overflow: hidden;
+      overflow-y: scroll;
+      position: relative;
+      text-decoration: none;
+      @media screen and (max-width: 767px) {
+        overflow-y: hidden;
+        height: inherit;
+        display: block;
+      }
+      article {
+        padding: 28px;
+        width: auto;
+        float: none;
+      }
+      &:hover {
+        article {
+          background-color: rgba(0, 0, 0, 0.1); 
+        }
+      }
     }
   }
+
 }
+
 
 .connected_index,
 #project-connected-devices {
@@ -74,9 +73,9 @@ html {
   $connected-devices-reverse: #ffffff;
 
   background: $connected-devices-secondary;
-  color: $connected-devices-reverse;
 
   article {
+    color: $connected-devices-reverse;
     width: 50%;
     float: right;
     background: $connected-devices-primary;
