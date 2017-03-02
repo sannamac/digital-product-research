@@ -15,7 +15,7 @@ html {
 }
 
 img {
-  max-width: 100%:
+  max-width: 100%;
 }
 
 #projects {
@@ -53,10 +53,16 @@ img {
         height: inherit;
         display: block;
       }
+
       article {
         padding: 28px;
         width: auto;
         float: none;
+        @media screen and (max-width: 767px) {
+          *:not(.project-title) {
+            display: none;
+          }
+        }
       }
       &:hover {
         article {
