@@ -34,24 +34,16 @@ html {
     overflow: hidden;
     overflow-y: scroll;
     position: relative;
+    text-decoration: none;
+  }
+
+  .scroll-container:hover {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   article {
     padding: 28px;
   }
-}
-
-.btn-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  border: none;
-}
-.btn-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 767px) {
@@ -71,15 +63,4 @@ html {
       display: block;
     }
   }
-}
-
-
-
-#project-connected-devices {
-  background: green;
-}
-
-#project-protect-together {
-  background: blue;
-  color: white;
 }
