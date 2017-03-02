@@ -123,11 +123,18 @@ body:not(.index) {
 // These are experiment specific styles
 
 
-// Connected devices
+//////////////// 
+//////////////// CONNECTED DEVICES
+//////////////// 
+
   $connected-devices-primary: #303832;
   $connected-devices-secondary: darken($connected-devices-primary, 5%);
   $connected-devices-reverse: #d3e4d7;
 
+
+
+
+// Experiment page
 .connected_index {
   h1 {
     @media screen and (min-width: 767px) {
@@ -148,7 +155,6 @@ body:not(.index) {
 
 .connected_index,
 #project-connected-devices {
-
 
   font-family: 'Source Code Pro', monospace;
   font-size: 1.4rem;
@@ -174,7 +180,7 @@ body:not(.index) {
 
     blockquote {
       font-family: 'Playfair Display', serif;
-      
+
     }
 
     section {
@@ -241,8 +247,45 @@ body:not(.index) {
   }
 }
 
+// Just index page
 
-// Protect together
+#project-connected-devices {
+  article {
+    h1  {
+
+    }
+    section {
+      &.situation {
+        p {
+          font-weight: 500;
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+        }
+      }
+    }
+    p, blockquote {
+      font-size: 1rem;
+      line-height: 1.4rem;
+      width: 100%;
+    } 
+    figure {
+      margin: 0;
+      &.alt {
+        &::after {
+          left: 0;
+        }
+        img {
+          margin-left: 0;
+        }
+      }
+    }   
+  }
+}
+
+//////////////// 
+//////////////// PROTECT TOGETHER
+//////////////// 
+
 #project-protect-together {
   background: blue;
   color: white;
