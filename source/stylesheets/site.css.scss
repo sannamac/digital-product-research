@@ -70,7 +70,7 @@ img {
       }
       &:hover {
         article {
-          background-color: rgba(0, 0, 0, 0.1); 
+          background-color: rgba(0, 0, 0, 0.1);
         }
       }
     }
@@ -119,7 +119,7 @@ body:not(.index) {
 // Connected devices
 .connected_index,
 #project-connected-devices {
-  
+
   $connected-devices-primary: #303832;
   $connected-devices-secondary: darken($connected-devices-primary, 20%);
   $connected-devices-reverse: #ffffff;
@@ -145,6 +145,7 @@ body:not(.index) {
         width: 375px;
         height: 667px;
       }
+
     }
   }
 }
@@ -154,4 +155,8 @@ body:not(.index) {
 #project-protect-together {
   background: blue;
   color: white;
+
+  h1 {
+    font-size: 3.6rem;
+  }
 }
