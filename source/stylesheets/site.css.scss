@@ -56,7 +56,6 @@ img {
         height: inherit;
         display: block;
       }
-
       article {
         padding: 28px;
         width: auto;
@@ -86,18 +85,28 @@ body:not(.index) {
     padding: 2rem;
     box-sizing: border-box;
     @media screen and (min-width: 767px) {
-      float: left;
-      width: 50%;
+      float: right;
+      width: 60%;
+      > section {
+        max-width: 800px;
+        float: left;
+      }
+    }
+    section {
+      > section {
+        margin-bottom: 8rem;
+      }
     }
   }
   aside {
     @media screen and (min-width: 767px) {
-      width: 50%;
-      float: right;
+      width: 40%;
+      float: left;
     }
     figure {
       @media screen and (min-width: 767px) {
         position: fixed;
+        right: 60%;
       }
     }
   }
@@ -116,6 +125,7 @@ body:not(.index) {
   $connected-devices-reverse: #ffffff;
 
   font-family: 'Source Code Pro', monospace;
+  font-size: 1.4rem;
   background: $connected-devices-secondary;
   article {
     color: $connected-devices-reverse;
@@ -123,6 +133,9 @@ body:not(.index) {
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3.6rem;
+    }
+    p, blockquote {
+      line-height: 2.4rem;
     }
   }
 
