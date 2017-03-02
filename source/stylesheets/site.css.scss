@@ -60,9 +60,34 @@ html {
 }
 
 
-
+.connected_index,
 #project-connected-devices {
-  background: green;
+  
+  $connected-devices-primary: #303832;
+  $connected-devices-secondary: darken($connected-devices-primary, 20%);
+  $connected-devices-reverse: #ffffff;
+
+  background: $connected-devices-secondary;
+  color: $connected-devices-reverse;
+
+  article {
+    width: 50%;
+    float: right;
+    background: $connected-devices-primary;
+  }
+  aside {
+    width: 50%;
+    float: left;
+    figure {
+
+
+      iframe {
+        width: 375px;
+        height: 667px;
+      }
+      
+    }
+  }
 }
 
 #project-protect-together {
