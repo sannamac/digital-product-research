@@ -40,6 +40,27 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .projects {
+    overflow: visible;
+    height: auto;
+
+    .project {
+      display: block;
+      width: inherit;
+      max-width: inherit;
+    }
+
+    .scroll-container {
+      overflow-y: hidden;
+      height: inherit;
+      display: block;
+    }
+  }
+}
+
+
+
 #project-connected-devices {
   background: green;
 }
