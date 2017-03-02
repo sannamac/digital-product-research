@@ -26,14 +26,11 @@ html {
     width: 330px;
     min-width: 330px;
     max-width: 330px;
-    padding: 0;
-    margin: 0;
   }
 
   .scroll-container {
     height: 100%;
     display: block;
-    padding: 28px 0 0 0;
     overflow: hidden;
     overflow-y: scroll;
   }
@@ -41,4 +38,13 @@ html {
   article {
     padding: 28px;
   }
+}
+
+#project-connected-devices {
+  background: green;
+}
+
+#project-protect-together {
+  background: blue;
+  color: white;
 }
