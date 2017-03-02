@@ -1,137 +1,44 @@
 @charset "utf-8";
 @import "normalize";
 
-body {
-  counter-reset: sidenote-counter;
+/* general
+--------------------------------------------------*/
+html {
+  overflow-y: scroll;
+  height:100%
 }
 
-
-body > .wrap {
-  width: 87.5%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 12.5%;
-  &:first-of-type {
-    background: #ebebeb;
-    padding-top: 4rem;
-    @media (min-width: 760px) {
-      padding-bottom: 6rem;
-      margin-bottom: 6rem;
-    }
-  }
+.index {
+  display: block;
+  background: yellow;
+  height: 100%;
 }
 
+.projects {
+  display: table;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  background: red;
 
-body > section {
-  > section {
+  .project {
+    display: table-cell;
+    width: 330px;
+    min-width: 330px;
+    max-width: 330px;
     padding: 0;
-    margin-bottom: 4rem;
-  }
-}
-
-h2 {
-  @media (min-width: 760px) {
-    width: 55%;
-    line-height: 2.2rem;
-  }
-}
-
-// Narriative structure
-.situation {
-  p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-  }
-}
-
-.complication {
-}
-
-
-.attribution {
-
-}
-
-.question {
-
-}
-
-.answer {
-  > p {
-
+    margin: 0;
   }
 
-}
-
-.learning {
-
-}
-
-
-.quote {
-  outline: 1px solid black;
-  padding: 0.5em 1.5em;
-  margin-bottom: 0.5em;
-  width: 65%;
-
-}
-
-.attribution {
-  text-align: right;
-}
-
-
-
-
-span.sidenote.belief-aside {
-  float: left;
-  width: 20%;
-  left: -20%;
-  span {
-    background: #ffffcd;
-    color: black;
-    text-decoration: underline;
-    line-height: 1.8;
+  .scroll-container {
+    height: 100%;
+    display: block;
+    padding: 28px 0 0 0;
+    overflow: hidden;
+    overflow-y: scroll;
   }
-}
 
-
-
-
-
-
-
-
-
-
-
-blockquote {
-  p {
-    display: inline;
+  article {
+    padding: 28px;
   }
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-
-// END Narriative structure
-
-
-
-#scaled-frame { height: 650px; width: 142.8%; border: 0; margin-bottom: -180px;}
-#scaled-frame {
-zoom: 0.70;
--moz-transform: scale(0.70);
--moz-transform-origin: 0 0;
--o-transform: scale(0.70);
--o-transform-origin: 0 0;
--webkit-transform: scale(0.70);
--webkit-transform-origin: 0 0;
-outline: 1px solid black;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-#scaled-frame  { zoom: 1;  }
 }
