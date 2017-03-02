@@ -18,6 +18,8 @@ img {
   max-width: 100%;
 }
 
+// Index layout
+
 #projects {
   display: table;
   width: auto;
@@ -76,6 +78,34 @@ img {
 }
 
 
+// These are consistent styles across all experiments
+body:not(.index) {
+  article {
+    padding: 2rem;
+    box-sizing: border-box;
+    @media screen and (min-width: 767px) {
+      float: left;
+      width: 50%;
+    }
+  }
+  aside {
+    @media screen and (min-width: 767px) {
+      width: 50%;
+      float: right;
+    }
+    figure {
+      @media screen and (min-width: 767px) {
+        position: fixed;
+      }
+    }
+  }
+}
+
+
+// These are experiment specific styles
+
+
+// Connected devices
 .connected_index,
 #project-connected-devices {
   
@@ -86,38 +116,26 @@ img {
   font-family: 'Source Code Pro', monospace;
   background: $connected-devices-secondary;
   article {
-    padding: 2rem;
-    box-sizing: border-box;
     color: $connected-devices-reverse;
-    float: left;
     background: $connected-devices-primary;
-    @media screen and (min-width: 767px) {
-      width: 50%;
-    }
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3.6rem;
     }
   }
-  aside {
-    @media screen and (min-width: 767px) {
-      width: 50%;
-      float: right;
-    }
 
+  aside {
     figure {
-    @media screen and (min-width: 767px) {
-      position: fixed;
-    }
       iframe {
         width: 375px;
         height: 667px;
       }
-      
     }
   }
 }
 
+
+// Protect together
 #project-protect-together {
   background: blue;
   color: white;
