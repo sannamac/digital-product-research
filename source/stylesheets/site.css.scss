@@ -83,7 +83,7 @@ img {
 body:not(.index) {
   article {
     figure {
-      margin: 0 0 4rem 0;
+      margin: 4rem 0 4rem 0;
     }
     padding: 2rem;
     box-sizing: border-box;
@@ -97,8 +97,7 @@ body:not(.index) {
     }
     section {
       &.situation {
-        font-size: 2rem;
-        line-height: 2.8rem;
+
       }
       > section {
         margin-bottom: 8rem;
@@ -134,15 +133,34 @@ body:not(.index) {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.4rem;
   background: $connected-devices-secondary;
+
   article {
     color: $connected-devices-reverse;
     background: $connected-devices-primary;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 500;
+    }
+
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3.6rem;
     }
     p, blockquote {
-      line-height: 2.4rem;
+      font-weight: 300;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      width: 90%;
+    }
+
+    section {
+      &.situation {
+        p {
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+        }
+      }
     }
     figure {
       &.alt {
