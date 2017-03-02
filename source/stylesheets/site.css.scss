@@ -61,9 +61,11 @@ img {
         padding: 28px;
         width: auto;
         float: none;
-        @media screen and (max-width: 767px) {
-          *:not(.project-title) {
-            display: none;
+        section {
+          @media screen and (max-width: 767px) {
+            *:not(.project-title) {
+              display: none;
+            }
           }
         }
       }
