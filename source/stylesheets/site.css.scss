@@ -17,7 +17,6 @@ html {
 .projects {
   display: table;
   width: auto;
-  height: 100%;
   overflow: hidden;
   background: red;
 
@@ -33,6 +32,14 @@ html {
     display: block;
     overflow: hidden;
     overflow-y: scroll;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .scroll-container:hover {
+    article {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 
   article {
@@ -58,7 +65,6 @@ html {
     }
   }
 }
-
 
 .connected_index,
 #project-connected-devices {
