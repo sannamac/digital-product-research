@@ -76,16 +76,22 @@ html {
 
   article {
     color: $connected-devices-reverse;
-    width: 50%;
-    float: right;
+    @media screen and (min-width: 767px) {
+      width: 50%;
+    }
+    float: left;
     background: $connected-devices-primary;
   }
   aside {
-    width: 50%;
-    float: left;
+    @media screen and (min-width: 767px) {
+      width: 50%;
+      float: right;
+    }
+
     figure {
-
-
+    @media screen and (min-width: 767px) {
+      position: fixed;
+    }
       iframe {
         width: 375px;
         height: 667px;
