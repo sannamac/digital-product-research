@@ -83,8 +83,7 @@ img {
 body:not(.index) {
   article {
     figure {
-      margin: 0;
-      mix-blend-mode: lighten;
+      margin: 0 0 4rem 0;
     }
     padding: 2rem;
     box-sizing: border-box;
@@ -114,7 +113,7 @@ body:not(.index) {
     figure {
       @media screen and (min-width: 767px) {
         position: fixed;
-        right: 60%;
+        right: 65%;
       }
     }
   }
@@ -145,6 +144,29 @@ body:not(.index) {
     p, blockquote {
       line-height: 2.4rem;
     }
+    figure {
+      &.alt {
+        mix-blend-mode: lighten;
+        position: relative;
+        &::after {
+          content: '02/04/2016';
+          background: black;
+          display: block;
+          position: absolute;
+          top: 1rem;
+          left: -2rem;
+          z-index: 1;
+        }
+        img {
+          margin-left: -4rem;
+        }
+      }
+      figcaption {
+        margin: 0.6rem 0 0 0;
+        color: darken($connected-devices-reverse, 40%);
+        font-size: 1rem;
+      }
+    }
   }
 
   aside {
@@ -152,6 +174,7 @@ body:not(.index) {
       background: darken($connected-devices-primary, 20%);
       padding: 4rem 2rem 5rem 2rem;
       border-radius: 4rem;
+      margin-top: 4rem;
       iframe {
         width: 375px;
         height: 667px;
