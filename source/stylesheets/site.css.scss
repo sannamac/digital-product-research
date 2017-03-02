@@ -82,6 +82,10 @@ img {
 // These are consistent styles across all experiments
 body:not(.index) {
   article {
+    figure {
+      margin: 0;
+      mix-blend-mode: lighten;
+    }
     padding: 2rem;
     box-sizing: border-box;
     @media screen and (min-width: 767px) {
@@ -93,6 +97,10 @@ body:not(.index) {
       }
     }
     section {
+      &.situation {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
       > section {
         margin-bottom: 8rem;
       }
