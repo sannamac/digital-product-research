@@ -112,7 +112,8 @@ body:not(.index) {
     figure {
       @media screen and (min-width: 767px) {
         position: fixed;
-        right: 65%;
+        right: 62%;
+        width: 25%;
       }
     }
   }
@@ -190,14 +191,22 @@ body:not(.index) {
   aside {
     figure {
       background: darken($connected-devices-primary, 20%);
-      padding: 4rem 2rem 5rem 2rem;
-      border-radius: 4rem;
+      padding: 5% 1%;
+      border-radius: 2rem;
       margin-top: 4rem;
-      iframe {
-        width: 375px;
-        height: 667px;
+      max-width: 400px;
+      .embed {
+        position: relative;
+        padding-bottom: 160%;
+        width: 100%;
+        text-align: left;
+        iframe {
+          width: 100%;
+          position: absolute;
+          height: 100%;
+          overflow: hidden;
+        }
       }
-
     }
   }
 }
