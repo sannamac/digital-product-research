@@ -82,15 +82,18 @@ img {
   $connected-devices-secondary: darken($connected-devices-primary, 20%);
   $connected-devices-reverse: #ffffff;
 
+  font-family: 'Source Code Pro', monospace;
   background: $connected-devices-secondary;
-
   article {
     color: $connected-devices-reverse;
+    float: left;
+    background: $connected-devices-primary;
     @media screen and (min-width: 767px) {
       width: 50%;
     }
-    float: left;
-    background: $connected-devices-primary;
+    h1 {
+      font-family: 'Playfair Display', serif;
+    }
   }
   aside {
     @media screen and (min-width: 767px) {
