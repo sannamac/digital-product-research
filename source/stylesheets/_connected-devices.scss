@@ -47,13 +47,16 @@ $connected-devices-reverse: #d3e4d7;
       font-weight: 300;
       font-size: 1.2rem;
       line-height: 2rem;
-      width: 90%;
+      @media screen and (min-width: 767px) {
+        width: 90%;
+      }
     }
 
     blockquote {
       font-family: 'Playfair Display', serif;
       box-sizing: border-box;
       margin-left: 0;
+      margin-right: 0;
       padding-left: 1em;
     }
 
