@@ -113,7 +113,7 @@ body:not(.index) {
       @media screen and (min-width: 767px) {
         position: fixed;
         right: 62%;
-        width: 25%;
+        width: 22%;
       }
     }
   }
@@ -123,9 +123,9 @@ body:not(.index) {
 // These are experiment specific styles
 
 
-//////////////// 
+////////////////
 //////////////// CONNECTED DEVICES
-//////////////// 
+////////////////
 
   $connected-devices-primary: #303832;
   $connected-devices-secondary: darken($connected-devices-primary, 5%);
@@ -146,7 +146,7 @@ body:not(.index) {
         z-index: 1;
         background: $connected-devices-reverse;
         color: $connected-devices-secondary;
-        line-height: 10rem;       
+        line-height: 10rem;
       }
     }
   }
@@ -267,7 +267,7 @@ body:not(.index) {
       font-size: 1rem;
       line-height: 1.4rem;
       width: 100%;
-    } 
+    }
     figure {
       margin: 0;
       &.alt {
@@ -278,13 +278,13 @@ body:not(.index) {
           margin-left: 0;
         }
       }
-    }   
+    }
   }
 }
 
-//////////////// 
+////////////////
 //////////////// PROTECT TOGETHER
-//////////////// 
+////////////////
 
 #project-protect-together {
   background: blue;
