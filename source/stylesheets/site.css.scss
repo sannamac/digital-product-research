@@ -62,7 +62,7 @@ img {
         float: none;
         section {
           @media screen and (max-width: 767px) {
-            *:not(.project-title) {
+            *:not(.project-title):not(.sub-span) {
               display: none;
             }
           }
