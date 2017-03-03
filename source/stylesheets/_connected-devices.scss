@@ -68,18 +68,20 @@ $connected-devices-reverse: #d3e4d7;
     }
     figure {
       &.alt {
-        position: relative;
-        &::after {
-          content: '02/04/2016';
-          background: black;
-          display: block;
-          position: absolute;
-          top: 1rem;
-          left: -2rem;
-          z-index: 1;
-        }
-        img {
-          margin-left: -4rem;
+        @media screen and (min-width: 767px) {
+          position: relative;
+          &::after {
+            content: '02/04/2016';
+            background: black;
+            display: block;
+            position: absolute;
+            top: 1rem;
+            left: -2rem;
+            z-index: 1;
+          }
+          img {
+            margin-left: -4rem;
+          }
         }
       }
       img {
