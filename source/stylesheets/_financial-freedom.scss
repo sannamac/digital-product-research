@@ -98,7 +98,7 @@ $financial-freedom-reverse: #282828;
 
   aside {
     figure {
-      background: darken($financial-freedom-primary, 20%);
+      background: lighten($financial-freedom-primary, 15%);
       padding: 5% 1%;
       border-radius: 2rem;
       margin-top: 4rem;
@@ -112,6 +112,7 @@ $financial-freedom-reverse: #282828;
         padding-bottom: 160%;
         width: 100%;
         text-align: left;
+        border: 1px solid darken($financial-freedom-primary, 15%);
         iframe {
           width: 100%;
           position: absolute;
