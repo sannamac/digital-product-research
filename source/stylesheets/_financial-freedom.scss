@@ -1,0 +1,154 @@
+////////////////
+//////////////// CONNECTED DEVICES
+////////////////
+
+$financial-freedom-primary: #c4c4c4;
+$financial-freedom-secondary: darken($financial-freedom-primary, 5%);
+$financial-freedom-reverse: #282828;
+
+
+// Experiment page
+.financial_freedom_index {
+  h1 {
+    @media screen and (min-width: 767px) {
+      margin-top: 6rem;
+      span {
+        position: relative;
+        font-size: 6.8rem;
+        margin-left: -50%;
+        z-index: 1;
+        background: $financial-freedom-reverse;
+        color: $financial-freedom-secondary;
+        line-height: 10rem;
+      }
+    }
+  }
+}
+
+.financial_freedom_index,
+#project-financial-freedom {
+
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  background: $financial-freedom-secondary;
+
+  article {
+    color: $financial-freedom-reverse;
+    background: $financial-freedom-primary;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 500;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+    }
+    p, blockquote {
+      font-weight: 300;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      width: 90%;
+    }
+
+    blockquote {
+      font-family: 'Playfair Display', serif;
+
+    }
+
+    section {
+      &.situation {
+        p {
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+    figure {
+      &.alt {
+        position: relative;
+        &::after {
+          content: '02/04/2016';
+          background: black;
+          display: block;
+          position: absolute;
+          top: 1rem;
+          left: -2rem;
+          z-index: 1;
+        }
+        img {
+          margin-left: -4rem;
+        }
+      }
+      img {
+        opacity: 1;
+      }
+      figcaption {
+        margin: 0.6rem 0 0 0;
+        color: darken($financial-freedom-reverse, 40%);
+        font-size: 1rem;
+      }
+    }
+  }
+
+  aside {
+    figure {
+      background: darken($financial-freedom-primary, 20%);
+      padding: 5% 1%;
+      border-radius: 2rem;
+      margin-top: 4rem;
+      max-width: 400px;
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
+      }
+      .embed {
+        position: relative;
+        padding-bottom: 160%;
+        width: 100%;
+        text-align: left;
+        iframe {
+          width: 100%;
+          position: absolute;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+// Just index page
+
+#project-financial-freedom {
+  article {
+    h1  {
+
+    }
+    section {
+      &.situation {
+        p {
+          font-weight: 500;
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+        }
+      }
+    }
+    p, blockquote {
+      font-size: 1rem;
+      line-height: 1.4rem;
+      width: 100%;
+    }
+    figure {
+      margin: 0;
+      &.alt {
+        &::after {
+          left: 0;
+        }
+        img {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
