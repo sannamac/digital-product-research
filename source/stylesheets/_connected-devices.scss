@@ -52,7 +52,9 @@ $connected-devices-reverse: #d3e4d7;
 
     blockquote {
       font-family: 'Playfair Display', serif;
-
+      box-sizing: border-box;
+      margin-left: 0;
+      padding-left: 1em;
     }
 
     section {
