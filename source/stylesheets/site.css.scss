@@ -20,8 +20,22 @@ img {
 
 header#topnav {
   background: white;
-  height: 60px;
   width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 60px;
+  padding: 0.2rem 1.2rem;
+  box-sizing: border-box;
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    &:nth-of-type(2) {
+      float: right;
+    }
+  }
 }
 
 // Index layout
@@ -63,7 +77,7 @@ header#topnav {
         display: block;
       }
       article {
-        padding: 28px;
+        padding: 1.2rem;
         width: auto;
         float: none;
         section {
