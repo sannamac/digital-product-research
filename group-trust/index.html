@@ -5,37 +5,49 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500|Playfair+Display" rel="stylesheet">
+
     <title>Digital Product Research</title>
 
     <link href="../stylesheets/site.css" rel="stylesheet" />
-    <link href="../stylesheets/tufte.css" rel="stylesheet" />
     <script src="../javascripts/all.js"></script>
   </head>
 
   <body class="group-trust group-trust_index">
-    <header>
-  <a href="../">Digital Product Research</a>
+    <div class="wrap">
+  <header>
+    <a href="../">Digital Product Research</a>
 
-  <h1>Protecting your stuff</h1>
-</header>
-<article>
-  <section>
+    <h1>Protecting your stuff</h1>
+  </header>
 
-    <section class="situation">
-      [situation]
-    </section>
+  <section class="situation">
+    <h2>A lack of trust has broken insurance</h2>
+    <p>
+      People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to.
+    </p>
+    <p>
+      Insurers don't trust customers. Customers don't trust insurers. Insurers collude to raise prices and don't trust each another... And the regulators don't trust the insurers.
+    </p>
+  </section>
 
+</div>
+
+<div class="wrap">
+
+  <article>
     <section class="complication">
-      <h2>A lack of trust has broken insurance</h2>
       <p>
-        People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to. There’s space for Co-op to try some radically new approaches to insurance: local, mutual, community focused and owned by members.
+        There’s space for Co-op to take a radically new approach to insurance: local, mutual, community focused and owned by members.
+        <label for="protect-coffeeshop" class="margin-toggle">⊕</label><input type="checkbox" id="protect-coffeeshop" class="margin-toggle"><span class="marginnote"><img src="../images/Assets/Protect/llyods-coffee-shop.png" alt="" />Insurance like it used to, 50 people in a coffee shop, working to protect each other’s interests.</span>
+
       </p>
     </section>
 
 
     <section class="what-we-did">
       <p>
-        In collaboration with colleagues in Co-op insurance, we explored an alternative model based on trust. If people with similar risks could formed groups and insured each other, they might be  more likely to trust one another.
+        In collaboration with colleagues in Co-op insurance, we explored this alternative model built on trust. If people with similar risks could formed groups and insure each other, they might be more likely to trust one another.
         <label for="working-together-0" class="margin-toggle sidenote-number"></label>
   
 <input type="checkbox" id="working-together-0" class="margin-toggle">
@@ -53,19 +65,25 @@
 
     <section class="question-and-answer">
       <h2 class="question">
-        How might we create an insurance model where everyone trusts everyone else, and where members felt confident about making a claim?
+        How might we create an insurance model where people trust each other, and where members feel confident making claims?
       </h2>
     </section>
 
     <section class="what-we-did">
       <h2>Small groups with something in common</h2>
       <p>
-        We created a prototype of <a href="https://coop-protect.herokuapp.com">Protect Together</a>. Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to X people who fit the requirements for our example group.
-        <label for="protect-0" class="margin-toggle">⊕</label><input type="checkbox" id="protect-0" class="margin-toggle"><span class="marginnote"><img src="../Assets/Protect/image00.png" alt="Image00" />Protect Together: insurance for small groups of people with something in common</span>
+        We created a prototype of <a href="https://coop-protect.herokuapp.com">Protect Together</a>.
+        <label for="protect-0" class="margin-toggle">⊕</label><input type="checkbox" id="protect-0" class="margin-toggle"><span class="marginnote"><img src="../images/Assets/Protect/image03.png" alt="A pen sketch of an early design for Protect Together showing an input field and results page" />An early paper prototype of Protect Together</span>
+
+             Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to 6 people who fit the requirements for our example group.
+        <label for="protect-1" class="margin-toggle">⊕</label><input type="checkbox" id="protect-1" class="margin-toggle"><span class="marginnote"><img src="../Assets/Protect/image00.png" alt="A screenshot of the homepage of the Protect Together website" />Protect Together: insurance for small groups of people with something in common</span>
 
 </p>
       </p>
     </section>
+    <figure>
+      ["Assets/Protect/image01.png", {:alt=>"A woman tests out the Protct Together prototype on a laptop guided by one of our team"}]
+    </figure>
 
     <section class="question-and-answer">
       <h2 class="question">
@@ -95,7 +113,7 @@
         </blockquote>
 
         <p>
-          Respondents did think it was different from traditional insurance.
+          Respondents saw the difference from traditional insurance.
         </p>
 
         <blockquote>
@@ -143,7 +161,7 @@
 
         <p>
           We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
-          <label for="protect-1" class="margin-toggle">⊕</label><input type="checkbox" id="protect-1" class="margin-toggle"><span class="marginnote"><img src="../Assets/Protect/image05.png" alt="Image05" />In our experiment we focused on people living in the same area, and not on different types of possessions</span>
+          <label for="protect-1" class="margin-toggle">⊕</label><input type="checkbox" id="protect-1" class="margin-toggle"><span class="marginnote"><img src="../Assets/Protect/image05.png" alt="" />In our experiment we focused on people living in the same area, and not on different types of possessions</span>
 
         </p>
 
@@ -204,8 +222,8 @@
         Explore different sizes of groups that people might join. We didn’t explicitly show the size of the Green Quarter group. A future design sprint might present respondents with different size groups to better understand how they feel about this and how they might communicate.
       </p>
     </section>
-  </section>
-</article>
+  </article>
+</div>
 
   </body>
 </html>
