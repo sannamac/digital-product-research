@@ -368,15 +368,52 @@ textarea {
 --------------------------------------------------*/
 html {
   overflow-y: scroll;
-  height: 100%; }
+  height: 100%;
+  background: #efefef; }
+
+body {
+  overflow: auto; }
 
 .index {
   display: block;
-  background: yellow;
   height: 100%; }
 
 img {
   max-width: 100%; }
+
+div#wip,
+header#topnav {
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  box-sizing: border-box; }
+
+div#wip {
+  padding: 0rem 1.2rem;
+  background: orange;
+  color: #774d00;
+  border-bottom: 1px solid #D08600;
+  line-height: 28px; }
+
+header#topnav {
+  line-height: 36px;
+  padding: 0.2rem 1.2rem;
+  background: white; }
+  header#topnav a {
+    font-weight: 500;
+    text-decoration: none; }
+    header#topnav a:nth-of-type(2) {
+      float: right; }
+
+body.about_index article {
+  padding: 0.2rem 1.2rem;
+  max-width: 800px;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 8rem; }
 
 #projects {
   display: table;
@@ -412,7 +449,7 @@ img {
         height: inherit;
         display: block; } }
     #projects a.scroll-container article {
-      padding: 28px;
+      padding: 1.2rem;
       width: auto;
       float: none; }
       @media screen and (max-width: 767px) {
@@ -421,29 +458,41 @@ img {
     #projects a.scroll-container:hover article {
       background-color: rgba(0, 0, 0, 0.1); }
 
-body:not(.index) article {
+body:not(.index):not(.about_index) article {
   padding: 2rem;
   box-sizing: border-box; }
-  body:not(.index) article figure {
+  body:not(.index):not(.about_index) article figure {
     margin: 4rem 0 4rem 0; }
   @media screen and (min-width: 767px) {
-    body:not(.index) article {
+    body:not(.index):not(.about_index) article {
       float: right;
       width: 60%; }
-      body:not(.index) article > section {
+      body:not(.index):not(.about_index) article > section {
         max-width: 800px;
         float: left; } }
-  body:not(.index) article section > section {
+  body:not(.index):not(.about_index) article section > section {
     margin-bottom: 8rem; }
 @media screen and (min-width: 767px) {
-  body:not(.index) aside {
+  body:not(.index):not(.about_index) aside {
     width: 40%;
     float: left; } }
 @media screen and (min-width: 767px) {
-  body:not(.index) aside figure {
+  body:not(.index):not(.about_index) aside figure {
     position: fixed;
     right: 62%;
     width: 25%; } }
+body:not(.index):not(.about_index) section.what-next {
+  width: 100%;
+  display: block;
+  float: left;
+  z-index: 1;
+  position: relative;
+  background: white;
+  padding-bottom: 10rem; }
+  body:not(.index):not(.about_index) section.what-next section.further-reading,
+  body:not(.index):not(.about_index) section.what-next section.related-project {
+    width: 50%;
+    margin: 0 auto; }
 
 @media screen and (min-width: 767px) {
   .connected_index h1 {
@@ -542,6 +591,20 @@ body:not(.index) article {
         position: absolute;
         height: 100%;
         overflow: hidden; }
+  .connected_index section.what-next,
+  #project-connected-devices section.what-next {
+    background: #010101 !important;
+    color: #d3e4d7;
+    padding-bottom: 10rem; }
+    .connected_index section.what-next section.further-reading,
+    .connected_index section.what-next section.related-project,
+    #project-connected-devices section.what-next section.further-reading,
+    #project-connected-devices section.what-next section.related-project {
+      width: 50%;
+      margin: 0 auto; }
+    .connected_index section.what-next a:link,
+    #project-connected-devices section.what-next a:link {
+      color: inherit; }
 
 #project-connected-devices article section.situation p {
   font-weight: 500;
