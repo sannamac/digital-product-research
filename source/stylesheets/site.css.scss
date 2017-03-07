@@ -119,10 +119,13 @@ body.about_index {
         float: none;
         section {
           @media screen and (max-width: 767px) {
-            *:not(.project-title) {
+            *:not(.project-title):not(span) {
               display: none;
             }
           }
+        }
+        figure {
+          margin: 0;
         }
       }
       &:hover {
@@ -138,6 +141,7 @@ body.about_index {
 
 // These are consistent styles across all experiments
 body:not(.index):not(.about_index) {
+  margin-top: 71px;
   article {
     figure {
       margin: 4rem 0 4rem 0;
@@ -153,6 +157,11 @@ body:not(.index):not(.about_index) {
       }
     }
     section {
+      p, blockquote {
+        @media screen and (min-width: 767px) {
+          width: 90%;
+        }
+      }
       &.situation {
 
       }
@@ -169,6 +178,7 @@ body:not(.index):not(.about_index) {
       float: left;
     }
     figure {
+      filter: blur(3px);
       @media screen and (min-width: 767px) {
         position: fixed;
         right: 62%;
@@ -186,6 +196,7 @@ body:not(.index):not(.about_index) {
       opacity: 0.4;
       &:hover {
         opacity: 1;
+        filter: blur(0px);
       }
       .embed {
         position: relative;
@@ -209,11 +220,14 @@ body:not(.index):not(.about_index) {
     z-index: 1;
     position: relative;
     background: white;
-    padding-bottom: 10rem;
+    padding: 4rem 0 10rem 0;
     section.further-reading,
     section.related-project {
       width: 50%;
       margin: 0 auto;
+      a {
+        color: inherit;
+      }
     }
   }
 
@@ -275,7 +289,6 @@ body:not(.index):not(.about_index) {
       font-weight: 300;
       font-size: 1.2rem;
       line-height: 2rem;
-      width: 90%;
     }
 
     blockquote {
@@ -380,18 +393,6 @@ body:not(.index):not(.about_index) {
   }
 }
 
-////////////////
-//////////////// PROTECT TOGETHER
-////////////////
-
-#project-protect-together {
-  background: blue;
-  color: white;
-
-  h1 {
-
-  }
-}
 
 ////////////////
 //////////////// FINANCIAL FREEDOM
@@ -445,6 +446,9 @@ $financial-freedom-reverse: #ffffff;
         background: $financial-freedom-secondary;
       }
     }
+    h2 {
+      line-height: 2rem;
+    }
   }
 }
 
@@ -459,11 +463,173 @@ $financial-freedom-reverse: #ffffff;
 ////////////////
 //////////////// GROUP TRUST
 ////////////////
+
+$group-trust-primary: #c2e8fd;
+$group-trust-secondary: lighten($group-trust-primary, 10%);
+$group-trust-reverse: black;
+
+
+// Experiment page
 .group-trust_index {
+  article {
+    h1 {
+      @media screen and (min-width: 767px) {
+        margin-top: 6rem;
+        span {
+          position: relative;
+          font-size: 6.8rem;
+          margin-left: -50%;
+          z-index: 1;
+          line-height: 10rem;
+        }
+      }
+    }
+    @media screen and (min-width: 767px) {
+      p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+      section.situation {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
 
   .embed {
     background: white;
   }
+
+  section.what-next {
+    background: $group-trust-reverse !important;
+    color: $group-trust-primary;
+    section.further-reading,
+    section.related-project {
+
+    }
+    a:link {
+      color: $financial-freedom-reverse;
+    }
+  }
+
 }
 
+// Experiment page AND index
+
+.group-trust_index,
+#project-protect-together {
+  font-family: 'Nunito', sans-serif;
+  background: darken($group-trust-primary, 10%);
+  article {
+    background: $group-trust-primary;
+    h1 {
+      span {
+        background: $group-trust-reverse;
+        color: $group-trust-secondary;
+      }
+    } 
+  }
+
+}
+
+// Just index page
+#project-protect-together {
+  article {
+    h1 span {
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+    }
+  }
+}
+
+////////////////
+//////////////// TERMS
+////////////////
+
+$terms-primary: #50E3C2;
+$terms-secondary: #blue;
+$terms-reverse: black;
+
+
+// Experiment page
+.terms_index {
+  article {
+    h1 {
+      @media screen and (min-width: 767px) {
+        margin-top: 6rem;
+        span {
+          position: relative;
+          font-size: 6.8rem;
+          margin-left: -50%;
+          z-index: 1;
+          line-height: 10rem;
+        }
+      }
+    }
+    @media screen and (min-width: 767px) {
+      p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+      section.situation {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
+
+  section.what-next {
+    background: $terms-reverse !important;
+    color: $terms-primary;
+    section.further-reading,
+    section.related-project {
+
+    }
+    a:link {
+      color: $terms-reverse;
+    }
+  }
+
+}
+
+// Experiment page AND index
+
+.terms_index,
+#project-terms-reviewers {
+  font-family: "Times New Roman", Times, serif;
+  background: darken($terms-primary, 10%);
+  article {
+    background: $terms-primary;
+    h1 {
+      span {
+        background: $terms-reverse;
+        color: white;
+      }
+    } 
+  }
+
+}
+
+// Just index page
+#project-terms-reviewers {
+  article {
+    h1 span {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+    p, blockquote {
+      line-height: 1.6rem;
+    }
+  }
+}
 
