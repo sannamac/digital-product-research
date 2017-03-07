@@ -14,11 +14,13 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <div id="wip">This is a work in progress.</div>
-    <header id="topnav">
-      <a href="./">Digital Product Research</a>
-      <a href="about">About</a>
-    </header>
+    <div id="top">
+      <div id="wip">This is a work in progress.</div>
+      <header id="topnav">
+        <a href="./">Digital Product Research</a>
+        <a href="about">About</a>
+      </header>
+    </div>
     <%= yield %>
   </body>
 </html>
