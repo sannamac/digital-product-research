@@ -25,6 +25,10 @@ img {
   border-radius: 0.2rem;
 }
 
+time {
+  font-size: 0.8rem;
+}
+
 div#top {
     position: fixed;
     top: 0;
@@ -67,6 +71,7 @@ header#topnav {
       float: right;
     }
   }
+  border-bottom: 1px solid #DFDEDF;
 }
 
 // About index
@@ -511,6 +516,10 @@ $financial-freedom-reverse: #ffffff;
 .financial-freedom_index,
 #project-financial-freedom {
   font-family: 'Overpass', sans-serif;
+
+  img {
+    filter: grayscale(100%);
+  }
   article {
     color: $financial-freedom-primary;
     background: $financial-freedom-reverse;
@@ -676,7 +685,17 @@ $terms-reverse: black;
         background: $terms-reverse;
         color: white;
       }
-    } 
+    }
+    figure {
+      &::after {
+        background: red; 
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        content: '';
+      }
+    }
   }
 
 }
