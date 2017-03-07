@@ -7,6 +7,7 @@ html {
   overflow-y: scroll;
   height:100%;
   background: #efefef;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -640,9 +641,9 @@ $terms-reverse: black;
 //////////////// LOCALLY
 ////////////////
 
+$locally-secondary: #242324;
+$locally-reverse: #E9A45B;
 $locally-primary: white;
-$locally-secondary: #blue;
-$locally-reverse: black;
 
 
 // Experiment page
@@ -678,14 +679,11 @@ $locally-reverse: black;
   }
 
   section.what-next {
-    background: $locally-reverse !important;
+    background: $locally-secondary !important;
     color: $locally-primary;
     section.further-reading,
     section.related-project {
 
-    }
-    a:link {
-      color: $locally-reverse;
     }
   }
 
@@ -695,14 +693,15 @@ $locally-reverse: black;
 
 .locally_index,
 #project-locally {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Arimo', sans-serif;
   background: darken($locally-primary, 10%);
+  color: $locally-secondary;
   article {
     background: $locally-primary;
     h1 {
       span {
         background: $locally-reverse;
-        color: white;
+        color: $locally-secondary;
       }
     } 
   }
@@ -715,6 +714,13 @@ $locally-reverse: black;
     h1 span {
       font-size: 2.4rem;
       line-height: 3rem;
+    }
+    section.situation {
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        
+      }
     }
     p, blockquote {
       line-height: 1.6rem;
