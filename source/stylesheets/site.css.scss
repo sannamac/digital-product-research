@@ -183,7 +183,7 @@ body:not(.index):not(.about_index) {
           background: black;
           padding: 5% 1%;
           border-radius: 2rem;
-          margin-top: 6rem;
+          margin-top: 4rem;
           max-width: 400px;
         }
       }
@@ -213,11 +213,14 @@ body:not(.index):not(.about_index) {
     z-index: 1;
     position: relative;
     background: white;
-    padding-bottom: 10rem;
+    padding: 4rem 0 10rem 0;
     section.further-reading,
     section.related-project {
       width: 50%;
       margin: 0 auto;
+      a {
+        color: inherit;
+      }
     }
   }
 
@@ -461,11 +464,84 @@ $financial-freedom-reverse: #ffffff;
 ////////////////
 //////////////// GROUP TRUST
 ////////////////
+
+$group-trust-primary: #c2e8fd;
+$group-trust-secondary: lighten($group-trust-primary, 10%);
+$group-trust-reverse: black;
+
+
+// Experiment page
 .group-trust_index {
+  article {
+    h1 {
+      @media screen and (min-width: 767px) {
+        margin-top: 6rem;
+        span {
+          position: relative;
+          font-size: 6.8rem;
+          margin-left: -50%;
+          z-index: 1;
+          line-height: 10rem;
+        }
+      }
+    }
+    @media screen and (min-width: 767px) {
+      p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        width: 90%;
+      }
+      section.situation {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
 
   .embed {
     background: white;
   }
+
+  section.what-next {
+    background: $group-trust-reverse !important;
+    color: $group-trust-primary;
+    section.further-reading,
+    section.related-project {
+
+    }
+    a:link {
+      color: $financial-freedom-reverse;
+    }
+  }
+
+}
+
+// Experiment page AND index
+
+.group-trust_index,
+#project-protect-together {
+  font-family: 'Nunito', sans-serif;
+  background: $group-trust-secondary;
+  article {
+    background: $group-trust-primary;
+    h1 {
+      span {
+        background: $group-trust-reverse;
+        color: $group-trust-secondary;
+      }
+    } 
+  }
+
+}
+
+// Just index page
+#project-group-trust {
+
 }
 
 
