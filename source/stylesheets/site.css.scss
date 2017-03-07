@@ -72,7 +72,6 @@ body.about_index {
   display: table;
   width: auto;
   overflow: hidden;
-  background: red;
   height: 100%;
   @media screen and (max-width: 767px) {
     overflow: visible;
@@ -315,11 +314,9 @@ body:not(.index):not(.about_index) {
   section.what-next {
     background: darken($connected-devices-primary, 20%) !important;
     color: $connected-devices-reverse;
-    padding-bottom: 10rem;
     section.further-reading,
     section.related-project {
-      width: 50%;
-      margin: 0 auto;
+
     }
     a:link {
       color: inherit;
@@ -374,6 +371,68 @@ body:not(.index):not(.about_index) {
   color: white;
 
   h1 {
-    font-size: 3.6rem;
+
+  }
+}
+
+////////////////
+//////////////// FINANCIAL FREEDOM
+////////////////
+
+
+$financial-freedom-primary: #131B43;
+$financial-freedom-secondary: #DEF600;
+$financial-freedom-reverse: #ffffff;
+
+// Experiment page
+.financial-freedom_index {
+
+  article {
+    h1 {
+      @media screen and (min-width: 767px) {
+        margin-top: 6rem;
+        span {
+          position: relative;
+          font-size: 6.8rem;
+          margin-left: -50%;
+          z-index: 1;
+          line-height: 10rem;
+        }
+      }
+    }
+  }
+
+  section.what-next {
+    background: $financial-freedom-primary !important;
+    color: $financial-freedom-reverse;
+    section.further-reading,
+    section.related-project {
+
+    }
+    a:link {
+      color: $financial-freedom-reverse;
+    }
+  }
+}
+
+// Experiment page AND index
+.financial-freedom_index,
+#project-financial-freedom {
+  font-family: 'Overpass', sans-serif;
+  article {
+    color: $financial-freedom-primary;
+    background: $financial-freedom-reverse;
+    h1 {
+      span {
+        background: $financial-freedom-secondary;
+      }
+    }
+  }
+}
+
+// Just index page
+#project-financial-freedom {
+  h1 {
+
   }
 }
