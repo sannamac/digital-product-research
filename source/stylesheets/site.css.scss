@@ -141,6 +141,7 @@ body.about_index {
 
 // These are consistent styles across all experiments
 body:not(.index):not(.about_index) {
+  margin-top: 71px;
   article {
     figure {
       margin: 4rem 0 4rem 0;
