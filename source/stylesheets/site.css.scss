@@ -205,15 +205,13 @@ body:not(.index):not(.about_index) {
         font-size: 6.8rem;
         margin-left: -50%;
         z-index: 1;
-        background: $connected-devices-reverse;
-        color: $connected-devices-secondary;
         line-height: 10rem;
       }
     }
   }
 }
 
-
+// Experiment page AND index
 .connected_index,
 #project-connected-devices {
 
@@ -231,6 +229,10 @@ body:not(.index):not(.about_index) {
 
     h1 {
       font-family: 'Playfair Display', serif;
+      span {
+        background: $connected-devices-reverse;
+        color: $connected-devices-secondary;
+      }
     }
     p, blockquote {
       font-weight: 300;
@@ -331,7 +333,9 @@ body:not(.index):not(.about_index) {
 #project-connected-devices {
   article {
     h1  {
-
+      span {
+        line-height: 4rem;
+      }
     }
     section {
       &.situation {
