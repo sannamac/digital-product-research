@@ -123,8 +123,17 @@ body.about_index {
         float: none;
         section {
           @media screen and (max-width: 767px) {
-            *:not(.project-title):not(span) {
+            * {
               display: none;
+            }
+            header.project-title {
+              display: block;
+              h1, time {
+                display: block;
+              }
+              span {
+                display: inline;
+              }
             }
           }
         }
@@ -184,7 +193,7 @@ body:not(.index):not(.about_index) {
           margin-top: 6rem;
         }
       }
-      > h1 {
+      > header.project-title {
         @media screen and (min-width: 767px) {
           margin-left: -50%;
         }
