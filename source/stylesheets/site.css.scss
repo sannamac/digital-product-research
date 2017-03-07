@@ -151,6 +151,8 @@ body:not(.index):not(.about_index) {
       }
     }
   }
+
+
   aside {
     @media screen and (min-width: 767px) {
       width: 40%;
@@ -162,8 +164,34 @@ body:not(.index):not(.about_index) {
         right: 62%;
         width: 25%;
       }
+      &.mobile-frame {
+        @media screen and (min-width: 767px) {
+          background: black;
+          padding: 5% 1%;
+          border-radius: 2rem;
+          margin-top: 4rem;
+          max-width: 400px;
+        }
+      }
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
+      }
+      .embed {
+        position: relative;
+        padding-bottom: 160%;
+        width: 100%;
+        text-align: left;
+        iframe {
+          width: 100%;
+          position: absolute;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
     }
   }
+
   section.what-next {
     width: 100%;
     display: block;
@@ -288,26 +316,6 @@ body:not(.index):not(.about_index) {
   aside {
     figure {
       background: darken($connected-devices-primary, 20%);
-      padding: 5% 1%;
-      border-radius: 2rem;
-      margin-top: 4rem;
-      max-width: 400px;
-      opacity: 0.4;
-      &:hover {
-        opacity: 1;
-      }
-      .embed {
-        position: relative;
-        padding-bottom: 160%;
-        width: 100%;
-        text-align: left;
-        iframe {
-          width: 100%;
-          position: absolute;
-          height: 100%;
-          overflow: hidden;
-        }
-      }
     }
   }
 
