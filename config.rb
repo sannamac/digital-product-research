@@ -42,7 +42,6 @@ activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
-  set :http_prefix, '/digital-product-research'
   # Minify CSS on build
   # activate :minify_css
 
