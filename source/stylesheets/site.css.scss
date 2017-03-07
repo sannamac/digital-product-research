@@ -363,7 +363,8 @@ body:not(.index):not(.about_index) {
   article {
     h1  {
       span {
-        line-height: 4rem;
+        font-size: 2.4rem;
+        line-height: 3.4rem;
       }
     }
     section {
@@ -633,4 +634,92 @@ $terms-reverse: black;
     }
   }
 }
+
+
+////////////////
+//////////////// LOCALLY
+////////////////
+
+$locally-primary: white;
+$locally-secondary: #blue;
+$locally-reverse: black;
+
+
+// Experiment page
+.locally_index {
+  article {
+    h1 {
+      @media screen and (min-width: 767px) {
+        margin-top: 6rem;
+        span {
+          position: relative;
+          font-size: 6.8rem;
+          margin-left: -50%;
+          z-index: 1;
+          line-height: 10rem;
+        }
+      }
+    }
+    @media screen and (min-width: 767px) {
+      p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+      section.situation {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
+
+  section.what-next {
+    background: $locally-reverse !important;
+    color: $locally-primary;
+    section.further-reading,
+    section.related-project {
+
+    }
+    a:link {
+      color: $locally-reverse;
+    }
+  }
+
+}
+
+// Experiment page AND index
+
+.locally_index,
+#project-locally {
+  font-family: "Times New Roman", Times, serif;
+  background: darken($locally-primary, 10%);
+  article {
+    background: $locally-primary;
+    h1 {
+      span {
+        background: $locally-reverse;
+        color: white;
+      }
+    } 
+  }
+
+}
+
+// Just index page
+#project-locally {
+  article {
+    h1 span {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+    p, blockquote {
+      line-height: 1.6rem;
+    }
+  }
+}
+
 
