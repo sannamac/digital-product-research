@@ -147,12 +147,12 @@ body:not(.index):not(.about_index) {
   margin-top: 71px;
   article {
     figure {
-      margin: 4rem 0 4rem 0;
-      &.wide {
-        img {
-          @media screen and (min-width: 767px) {
-            width: 140%;
-            margin-left: -20%;
+      margin: 0 0 4rem 0;
+      &.img-wide {
+        @media screen and (min-width: 767px) {
+          margin-left: -8rem;
+          figcaption {
+            margin-left: 8rem;
           }
         }
       }
@@ -174,10 +174,14 @@ body:not(.index):not(.about_index) {
         }
       }
       &.situation {
-
+        @media screen and (min-width: 767px) {
+          margin-top: 6rem;
+        }
       }
       > h1 {
-        margin-left: -50%;
+        @media screen and (min-width: 767px) {
+          margin-left: -50%;
+        }
         z-index: 1;
       }
       > section {
@@ -188,9 +192,23 @@ body:not(.index):not(.about_index) {
 
 
   aside {
+    @media screen and (min-width: 767px) {
       width: 50%;
       margin-left: -60%;
       float: left;
+    }
+    &.experiment-live {
+      figure {
+        @media screen and (max-width: 766px) {
+          display: none;
+        }
+      }
+      a.experiment-link {
+        @media screen and (min-width: 767px) {
+          display: none;
+        }
+      }
+    }
     figure {
       &.mobile-frame {
         @media screen and (min-width: 767px) {
@@ -429,6 +447,15 @@ $financial-freedom-reverse: #ffffff;
       p, blockquote {
         font-size: 1.4rem;
         line-height: 2rem;
+      }
+      &.situation {
+        @media screen and (min-width: 767px) {
+          p {
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            
+          }
+        }
       }
     }
   }
