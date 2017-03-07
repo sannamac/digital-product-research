@@ -6,7 +6,7 @@
       <p>
         Many of the things in our homes connect to the internet, allowing us to control them with our phones via an app, to be part of an online community or to access content online.
       </p>
-      <figure>
+      <figure class="img-wide">
         <%= image_tag 'Assets/Scout/100-connected.jpg' %>
         <figcaption>
           LG's announcement at CES, photo by Karissa Bell
@@ -28,12 +28,14 @@
       complicated terms and
       conditions.
       </p>
-      <figure class="alt">
-        <%= image_tag 'Assets/Scout/image02.jpg', {:alt => 'A smart television with a Google terms and conditions dialog box' } %>
-        <figcaption>
-          Google terms and conditions dialog box
-        </figcaption>
-      </figure>
+      <aside>
+        <figure class="alt">
+          <%= image_tag 'Assets/Scout/image02.jpg', {:alt => 'A smart television with a Google terms and conditions dialog box' } %>
+          <figcaption>
+            Google terms and conditions dialog box
+          </figcaption>
+        </figure>
+      </aside>
 
 
       <p>
@@ -58,7 +60,8 @@
         router, and showed it to four people who use these kinds of devices in
         their homes.
       </p>
-      <figure>
+
+      <figure class="img-wide">
         <%= image_tag 'Assets/Scout/image01.png' %>
         <figcaption>
           A fridge magnet could alert the homeowner to new vulnerabilities on their network
@@ -101,7 +104,7 @@
       </section>
     </section>
 
-      <figure class="alt">
+      <figure class="img-wide alt">
         <%= image_tag 'Assets/Scout/image06.png' %>
         <figcaption>
           The team reviewing the research findings
@@ -110,6 +113,14 @@
 
     <section>
       <h2 class="question">Can we make security exploits visible and understandable?</h2>
+
+      <aside class="experiment-live">
+        <figure class="mobile-frame">
+          <div class="embed">
+            <iframe width="375" height="667" frameborder="0" src="http://scout-dashboard.herokuapp.com/1.html"></iframe>
+          </div>
+        </figure>
+      </aside>
 
       <section class="answer">
         <p>
@@ -200,7 +211,6 @@
       </section>
     </section>
 
-  <hr>
     <section>
 
       <section class="learning">

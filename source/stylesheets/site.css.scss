@@ -21,6 +21,7 @@ body {
 
 img {
   max-width: 100%;
+  min-width: 100%;
   border-radius: 0.2rem;
 }
 
@@ -173,7 +174,7 @@ body:not(.index):not(.about_index) {
       }
     }
     section {
-      p, blockquote {
+      p, blockquote, h2 {
         @media screen and (min-width: 767px) {
           width: 90%;
         }
@@ -209,6 +210,35 @@ body:not(.index):not(.about_index) {
         }
       }
     }
+
+    &.desktop-embed {
+      width: 150%;
+        @media screen and (min-width: 767px) and (max-width: 1200px) {
+      float: right;
+          -ms-transform: scale(0.5);
+          -moz-transform: scale(0.5);
+          -o-transform: scale(0.5);
+          -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+          
+          -ms-transform-origin: 0 0;
+          -moz-transform-origin: 0 0;
+          -o-transform-origin: 0 0;
+          -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+        }
+      figure {
+        border-radius: 0.4rem;
+        padding-top: 2rem;
+        background: #d0d0d0;
+        @media screen and (min-width: 767px) and (max-width: 1200px) {
+          width: 120%;
+          iframe {
+          }
+        }
+      }
+    }
+
     figure {
       &.mobile-frame {
         @media screen and (min-width: 767px) {
@@ -348,11 +378,8 @@ body:not(.index):not(.about_index) {
           display: block;
           position: absolute;
           top: 1rem;
-          left: -2rem;
+          left: 1rem;
           z-index: 1;
-        }
-        img {
-          margin-left: -4rem;
         }
       }
       img {
@@ -370,19 +397,9 @@ body:not(.index):not(.about_index) {
     }
   }
 
-  aside {
-    figure {
-      background: darken($connected-devices-primary, 20%);
-    }
-  }
-
   section.what-next {
     background: darken($connected-devices-primary, 20%) !important;
     color: $connected-devices-reverse;
-    section.further-reading,
-    section.related-project {
-
-    }
     a:link {
       color: inherit;
     }
@@ -472,10 +489,6 @@ $financial-freedom-reverse: #ffffff;
   section.what-next {
     background: $financial-freedom-primary !important;
     color: $financial-freedom-reverse;
-    section.further-reading,
-    section.related-project {
-
-    }
     a:link {
       color: $financial-freedom-reverse;
     }
@@ -554,10 +567,6 @@ $group-trust-reverse: black;
   section.what-next {
     background: $group-trust-reverse !important;
     color: $group-trust-primary;
-    section.further-reading,
-    section.related-project {
-
-    }
     a:link {
       color: $financial-freedom-reverse;
     }
@@ -635,10 +644,6 @@ $terms-reverse: black;
   section.what-next {
     background: $terms-reverse !important;
     color: $terms-primary;
-    section.further-reading,
-    section.related-project {
-
-    }
     a:link {
       color: $terms-reverse;
     }
@@ -720,10 +725,6 @@ $locally-primary: white;
   section.what-next {
     background: $locally-secondary !important;
     color: $locally-primary;
-    section.further-reading,
-    section.related-project {
-
-    }
   }
 
 }
