@@ -32,6 +32,7 @@ activate :directory_indexes
 # Helpers
 ###
 
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -41,6 +42,7 @@ activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
+  set :http_prefix, '/digital-product-research'
   # Minify CSS on build
   # activate :minify_css
 
