@@ -127,6 +127,11 @@ body.about_index {
             }
           }
         }
+        aside {
+          &.experiment-live {
+            display: none;
+          }
+        }
         figure {
           margin: 0;
         }
@@ -203,11 +208,6 @@ body:not(.index):not(.about_index) {
           display: none;
         }
       }
-      a.experiment-link {
-        @media screen and (min-width: 767px) {
-          display: none;
-        }
-      }
     }
     figure {
       &.mobile-frame {
@@ -242,9 +242,18 @@ body:not(.index):not(.about_index) {
     background: white;
     padding: 4rem 0 10rem 0;
     section.further-reading,
-    section.related-project {
-      width: 50%;
+    section.related-project,
+    section.view-experiment {
+      a.experiment-link {
+        @media screen and (min-width: 767px) {
+          display: none;
+        }
+      }
+      width: 90%;
       margin: 0 auto;
+      @media screen and (min-width: 767px) {
+        width: 50%;
+      }
       ul {
         li {
           line-height: 1.4em;
