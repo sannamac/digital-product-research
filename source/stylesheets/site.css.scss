@@ -173,6 +173,7 @@ body:not(.index):not(.about_index) {
       float: left;
     }
     figure {
+      filter: blur(3px);
       @media screen and (min-width: 767px) {
         position: fixed;
         right: 62%;
@@ -190,6 +191,7 @@ body:not(.index):not(.about_index) {
       opacity: 0.4;
       &:hover {
         opacity: 1;
+        filter: blur(0px);
       }
       .embed {
         position: relative;
@@ -540,8 +542,12 @@ $group-trust-reverse: black;
 }
 
 // Just index page
-#project-group-trust {
-
+#project-protect-together {
+  article {
+    h1 span {
+      line-height: 3.2rem;
+    }
+  }
 }
 
 
