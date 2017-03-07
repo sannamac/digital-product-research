@@ -157,6 +157,11 @@ body:not(.index):not(.about_index) {
       }
     }
     section {
+      p, blockquote {
+        @media screen and (min-width: 767px) {
+          width: 90%;
+        }
+      }
       &.situation {
 
       }
@@ -284,7 +289,6 @@ body:not(.index):not(.about_index) {
       font-weight: 300;
       font-size: 1.2rem;
       line-height: 2rem;
-      width: 90%;
     }
 
     blockquote {
@@ -389,16 +393,6 @@ body:not(.index):not(.about_index) {
   }
 }
 
-////////////////
-//////////////// PROTECT TOGETHER
-////////////////
-
-#project-protect-together {
-
-  h1 {
-
-  }
-}
 
 ////////////////
 //////////////// FINANCIAL FREEDOM
@@ -494,7 +488,6 @@ $group-trust-reverse: black;
       p {
         font-size: 1.4rem;
         line-height: 2rem;
-        width: 90%;
       }
       section.situation {
         h2 {
@@ -582,7 +575,6 @@ $terms-reverse: black;
       p {
         font-size: 1.4rem;
         line-height: 2rem;
-        width: 90%;
       }
       section.situation {
         h2 {
