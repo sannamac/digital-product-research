@@ -148,6 +148,14 @@ body:not(.index):not(.about_index) {
   article {
     figure {
       margin: 4rem 0 4rem 0;
+      &.wide {
+        img {
+          @media screen and (min-width: 767px) {
+            width: 140%;
+            margin-left: -20%;
+          }
+        }
+      }
     }
     padding: 2rem;
     box-sizing: border-box;
@@ -167,6 +175,10 @@ body:not(.index):not(.about_index) {
       }
       &.situation {
 
+      }
+      > h1 {
+        margin-left: -50%;
+        z-index: 1;
       }
       > section {
         margin-bottom: 8rem;
@@ -251,8 +263,6 @@ body:not(.index):not(.about_index) {
       span {
         position: relative;
         font-size: 6.8rem;
-        margin-left: -50%;
-        z-index: 1;
         line-height: 10rem;
       }
     }
@@ -411,8 +421,6 @@ $financial-freedom-reverse: #ffffff;
         span {
           position: relative;
           font-size: 6.8rem;
-          margin-left: -50%;
-          z-index: 1;
           line-height: 10rem;
         }
       }
@@ -482,8 +490,6 @@ $group-trust-reverse: black;
         span {
           position: relative;
           font-size: 6.8rem;
-          margin-left: -50%;
-          z-index: 1;
           line-height: 10rem;
         }
       }
@@ -569,8 +575,6 @@ $terms-reverse: black;
         span {
           position: relative;
           font-size: 6.8rem;
-          margin-left: -50%;
-          z-index: 1;
           line-height: 10rem;
         }
       }
@@ -656,8 +660,6 @@ $locally-primary: white;
         span {
           position: relative;
           font-size: 6.8rem;
-          margin-left: -50%;
-          z-index: 1;
           line-height: 10rem;
         }
       }
