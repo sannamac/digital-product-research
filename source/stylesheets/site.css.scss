@@ -227,6 +227,13 @@ body:not(.index):not(.about_index) {
     section.related-project {
       width: 50%;
       margin: 0 auto;
+      ul {
+        li {
+          line-height: 1.4em;
+          margin-bottom: 1.2rem;
+        }
+        margin-bottom: 4rem;
+      }
       a {
         color: inherit;
       }
