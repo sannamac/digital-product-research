@@ -176,30 +176,17 @@ body:not(.index):not(.about_index) {
 
 
   aside {
-    @media screen and (min-width: 767px) {
-      width: 40%;
+      width: 50%;
+      margin-left: -60%;
       float: left;
-    }
     figure {
-      filter: blur(3px);
-      @media screen and (min-width: 767px) {
-        position: fixed;
-        right: 62%;
-        width: 25%;
-      }
       &.mobile-frame {
         @media screen and (min-width: 767px) {
           background: black;
-          padding: 5% 1%;
+          padding: 4rem 1rem;
           border-radius: 2rem;
-          margin-top: 4rem;
           max-width: 400px;
         }
-      }
-      opacity: 0.4;
-      &:hover {
-        opacity: 1;
-        filter: blur(0px);
       }
       .embed {
         position: relative;
