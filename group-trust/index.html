@@ -9,11 +9,11 @@
 
     <title>Digital Product Research</title>
 
-    <link href="../../stylesheets/site.css" rel="stylesheet" />
-    <script src="../../javascripts/all.js"></script>
+    <link href="../stylesheets/site.css" rel="stylesheet" />
+    <script src="../javascripts/all.js"></script>
   </head>
 
-  <body class="old_pages old_pages_group-trust old_pages_group-trust_index">
+  <body class="group-trust group-trust_index">
     <div id="top">
       <div id="wip">This is a work in progress: <a href="https://docs.google.com/a/coopdigital.co.uk/forms/d/e/1FAIpQLSeD4Fbz0-RI8ltn_cuP7Xrcce4gr5hAEn0saGV_ELoAvL3oQw/viewform?usp=sf_link" target="_blank">Give feedback</a></div>
       <header id="topnav">
@@ -21,52 +21,33 @@
         <a href="https://coopdigital.github.io/digital-product-research/about">About</a>
       </header>
     </div>
-    <div class="wrap">
-  <header>
-    <a href="../">Digital Product Research</a>
+    <article>
+  <section>
 
-    <h1>Protecting your stuff</h1>
-  </header>
+    <header class="project-title">
+      <h1><span>Protecting your stuff</span></h1>
+      <time>December 2016</time>
+    </header>
 
-  <section class="situation">
-    <h2>A lack of trust has broken insurance</h2>
-    <p>
-      People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to.
-    </p>
-    <p>
-      Insurers don't trust customers. Customers don't trust insurers. Insurers collude to raise prices and don't trust each another... And the regulators don't trust the insurers.
-    </p>
-  </section>
-
-</div>
-
-<div class="wrap">
-
-  <article>
-    <section class="complication">
+    <section class="situation">
+      <h2>A lack of trust has broken insurance</h2>
       <p>
-        There’s space for Co-op to take a radically new approach to insurance: local, mutual, community focused and owned by members.
-        <label for="protect-coffeeshop" class="margin-toggle">⊕</label><input type="checkbox" id="protect-coffeeshop" class="margin-toggle"><span class="marginnote"><img src="../../images/Assets/Protect/llyods-coffee-shop.png" alt="" />Insurance like it used to, 50 people in a coffee shop, working to protect each other’s interests.</span>
-
+        People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to.
+      </p>
+      <p>
+        Insurers don't trust customers. Customers don't trust insurers. Insurers collude to raise prices and don't trust each another... And the regulators don't trust the insurers.
       </p>
     </section>
 
+    <section class="complication">
+      <p>
+        There’s space for Co-op to take a radically new approach to insurance: local, mutual, community focused and owned by members.
+      </p>
+    </section>
 
     <section class="what-we-did">
       <p>
         In collaboration with colleagues in Co-op insurance, we explored this alternative model built on trust. If people with similar risks could formed groups and insure each other, they might be more likely to trust one another.
-        <label for="working-together-0" class="margin-toggle sidenote-number"></label>
-  
-<input type="checkbox" id="working-together-0" class="margin-toggle">
-<span class="sidenote belief-aside">
-	<span>
-  		We believe that people should work together to support each other
-
-	</span>
-
-</span>
-
-        </p>
       </p>
     </section>
 
@@ -78,27 +59,32 @@
 
     <section class="what-we-did">
       <h2>Small groups with something in common</h2>
+
+
+      <aside class="experiment-live">
+        <figure class="mobile-frame">
+          <div class="embed">
+            <iframe width="375" height="667" frameborder="0" src="https://coop-protect.herokuapp.com/"></iframe>
+          </div>
+        </figure>
+      </aside>
+
       <p>
-        We created a prototype of <a href="https://coop-protect.herokuapp.com">Protect Together</a>.
-        <label for="protect-0" class="margin-toggle">⊕</label><input type="checkbox" id="protect-0" class="margin-toggle"><span class="marginnote"><img src="../../images/Assets/Protect/image03.png" alt="A pen sketch of an early design for Protect Together showing an input field and results page" />An early paper prototype of Protect Together</span>
-
-             Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to 6 people who fit the requirements for our example group.
-        <label for="protect-1" class="margin-toggle">⊕</label><input type="checkbox" id="protect-1" class="margin-toggle"><span class="marginnote"><img src="../../Assets/Protect/image00.png" alt="A screenshot of the homepage of the Protect Together website" />Protect Together: insurance for small groups of people with something in common</span>
-
-</p>
+        We created a prototype of Protect Together. Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to 6 people who fit the requirements for our example group.
       </p>
     </section>
-    <figure>
-      ["Assets/Protect/image01.png", {:alt=>"A woman tests out the Protct Together prototype on a laptop guided by one of our team"}]
-    </figure>
+
 
     <section class="question-and-answer">
+    <figure>
+      <img src="../Assets/Protect/image01.jpg" alt="A woman tests out the Protct Together prototype on a laptop guided by one of our team" />
+    </figure>
       <h2 class="question">
         Could we explain the concept?
       </h2>
 
       <section class="answer">
-        <h3 class="answer">A new model of insurance needs a new way to explain it</h3><!-- TODO: is this really an answer? -->
+        <h3 class="answer">A new model of insurance needs a new way to explain it</h3>
         <p>
           The Protect Together home page did a poor job of explaining what the service was at a glance. While all respondents recognised it was something to do with insurance, none were entirely clear with how it worked.
         </p>
@@ -168,8 +154,6 @@
 
         <p>
           We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
-          <label for="protect-1" class="margin-toggle">⊕</label><input type="checkbox" id="protect-1" class="margin-toggle"><span class="marginnote"><img src="../../Assets/Protect/image05.png" alt="" />In our experiment we focused on people living in the same area, and not on different types of possessions</span>
-
         </p>
 
         <blockquote>
@@ -214,7 +198,6 @@
     </section>
 
     <section class="next-steps">
-
       <h2>Things we'd like to try next</h2>
 
       <p>
@@ -229,8 +212,31 @@
         Explore different sizes of groups that people might join. We didn’t explicitly show the size of the Green Quarter group. A future design sprint might present respondents with different size groups to better understand how they feel about this and how they might communicate.
       </p>
     </section>
-  </article>
-</div>
+  </section>
+</article>
+
+
+
+<section class="what-next">
+  <section class="further-reading">
+    <h1>Further reading</h1>
+    <ul>
+      <li><a href="https://teambrella.com/">Teambrella</a></li>
+      <li><a href="http://www.safeshareinsurance.com/">The insurance solution for the sharing economy</a></li>
+      <li><a href="http://monevator.com/when-to-buy-insurance/">When to buy insurance</a></li>
+      <li><a href="https://medium.com/@shai_wininger/lemonades-first-quarter-in-market-exposed-1e868e514bfa#.9sh9z97in">Lemonade’s First Quarter In Market— Exposed</a></li>
+
+    </ul>
+  </section>
+  <section class="related-project">
+    <h1>We believe that people should work together to support each other
+</h1>
+    <h2>
+      Keep reading
+    </h2>
+    <a href="locally">Keeping money local</a>
+  </section>
+</section>
 
   </body>
 </html>

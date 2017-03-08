@@ -369,7 +369,8 @@ textarea {
 html {
   overflow-y: scroll;
   height: 100%;
-  background: #efefef; }
+  background: #efefef;
+  text-rendering: optimizeLegibility; }
 
 body {
   overflow: auto; }
@@ -379,7 +380,19 @@ body {
   height: 100%; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 0.2rem; }
+
+time {
+  font-size: 0.8rem; }
+
+div#top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
 
 div#wip,
 header#topnav {
@@ -397,30 +410,36 @@ div#wip {
   color: #774d00;
   border-bottom: 1px solid #D08600;
   line-height: 28px; }
+  div#wip a {
+    color: white; }
 
 header#topnav {
   line-height: 36px;
   padding: 0.2rem 1.2rem;
-  background: white; }
-  header#topnav a {
+  background: white;
+  border-bottom: 1px solid #DFDEDF; }
+  header#topnav a, header#topnav a:active, header#topnav a:visited {
+    color: inherit;
     font-weight: 500;
     text-decoration: none; }
-    header#topnav a:nth-of-type(2) {
+    header#topnav a:nth-of-type(2), header#topnav a:active:nth-of-type(2), header#topnav a:visited:nth-of-type(2) {
       float: right; }
 
-body.about_index article {
-  padding: 0.2rem 1.2rem;
-  max-width: 800px;
-  font-size: 2.4rem;
-  line-height: 3.4rem;
-  margin-bottom: 8rem; }
+body.about_index {
+  margin-top: 71px; }
+  body.about_index article {
+    padding: 0.2rem 1.2rem;
+    max-width: 800px;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin-bottom: 8rem; }
 
 #projects {
   display: table;
   width: auto;
   overflow: hidden;
-  background: red;
-  height: 100%; }
+  height: 100%;
+  margin-top: 71px; }
   @media screen and (max-width: 767px) {
     #projects {
       overflow: visible;
@@ -453,46 +472,135 @@ body.about_index article {
       width: auto;
       float: none; }
       @media screen and (max-width: 767px) {
-        #projects a.scroll-container article section *:not(.project-title) {
-          display: none; } }
+        #projects a.scroll-container article section * {
+          display: none; }
+        #projects a.scroll-container article section header.project-title {
+          display: block; }
+          #projects a.scroll-container article section header.project-title h1, #projects a.scroll-container article section header.project-title time {
+            display: block; }
+          #projects a.scroll-container article section header.project-title span {
+            display: inline; } }
+      #projects a.scroll-container article aside.experiment-live {
+        display: none; }
+      #projects a.scroll-container article figure {
+        margin: 0; }
     #projects a.scroll-container:hover article {
       background-color: rgba(0, 0, 0, 0.1); }
 
-body:not(.index):not(.about_index) article {
-  padding: 2rem;
-  box-sizing: border-box; }
-  body:not(.index):not(.about_index) article figure {
-    margin: 4rem 0 4rem 0; }
+body:not(.index):not(.about_index) {
+  margin-top: 71px; }
+  body:not(.index):not(.about_index) article {
+    padding: 2rem;
+    box-sizing: border-box; }
+    body:not(.index):not(.about_index) article figure {
+      margin: 0 0 4rem 0; }
+      @media screen and (min-width: 767px) {
+        body:not(.index):not(.about_index) article figure.img-wide {
+          margin-left: -8rem; }
+          body:not(.index):not(.about_index) article figure.img-wide figcaption {
+            margin-left: 8rem; } }
+    @media screen and (min-width: 767px) {
+      body:not(.index):not(.about_index) article {
+        float: right;
+        width: 60%; }
+        body:not(.index):not(.about_index) article > section {
+          max-width: 800px;
+          float: left; } }
+    @media screen and (min-width: 767px) {
+      body:not(.index):not(.about_index) article section p, body:not(.index):not(.about_index) article section blockquote, body:not(.index):not(.about_index) article section h2 {
+        width: 90%; } }
+    @media screen and (min-width: 767px) {
+      body:not(.index):not(.about_index) article section.situation {
+        margin-top: 6rem; } }
+    body:not(.index):not(.about_index) article section > header.project-title {
+      z-index: 1; }
+      @media screen and (min-width: 767px) {
+        body:not(.index):not(.about_index) article section > header.project-title {
+          margin-left: -50%; } }
+    body:not(.index):not(.about_index) article section > section {
+      margin-bottom: 8rem; }
   @media screen and (min-width: 767px) {
-    body:not(.index):not(.about_index) article {
-      float: right;
-      width: 60%; }
-      body:not(.index):not(.about_index) article > section {
-        max-width: 800px;
-        float: left; } }
-  body:not(.index):not(.about_index) article section > section {
-    margin-bottom: 8rem; }
-@media screen and (min-width: 767px) {
-  body:not(.index):not(.about_index) aside {
-    width: 40%;
-    float: left; } }
-@media screen and (min-width: 767px) {
-  body:not(.index):not(.about_index) aside figure {
-    position: fixed;
-    right: 62%;
-    width: 25%; } }
-body:not(.index):not(.about_index) section.what-next {
-  width: 100%;
-  display: block;
-  float: left;
-  z-index: 1;
-  position: relative;
-  background: white;
-  padding-bottom: 10rem; }
-  body:not(.index):not(.about_index) section.what-next section.further-reading,
-  body:not(.index):not(.about_index) section.what-next section.related-project {
-    width: 50%;
-    margin: 0 auto; }
+    body:not(.index):not(.about_index) aside {
+      width: 50%;
+      margin-left: -60%;
+      float: left; } }
+  @media screen and (max-width: 766px) {
+    body:not(.index):not(.about_index) aside.experiment-live figure {
+      display: none; } }
+  body:not(.index):not(.about_index) aside.desktop-embed {
+    width: 150%; }
+    @media screen and (min-width: 767px) and (max-width: 1200px) {
+      body:not(.index):not(.about_index) aside.desktop-embed {
+        float: right;
+        -ms-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -ms-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0; } }
+    body:not(.index):not(.about_index) aside.desktop-embed figure {
+      border-radius: 0.4rem;
+      padding-top: 2rem;
+      background: #d0d0d0; }
+      @media screen and (min-width: 767px) and (max-width: 1200px) {
+        body:not(.index):not(.about_index) aside.desktop-embed figure {
+          width: 120%; } }
+  @media screen and (min-width: 767px) {
+    body:not(.index):not(.about_index) aside figure.mobile-frame {
+      background: black;
+      padding: 4rem 1rem;
+      border-radius: 2rem;
+      max-width: 400px; } }
+  body:not(.index):not(.about_index) aside figure .embed {
+    position: relative;
+    padding-bottom: 160%;
+    width: 100%;
+    text-align: left; }
+    body:not(.index):not(.about_index) aside figure .embed iframe {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      overflow: hidden; }
+  body:not(.index):not(.about_index) section.what-next {
+    width: 100%;
+    display: block;
+    float: left;
+    z-index: 1;
+    position: relative;
+    background: white;
+    padding: 4rem 0 10rem 0; }
+    body:not(.index):not(.about_index) section.what-next section.further-reading,
+    body:not(.index):not(.about_index) section.what-next section.related-project,
+    body:not(.index):not(.about_index) section.what-next section.view-experiment {
+      width: 90%;
+      margin: 0 auto; }
+      @media screen and (min-width: 767px) {
+        body:not(.index):not(.about_index) section.what-next section.further-reading a.experiment-link,
+        body:not(.index):not(.about_index) section.what-next section.related-project a.experiment-link,
+        body:not(.index):not(.about_index) section.what-next section.view-experiment a.experiment-link {
+          display: none; } }
+      @media screen and (min-width: 767px) {
+        body:not(.index):not(.about_index) section.what-next section.further-reading,
+        body:not(.index):not(.about_index) section.what-next section.related-project,
+        body:not(.index):not(.about_index) section.what-next section.view-experiment {
+          width: 50%; } }
+      body:not(.index):not(.about_index) section.what-next section.further-reading ul,
+      body:not(.index):not(.about_index) section.what-next section.related-project ul,
+      body:not(.index):not(.about_index) section.what-next section.view-experiment ul {
+        margin-bottom: 4rem; }
+        body:not(.index):not(.about_index) section.what-next section.further-reading ul li,
+        body:not(.index):not(.about_index) section.what-next section.related-project ul li,
+        body:not(.index):not(.about_index) section.what-next section.view-experiment ul li {
+          line-height: 1.4em;
+          margin-bottom: 1.2rem; }
+      body:not(.index):not(.about_index) section.what-next section.further-reading a,
+      body:not(.index):not(.about_index) section.what-next section.related-project a,
+      body:not(.index):not(.about_index) section.what-next section.view-experiment a {
+        color: inherit; }
 
 @media screen and (min-width: 767px) {
   .connected_index h1 {
@@ -500,10 +608,6 @@ body:not(.index):not(.about_index) section.what-next {
     .connected_index h1 span {
       position: relative;
       font-size: 6.8rem;
-      margin-left: -50%;
-      z-index: 1;
-      background: #d3e4d7;
-      color: #242a26;
       line-height: 10rem; } }
 
 .connected_index,
@@ -526,13 +630,16 @@ body:not(.index):not(.about_index) section.what-next {
     .connected_index article h1,
     #project-connected-devices article h1 {
       font-family: 'Playfair Display', serif; }
+      .connected_index article h1 span,
+      #project-connected-devices article h1 span {
+        background: #d3e4d7;
+        color: #242a26; }
     .connected_index article p, .connected_index article blockquote,
     #project-connected-devices article p,
     #project-connected-devices article blockquote {
       font-weight: 300;
       font-size: 1.2rem;
-      line-height: 2rem;
-      width: 90%; }
+      line-height: 2rem; }
     .connected_index article blockquote,
     #project-connected-devices article blockquote {
       font-family: 'Playfair Display', serif; }
@@ -551,11 +658,8 @@ body:not(.index):not(.about_index) section.what-next {
         display: block;
         position: absolute;
         top: 1rem;
-        left: -2rem;
+        left: 1rem;
         z-index: 1; }
-      .connected_index article figure.alt img,
-      #project-connected-devices article figure.alt img {
-        margin-left: -4rem; }
     .connected_index article figure img,
     #project-connected-devices article figure img {
       mix-blend-mode: difference;
@@ -568,44 +672,17 @@ body:not(.index):not(.about_index) section.what-next {
       .connected_index article figure figcaption a,
       #project-connected-devices article figure figcaption a {
         color: #599267; }
-  .connected_index aside figure,
-  #project-connected-devices aside figure {
-    background: #010101;
-    padding: 5% 1%;
-    border-radius: 2rem;
-    margin-top: 4rem;
-    max-width: 400px;
-    opacity: 0.4; }
-    .connected_index aside figure:hover,
-    #project-connected-devices aside figure:hover {
-      opacity: 1; }
-    .connected_index aside figure .embed,
-    #project-connected-devices aside figure .embed {
-      position: relative;
-      padding-bottom: 160%;
-      width: 100%;
-      text-align: left; }
-      .connected_index aside figure .embed iframe,
-      #project-connected-devices aside figure .embed iframe {
-        width: 100%;
-        position: absolute;
-        height: 100%;
-        overflow: hidden; }
   .connected_index section.what-next,
   #project-connected-devices section.what-next {
     background: #010101 !important;
-    color: #d3e4d7;
-    padding-bottom: 10rem; }
-    .connected_index section.what-next section.further-reading,
-    .connected_index section.what-next section.related-project,
-    #project-connected-devices section.what-next section.further-reading,
-    #project-connected-devices section.what-next section.related-project {
-      width: 50%;
-      margin: 0 auto; }
+    color: #d3e4d7; }
     .connected_index section.what-next a:link,
     #project-connected-devices section.what-next a:link {
       color: inherit; }
 
+#project-connected-devices article h1 span {
+  font-size: 2.4rem;
+  line-height: 3.4rem; }
 #project-connected-devices article section.situation p {
   font-weight: 500;
   font-size: 1.2rem;
@@ -621,8 +698,169 @@ body:not(.index):not(.about_index) section.what-next {
   #project-connected-devices article figure.alt img {
     margin-left: 0; }
 
+@media screen and (min-width: 767px) {
+  .financial-freedom_index article h1 {
+    margin-top: 6rem; }
+    .financial-freedom_index article h1 span {
+      position: relative;
+      font-size: 6.8rem;
+      line-height: 10rem; } }
+.financial-freedom_index article section p, .financial-freedom_index article section blockquote {
+  font-size: 1.4rem;
+  line-height: 2rem; }
+@media screen and (min-width: 767px) {
+  .financial-freedom_index article section.situation p {
+    font-size: 1.8rem;
+    line-height: 2.6rem; } }
+.financial-freedom_index section.what-next {
+  background: #131B43 !important;
+  color: #ffffff; }
+  .financial-freedom_index section.what-next a:link {
+    color: #ffffff; }
+
+.financial-freedom_index,
+#project-financial-freedom {
+  font-family: 'Overpass', sans-serif; }
+  .financial-freedom_index img,
+  #project-financial-freedom img {
+    filter: grayscale(100%); }
+  .financial-freedom_index article,
+  #project-financial-freedom article {
+    color: #131B43;
+    background: #ffffff; }
+    .financial-freedom_index article h1 span,
+    #project-financial-freedom article h1 span {
+      background: #DEF600; }
+    .financial-freedom_index article h2,
+    #project-financial-freedom article h2 {
+      line-height: 2rem; }
+
+@media screen and (min-width: 767px) {
+  .group-trust_index article h1 {
+    margin-top: 6rem; }
+    .group-trust_index article h1 span {
+      position: relative;
+      font-size: 6.8rem;
+      line-height: 10rem; } }
+@media screen and (min-width: 767px) {
+  .group-trust_index article p {
+    font-size: 1.4rem;
+    line-height: 2rem; }
+  .group-trust_index article section.situation h2 {
+    font-size: 2.4rem; }
+  .group-trust_index article section.situation p {
+    font-size: 1.8rem;
+    line-height: 2.4rem; } }
+.group-trust_index .embed {
+  background: white; }
+.group-trust_index section.what-next {
+  background: black !important;
+  color: #c2e8fd; }
+  .group-trust_index section.what-next a:link {
+    color: #ffffff; }
+
+.group-trust_index,
 #project-protect-together {
-  background: blue;
+  font-family: 'Nunito', sans-serif;
+  background: #91d5fb; }
+  .group-trust_index article,
+  #project-protect-together article {
+    background: #c2e8fd; }
+    .group-trust_index article h1 span,
+    #project-protect-together article h1 span {
+      background: black;
+      color: #f3fbff; }
+
+#project-protect-together article h1 span {
+  font-size: 2.4rem;
+  line-height: 3.6rem; }
+
+@media screen and (min-width: 767px) {
+  .terms_index article h1 {
+    margin-top: 6rem; }
+    .terms_index article h1 span {
+      position: relative;
+      font-size: 6.8rem;
+      line-height: 10rem; } }
+@media screen and (min-width: 767px) {
+  .terms_index article p {
+    font-size: 1.4rem;
+    line-height: 2rem; }
+  .terms_index article section.situation h2 {
+    font-size: 2.4rem; }
+  .terms_index article section.situation p {
+    font-size: 1.8rem;
+    line-height: 2.4rem; } }
+.terms_index section.what-next {
+  background: black !important;
+  color: #50E3C2; }
+  .terms_index section.what-next a:link {
+    color: black; }
+
+.terms_index,
+#project-terms-reviewers {
+  font-family: "Times New Roman", Times, serif;
+  background: #24dcb3; }
+  .terms_index article,
+  #project-terms-reviewers article {
+    background: #50E3C2; }
+    .terms_index article h1 span,
+    #project-terms-reviewers article h1 span {
+      background: black;
+      color: white; }
+    .terms_index article figure::after,
+    #project-terms-reviewers article figure::after {
+      background: red;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      content: ''; }
+
+#project-terms-reviewers article h1 span {
+  font-size: 2.4rem;
+  line-height: 3rem; }
+#project-terms-reviewers article p, #project-terms-reviewers article blockquote {
+  line-height: 1.6rem; }
+
+@media screen and (min-width: 767px) {
+  .locally_index article h1 {
+    margin-top: 6rem; }
+    .locally_index article h1 span {
+      position: relative;
+      font-size: 6.8rem;
+      line-height: 10rem; } }
+@media screen and (min-width: 767px) {
+  .locally_index article p {
+    font-size: 1.4rem;
+    line-height: 2rem; }
+  .locally_index article section.situation h2 {
+    font-size: 2.4rem; }
+  .locally_index article section.situation p {
+    font-size: 1.8rem;
+    line-height: 2.4rem; } }
+.locally_index section.what-next {
+  background: #242324 !important;
   color: white; }
-  #project-protect-together h1 {
-    font-size: 3.6rem; }
+
+.locally_index,
+#project-locally {
+  font-family: 'Arimo', sans-serif;
+  background: #e6e6e6;
+  color: #242324; }
+  .locally_index article,
+  #project-locally article {
+    background: white; }
+    .locally_index article h1 span,
+    #project-locally article h1 span {
+      background: #E9A45B;
+      color: #242324; }
+
+#project-locally article h1 span {
+  font-size: 2.4rem;
+  line-height: 3rem; }
+#project-locally article section.situation p {
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
+#project-locally article p, #project-locally article blockquote {
+  line-height: 1.6rem; }

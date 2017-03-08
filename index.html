@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500|Playfair+Display|Overpass:400,700|Nunito:400,700|Arimo:400,700" rel="stylesheet">
 
     <title>Digital Product Research</title>
 
@@ -14,23 +14,29 @@
   </head>
 
   <body class="index">
-    <div id="wip">This is a work in progress. We update this site as we work</div>
-    <header id="topnav">
-      <a href="https://coopdigital.github.io/digital-product-research/">Digital Product Research</a>
-      <a href="about">About</a>
-    </header>
+    <div id="top">
+      <div id="wip">This is a work in progress: <a href="https://docs.google.com/a/coopdigital.co.uk/forms/d/e/1FAIpQLSeD4Fbz0-RI8ltn_cuP7Xrcce4gr5hAEn0saGV_ELoAvL3oQw/viewform?usp=sf_link" target="_blank">Give feedback</a></div>
+      <header id="topnav">
+        <a href="https://coopdigital.github.io/digital-product-research/">Digital Product Research</a>
+        <a href="https://coopdigital.github.io/digital-product-research/about">About</a>
+      </header>
+    </div>
     <div id="projects">
   <div class="project" id="project-connected-devices">
     <a href="connected" class="scroll-container">
       <article>
   <section>
-    <h1 class="project-title"><span>Everything is connected</span></h1>
+    
+    <header class="project-title">
+      <h1><span>Everything is connected</span></h1>
+      <time>November 2016</time>
+    </header>
 
     <section class="situation">
       <p>
         Many of the things in our homes connect to the internet, allowing us to control them with our phones via an app, to be part of an online community or to access content online.
       </p>
-      <figure>
+      <figure class="img-wide">
         <img src="Assets/Scout/100-connected.jpg" alt="100 connected" />
         <figcaption>
           LG's announcement at CES, photo by Karissa Bell
@@ -52,12 +58,14 @@
       complicated terms and
       conditions.
       </p>
-      <figure class="alt">
-        <img src="Assets/Scout/image02.jpg" alt="A smart television with a Google terms and conditions dialog box" />
-        <figcaption>
-          Google terms and conditions dialog box
-        </figcaption>
-      </figure>
+      <aside>
+        <figure class="alt">
+          <img src="Assets/Scout/image02.jpg" alt="A smart television with a Google terms and conditions dialog box" />
+          <figcaption>
+            Google terms and conditions dialog box
+          </figcaption>
+        </figure>
+      </aside>
 
 
       <p>
@@ -82,7 +90,8 @@
         router, and showed it to four people who use these kinds of devices in
         their homes.
       </p>
-      <figure>
+
+      <figure class="img-wide">
         <img src="Assets/Scout/image01.png" alt="Image01" />
         <figcaption>
           A fridge magnet could alert the homeowner to new vulnerabilities on their network
@@ -125,7 +134,7 @@
       </section>
     </section>
 
-      <figure class="alt">
+      <figure class="img-wide alt">
         <img src="Assets/Scout/image06.png" alt="Image06" />
         <figcaption>
           The team reviewing the research findings
@@ -134,6 +143,14 @@
 
     <section>
       <h2 class="question">Can we make security exploits visible and understandable?</h2>
+
+      <aside class="experiment-live">
+        <figure class="mobile-frame">
+          <div class="embed">
+            <iframe width="375" height="667" frameborder="0" src="http://scout-dashboard.herokuapp.com/1.html"></iframe>
+          </div>
+        </figure>
+      </aside>
 
       <section class="answer">
         <p>
@@ -224,7 +241,6 @@
       </section>
     </section>
 
-  <hr>
     <section>
 
       <section class="learning">
@@ -300,184 +316,198 @@
     </a>
   </div>
   <div class="project" id="project-protect-together">
-    <a href="#" class="scroll-container">
+    <a href="group-trust" class="scroll-container">
       <article>
-  <h1 class="project-title">Protecting your stuff</h1>
+  <section>
 
-  <section class="situation">
-    <h2>A lack of trust has broken insurance</h2>
-    <p>
-      People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to.
-    </p>
-    <p>
-      Insurers don't trust customers. Customers don't trust insurers. Insurers collude to raise prices and don't trust each another... And the regulators don't trust the insurers.
-    </p>
-  </section>
+    <header class="project-title">
+      <h1><span>Protecting your stuff</span></h1>
+      <time>December 2016</time>
+    </header>
 
-  <section class="complication">
-    <p>
-      There’s space for Co-op to take a radically new approach to insurance: local, mutual, community focused and owned by members.
-    </p>
-  </section>
-
-  <section class="what-we-did">
-    <p>
-      In collaboration with colleagues in Co-op insurance, we explored this alternative model built on trust. If people with similar risks could formed groups and insure each other, they might be more likely to trust one another.
-    </p>
-  </section>
-
-  <section class="question-and-answer">
-    <h2 class="question">
-      How might we create an insurance model where people trust each other, and where members feel confident making claims?
-    </h2>
-  </section>
-
-  <section class="what-we-did">
-    <h2>Small groups with something in common</h2>
-    <p>
-      We created a prototype of Protect Together.
-
-      Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to 6 people who fit the requirements for our example group.
-    </p>
-  </section>
-
-  <figure>
-    ["Assets/Protect/image01.png", {:alt=>"A woman tests out the Protct Together prototype on a laptop guided by one of our team"}]
-  </figure>
-
-  <section class="question-and-answer">
-    <h2 class="question">
-      Could we explain the concept?
-    </h2>
-
-    <section class="answer">
-      <h3 class="answer">A new model of insurance needs a new way to explain it</h3>
+    <section class="situation">
+      <h2>A lack of trust has broken insurance</h2>
       <p>
-        The Protect Together home page did a poor job of explaining what the service was at a glance. While all respondents recognised it was something to do with insurance, none were entirely clear with how it worked.
+        People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to.
       </p>
-
-      <blockquote>
-        <p>
-          “I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.”
-        </p>
-      </blockquote>
-
       <p>
-        Having started to sign up and clicked through a few of the screens, respondents then understood more clearly what Protect Together was. They all felt it aligned with the Co-op’s overall values.
+        Insurers don't trust customers. Customers don't trust insurers. Insurers collude to raise prices and don't trust each another... And the regulators don't trust the insurers.
       </p>
-
-      <blockquote>
-        <p>
-          “I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.”
-        </p>
-      </blockquote>
-
-      <p>
-        Respondents saw the difference from traditional insurance.
-      </p>
-
-      <blockquote>
-        <p>
-          “It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.”
-        </p>
-      </blockquote>
-
     </section>
-  </section>
 
-  <section class="question-and-answer">
-    <h2 class="question">
-      Could we create trust? How do we define communities and groups?
-    </h2>
-    <section class="answer">
-
-      <h3 class="answer">Living close to someone isn’t a strong enough reason to trust them</h3>
-
+    <section class="complication">
       <p>
-        Despite living in the same area, none of the respondents felt a particular affinity with our example group (people renting flats in the Green Quarter, Manchester). They either felt that they didn’t know their neighbours, or that the age group wasn’t right for them.
+        There’s space for Co-op to take a radically new approach to insurance: local, mutual, community focused and owned by members.
       </p>
-
-      <blockquote>
-        <p>
-          “I wouldn’t trust my neighbours because I don’t know them.”
-        </p>
-      </blockquote>
-
-      <blockquote>
-        <p>
-          “I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!”
-        </p>
-      </blockquote>
     </section>
-  </section>
 
-  <section class="question-and-answer">
-    <h2 class="question">
-      Is there a need for this type of insurance?
-    </h2>
-    <section class="answer">
-
-      <h3 class="answer">Renters don’t feel that they have a lot that’s worth insuring</h3>
-
+    <section class="what-we-did">
       <p>
-        We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
+        In collaboration with colleagues in Co-op insurance, we explored this alternative model built on trust. If people with similar risks could formed groups and insure each other, they might be more likely to trust one another.
       </p>
-
-      <blockquote>
-        <p>
-          “TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.”
-        </p>
-      </blockquote>
-
     </section>
-  </section>
 
-  <section class="question-and-answer">
-    <h2 class="question">
-      Should members of the group be visible to each other? Is transparency better than anonymity?
-    </h2>
-    <section class="answer">
-
-      <h3 class="answer">People felt they’d need to talk to the group</h3>
-
-      <p>
-        When presented with the emails explaining a vote or action was required, four respondents weren’t comfortable with voting. They indicated they’d want to sound out the group in advance, or talk to people before making a decision. They seemed to assume the group was about 10 - 15 people strong.
-      </p>
-
-      <blockquote>
-        <p>
-          “You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion”
-        </p>
-      </blockquote>
-
-      <h3 class="answer">The perceived effort of participating in a group can be off putting</h3>
-
-      <p>
-        One participant was concerned that there might be a significant overhead in managing a group, and that it might involve meeting up or other commitments.
-      </p>
-
-      <blockquote>
-        <p>
-          “For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.”
-        </p>
-      </blockquote>
+    <section class="question-and-answer">
+      <h2 class="question">
+        How might we create an insurance model where people trust each other, and where members feel confident making claims?
+      </h2>
     </section>
-  </section>
 
-  <section class="next-steps">
-    <h2>Things we'd like to try next</h2>
+    <section class="what-we-did">
+      <h2>Small groups with something in common</h2>
 
-    <p>
-      Experiment with other ways of communicating the concept. A short 1 minute animation explaining Protect Together might be more effective at communicating the various parts to it. For a good example, see https://vimeo.com/62806565
-    </p>
 
-    <p>
-      Explore different types of groups that people might associate with. We should experiment whether individuals associate and trust other people based on age, salary, job, interests. We could also look at whether it makes a difference if the group already know each other in another context or come together specifically to take part in the scheme.
-    </p>
+      <aside class="experiment-live">
+        <figure class="mobile-frame">
+          <div class="embed">
+            <iframe width="375" height="667" frameborder="0" src="https://coop-protect.herokuapp.com/"></iframe>
+          </div>
+        </figure>
+      </aside>
 
-    <p>
-      Explore different sizes of groups that people might join. We didn’t explicitly show the size of the Green Quarter group. A future design sprint might present respondents with different size groups to better understand how they feel about this and how they might communicate.
-    </p>
+      <p>
+        We created a prototype of Protect Together. Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to 6 people who fit the requirements for our example group.
+      </p>
+    </section>
+
+
+    <section class="question-and-answer">
+    <figure>
+      <img src="Assets/Protect/image01.jpg" alt="A woman tests out the Protct Together prototype on a laptop guided by one of our team" />
+    </figure>
+      <h2 class="question">
+        Could we explain the concept?
+      </h2>
+
+      <section class="answer">
+        <h3 class="answer">A new model of insurance needs a new way to explain it</h3>
+        <p>
+          The Protect Together home page did a poor job of explaining what the service was at a glance. While all respondents recognised it was something to do with insurance, none were entirely clear with how it worked.
+        </p>
+
+        <blockquote>
+          <p>
+            “I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.”
+          </p>
+        </blockquote>
+
+        <p>
+          Having started to sign up and clicked through a few of the screens, respondents then understood more clearly what Protect Together was. They all felt it aligned with the Co-op’s overall values.
+        </p>
+
+        <blockquote>
+          <p>
+            “I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.”
+          </p>
+        </blockquote>
+
+        <p>
+          Respondents saw the difference from traditional insurance.
+        </p>
+
+        <blockquote>
+          <p>
+            “It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.”
+          </p>
+        </blockquote>
+
+      </section>
+    </section>
+
+    <section class="question-and-answer">
+      <h2 class="question">
+        Could we create trust? How do we define communities and groups?
+      </h2>
+      <section class="answer">
+
+        <h3 class="answer">Living close to someone isn’t a strong enough reason to trust them</h3>
+
+        <p>
+          Despite living in the same area, none of the respondents felt a particular affinity with our example group (people renting flats in the Green Quarter, Manchester). They either felt that they didn’t know their neighbours, or that the age group wasn’t right for them.
+        </p>
+
+        <blockquote>
+          <p>
+            “I wouldn’t trust my neighbours because I don’t know them.”
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            “I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!”
+          </p>
+        </blockquote>
+      </section>
+    </section>
+
+    <section class="question-and-answer">
+      <h2 class="question">
+        Is there a need for this type of insurance?
+      </h2>
+      <section class="answer">
+
+        <h3 class="answer">Renters don’t feel that they have a lot that’s worth insuring</h3>
+
+        <p>
+          We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
+        </p>
+
+        <blockquote>
+          <p>
+            “TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.”
+          </p>
+        </blockquote>
+
+      </section>
+    </section>
+
+    <section class="question-and-answer">
+      <h2 class="question">
+        Should members of the group be visible to each other? Is transparency better than anonymity?
+      </h2>
+      <section class="answer">
+
+        <h3 class="answer">People felt they’d need to talk to the group</h3>
+
+        <p>
+          When presented with the emails explaining a vote or action was required, four respondents weren’t comfortable with voting. They indicated they’d want to sound out the group in advance, or talk to people before making a decision. They seemed to assume the group was about 10 - 15 people strong.
+        </p>
+
+        <blockquote>
+          <p>
+            “You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion”
+          </p>
+        </blockquote>
+
+        <h3 class="answer">The perceived effort of participating in a group can be off putting</h3>
+
+        <p>
+          One participant was concerned that there might be a significant overhead in managing a group, and that it might involve meeting up or other commitments.
+        </p>
+
+        <blockquote>
+          <p>
+            “For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.”
+          </p>
+        </blockquote>
+      </section>
+    </section>
+
+    <section class="next-steps">
+      <h2>Things we'd like to try next</h2>
+
+      <p>
+        Experiment with other ways of communicating the concept. A short 1 minute animation explaining Protect Together might be more effective at communicating the various parts to it. For a good example, see https://vimeo.com/62806565
+      </p>
+
+      <p>
+        Explore different types of groups that people might associate with. We should experiment whether individuals associate and trust other people based on age, salary, job, interests. We could also look at whether it makes a difference if the group already know each other in another context or come together specifically to take part in the scheme.
+      </p>
+
+      <p>
+        Explore different sizes of groups that people might join. We didn’t explicitly show the size of the Green Quarter group. A future design sprint might present respondents with different size groups to better understand how they feel about this and how they might communicate.
+      </p>
+    </section>
   </section>
 </article>
 
@@ -487,12 +517,14 @@
     <a href="financial-freedom" class="scroll-container">
       <article>
   <section>
-    <h1 class="project-title"><span>Financial freedom through early planning</span></h1>
+    <header class="project-title">
+      <h1><span>Financial freedom through early planning</span></h1>
+      <time>February 2017</time>
+    </header>
 
     <section class="situation">
-      <h2>The future is bleak for people in their 20s</h2>
       <p>
-        High rents, low wages and a shrinking job market make the things this generation’s parents took for granted an impossibility; owning your own home, saving for a rainy day, taking early retirement.
+        The future is bleak for people in their 20s. High rents, low wages and a shrinking job market make the things this generation’s parents took for granted an impossibility; owning your own home, saving for a rainy day, taking early retirement.
       </p>
     </section>
 
@@ -518,7 +550,7 @@
         If you save small amounts by reducing your spending when you are young, and (crucially) invest that money in an investment account that pays a good rate of interest (4-7%), then the compound interest you accrue over 40 years will give you a passive income when you are ready to stop working. But most of us don't get involved with investments - we think it's too complicated, too risky.
       </p>
 
-      <figure>
+      <figure class="img-wide">
         <img src="Assets/Level_up/pot-to-income.jpg" alt="Post-it note with text saying &quot;turns a pot into an income&quot;" />
         <figcaption>
           It's not just about savings, it's about turning your savings into an income.
@@ -526,6 +558,8 @@
       </figure>
 
     </section>
+
+
     <section class="what-we-did">
 
       <h2>Could we balance instant gratification and long term pay off?</h2>
@@ -534,18 +568,21 @@
         Our goal is to give people a happier old age by getting them to rethink their approach to money at the point in their lives when they can take advantage of compound interest.
       </p>
 
+      <aside class="experiment-live">
+        <figure class="mobile-frame">
+          <div class="embed">
+            <iframe width="375" height="667" frameborder="0" src="https://coopdigital.github.io/dpr-level-up"></iframe>
+          </div>
+        </figure>
+      </aside>
+
       <p>
         To test this, we created a prototype of Level Up, a service to connect people who wanted to reduce their spending and increase their passive income with mentors who had successfully done this. We showed our prototype to 4 people in their early 20s. All were early career, renting or living with parents, earning more than &pound;20,000 a year and degree educated.
       </p>
 
-      <figure>
-        <img src="Assets/Level_up/prototype-build.jpg" alt="Computer screen showing a page from the Level Up website and the code behind it" />
-        <figcaption>
-          We spent a day building the prototype for Level Up.
-        </figcaption>
-      </figure>
-
     </section>
+ 
+
     <section class="learning">
 
       <h2>Most people displayed 'poor dad' thinking</h2>
@@ -628,221 +665,229 @@
         </p>
       </blockquote>
 
-      <figure>
-        <img src="Assets/Level_up/things-i-could-quit.jpg" alt="Handwritten list of ideas for things we could go without: coffee, buying lunch, booze, magazone subscriptions, bottled water, fizzy drinks, living in London, owning a car" />
+
+      <aside>
+        <figure>
+          <img src="Assets/Level_up/things-i-could-quit.jpg" alt="Handwritten list of ideas for things we could go without: coffee, buying lunch, booze, magazone subscriptions, bottled water, fizzy drinks, living in London, owning a car" />
         <figcaption>
           We thought about the types of things that people stop buying or doing to save money.
         </figcaption>
-      </figure>
+        </figure>
+      </aside>
+
 
 
       <h2>Nobody trusted themselves to not spend all the money in their current account</h2>
 
       <p>
         Immediately transferring money on payday out of a current account (where it is at risk of being spent) and into a savings account (where it can be held for short- and mid-term needs) was seen as a sensible tactic for managing finances.
-    </p>
-    <blockquote>
+      </p>
+      <blockquote>
+        <p>
+          I have my current account (graduate), interest free overdraft. I have a savings account. Usually when I get paid I dump it into my savings account then transfer back in. It's really easy on the app.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          Erm, hmm. Comes into my wages, I've got an app. I just transfer from my current account to my savings account. But I'm not very militant about it, I mean last month I just forgot.
+        </p>
+      </blockquote>
+
+      <h2>Conventional savings accounts are understood</h2>
+
       <p>
-        I have my current account (graduate), interest free overdraft. I have a savings account. Usually when I get paid I dump it into my savings account then transfer back in. It's really easy on the app.
+        Most of the people we spoke to all had, or were thinking about opening a savings accounts. Some had opened cash ISAs.
       </p>
-    </blockquote>
 
-    <blockquote>
+      <blockquote>
+        <p>
+          So I've just got two accounts, but they're with the same bank. Actually I've got three, because I've got another one with another bank that my parents set up for me when I was a baby.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          I've been thinking about opening a savings account for my interest and potentially make some interest.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          I'll probably go on Martin Lewis, the money saving expert man, and look at what's the best one. I'll see what I can do from there.
+        </p>
+      </blockquote>
+
+      <h2>Everyone was saving, but not for the long term</h2>
       <p>
-        Erm, hmm. Comes into my wages, I've got an app. I just transfer from my current account to my savings account. But I'm not very militant about it, I mean last month I just forgot.
+        As well as using their savings account as a means to control their spending, most of the people we spoke to were savings for specific short-term goals, such as holidays. To them, a savings account is where you put money to keep it safe, but where it is also accessible when needed. They didn't like savings products where you couldn't withdraw your money.
       </p>
-    </blockquote>
 
-    <h2>Conventional savings accounts are understood</h2>
+      <blockquote>
+        <p>
+          I think we've got £180 for flights and accommodation plus food and drink when there. I'll probably put away another £150.
+        </p>
+      </blockquote>
 
-    <p>
-      Most of the people we spoke to all had, or were thinking about opening a savings accounts. Some had opened cash ISAs.
-    </p>
+      <blockquote>
+        <p>
+          I have thought about opening up an ISA with a higher level of interest that I can't touch. But I don't know if I'll do that because I like the idea of being able to do something with it.
+        </p>
+      </blockquote>
 
-    <blockquote>
+      <blockquote>
+        <p>
+          Even though I try to generally save that a month, whenever I book my holiday then in that month I won't save that much. So some of it I'll spend probably this year, it won't all be saved super long term.
+        </p>
+      </blockquote>
+
+      <h2>'Rainy day' saving is less common</h2>
+
       <p>
-        So I've just got two accounts, but they're with the same bank. Actually I've got three, because I've got another one with another bank that my parents set up for me when I was a baby.
+        Only of our participants had a good appreciation of their mid- to long-term future, and was putting aside in a savings account for an unforeseen circumstance, and not for anything specific.
       </p>
-    </blockquote>
 
-    <blockquote>
+      <blockquote>
+        <p>
+          I don't really think in my mind I'm saving it for a car or a flat than the idea that I might want to be more flexible in the future.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          I want to be able to.. if I want to quit my job because I hate it, I want to be able to do that.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          If there's a rainy day is there no way I can access [money tied up in investments]?
+        </p>
+      </blockquote>
+
+      <h2>Everyone struggled to think about their future</h2>
+
       <p>
-        I've been thinking about opening a savings account for my interest and potentially make some interest.
+        Although the people we spoke to had, or were considering short- to mid-term saving goals, the future was something they found hard to visualise.
       </p>
-    </blockquote>
 
-    <blockquote>
+      <blockquote>
+        <p>
+          But I think now it feels so far away, I feel like I'd be nowhere near at the moment. So it's the sort of thing that I haven't really thought about a target, because the target is so far away. I'll think about it more in a while when it's maybe more achievable.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          As I say I'm kind of aware that I should be saving in the long term sense. But it seems almost quite out of reach. I'm not going to have a car, for example. The money needed makes it something not particularly appealing.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          I really don't know. I've become less and less sure. I used to be quite confident, it was more like money. That's partly why I want to maintain a lifestyle which is a bit separate from my income.
+        </p>
+      </blockquote>
+
+      <h2>Investment is seen as risky, like betting on a horse race</h2>
+
       <p>
-        I'll probably go on Martin Lewis, the money saving expert man, and look at what's the best one. I'll see what I can do from there.
+        When we introduced the topic of investment, everyone we spoke to felt it was risky in comparison to putting money in a savings account. Putting money into a savings account was seen as something that made them feel good about themselves, and investing was an activity that conflicted with the pride their took in their sensible choices.
       </p>
-    </blockquote>
 
-    <h2>Everyone was saving, but not for the long term</h2>
-    <p>
-      As well as using their savings account as a means to control their spending, most of the people we spoke to were savings for specific short-term goals, such as holidays. To them, a savings account is where you put money to keep it safe, but where it is also accessible when needed. They didn't like savings products where you couldn't withdraw your money.
-    </p>
+      <blockquote>
+        <p>
+          I wouldn't think about investing, I'd think about putting it in a savings account. Which is probably a fairly short sighted view. [...] like investment options.
+        </p>
+      </blockquote>
 
-    <blockquote>
+      <blockquote>
+        <p>
+          I'm proud of my ability to save. I don't want to put my money into something where I might not get it back.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          Like investments are risky that might have big returns but might not.
+        </p>
+      </blockquote>
+
+      <h2>There was skepticism and confusion around the numbers</h2>
+
       <p>
-        I think we've got £180 for flights and accommodation plus food and drink when there. I'll probably put away another £150.
+        We realised we needed to explain in much more detail was how compound interest works. Even though our examples were based on real numbers, our group did not believe them. We learned that this concept was very hard for our group to understand, despite their high level of academic attainment.
       </p>
-    </blockquote>
 
-    <blockquote>
+      <blockquote>
+        <p>
+          I don't know the mechanics of that, but it feels like a lot, from just earning interest from a savings account. That feels quite a long way away from being achievable.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          I'd like more info on that. I'm not convinced by this passive income thing. It sounds too good to be true.
+        </p>
+      </blockquote>
+
+      <h2>The idea of a finance mentor did not go down well</h2>
+
+      <aside>
+        <figure>
+          <img src="Assets/Level_up/meet-your-mentor.png" alt="Screenshot of the profile page for Marian, one of our fictional mentors" />
+        <figcaption>
+          People identified with Marian, but did not like the idea of her checking up on them.
+        </figcaption>
+        </figure>
+      </aside>
+
       <p>
-        I have thought about opening up an ISA with a higher level of interest that I can't touch. But I don't know if I'll do that because I like the idea of being able to do something with it.
+        Our group identified with the content of our (fictional) mentor profiles, but did not respond well to the idea of being contacted by a mentor and checked up on. Everyone entered their emails and clicked the 'Connect with' button, but their goal was to get more information, and not to make contact with a mentor.
       </p>
-    </blockquote>
 
-    <blockquote>
+      <blockquote>
+        <p>
+          I'm not sure sure Marie's giving me a tremendous amount of value. I get Marie might have been there and done that, but I want more info about how she's done that.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          I think it's one thing having your mum hammering you about how much you're saving. I'm not sure how I feel about having an actual person seeing whether I'm sticking to my goals. I think I'd prefer an automatic robot or something.
+        </p>
+      </blockquote>
+
+      <h2>People wanted to know more about investment after trying the prototype</h2>
+
       <p>
-        Even though I try to generally save that a month, whenever I book my holiday then in that month I won't save that much. So some of it I'll spend probably this year, it won't all be saved super long term.
+        Level Up did not do a good job of explaining how compound interest works. However, despite not grasping the central concept, our group were still interested and wanted more information about making investments.
       </p>
-    </blockquote>
 
-    <h2>'Rainy day' saving is less common</h2>
+      <blockquote>
+        <p>It's not telling me where to invest that, or how. I have lots of questions now, where these numbers are coming from. What that is. How I do it, what's the minimum that I have to do. If there's a rainy day is there no way I can access it.
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>I think it's a great idea because a lot of my friends are confused about bonds, isas, where to put your money initially, so I think this would be really handy. It's a great plan.
+        </p>
+      </blockquote>
 
-    <p>
-      Only of our participants had a good appreciation of their mid- to long-term future, and was putting aside in a savings account for an unforeseen circumstance, and not for anything specific.
-    </p>
-
-    <blockquote>
-      <p>
-        I don't really think in my mind I'm saving it for a car or a flat than the idea that I might want to be more flexible in the future.
-      </p>
-    </blockquote>
-
-    <blockquote>
-      <p>
-        I want to be able to.. if I want to quit my job because I hate it, I want to be able to do that.
-      </p>
-    </blockquote>
-
-    <blockquote>
-      <p>
-        If there's a rainy day is there no way I can access [money tied up in investments]?
-      </p>
-    </blockquote>
-
-    <h2>Everyone struggled to think about their future</h2>
-
-    <p>
-      Although the people we spoke to had, or were considering short- to mid-term saving goals, the future was something they found hard to visualise.
-    </p>
-
-    <blockquote>
-      <p>
-        But I think now it feels so far away, I feel like I'd be nowhere near at the moment. So it's the sort of thing that I haven't really thought about a target, because the target is so far away. I'll think about it more in a while when it's maybe more achievable.
-      </p>
-    </blockquote>
-
-    <blockquote>
-      <p>
-        As I say I'm kind of aware that I should be saving in the long term sense. But it seems almost quite out of reach. I'm not going to have a car, for example. The money needed makes it something not particularly appealing.
-      </p>
-    </blockquote>
-
-    <blockquote>
-      <p>
-        I really don't know. I've become less and less sure. I used to be quite confident, it was more like money. That's partly why I want to maintain a lifestyle which is a bit separate from my income.
-      </p>
-    </blockquote>
-
-    <h2>Investment is seen as risky, like betting on a horse race</h2>
-
-    <p>
-      When we introduced the topic of investment, everyone we spoke to felt it was risky in comparison to putting money in a savings account. Putting money into a savings account was seen as something that made them feel good about themselves, and investing was an activity that conflicted with the pride their took in their sensible choices.
-    </p>
-
-    <blockquote>
-      <p>
-        I wouldn't think about investing, I'd think about putting it in a savings account. Which is probably a fairly short sighted view. [...] like investment options.
-      </p>
-    </blockquote>
-
-    <blockquote>
-      <p>
-        I'm proud of my ability to save. I don't want to put my money into something where I might not get it back.
-      </p>
-    </blockquote>
-
-    <blockquote>
-      <p>
-        Like investments are risky that might have big returns but might not.
-      </p>
-    </blockquote>
-
-    <h2>There was skepticism and confusion around the numbers</h2>
-
-    <p>
-      We realised we needed to explain in much more detail was how compound interest works. Even though our examples were based on real numbers, our group did not believe them. We learned that this concept was very hard for our group to understand, despite their high level of academic attainment.
-    </p>
-
-    <blockquote>
-      <p>
-        I don't know the mechanics of that, but it feels like a lot, from just earning interest from a savings account. That feels quite a long way away from being achievable.
-      </p>
-    </blockquote>
-
-    <blockquote>
-      <p>
-        I'd like more info on that. I'm not convinced by this passive income thing. It sounds too good to be true.
-      </p>
-    </blockquote>
-
-    <h2>The idea of a finance mentor did not go down well</h2>
-
-    <p>
-      Our group identified with the content of our (fictional) mentor profiles, but did not respond well to the idea of being contacted by a mentor and checked up on. Everyone entered their emails and clicked the 'Connect with' button, but their goal was to get more information, and not to make contact with a mentor.
-    </p>
-
-    <blockquote>
-      <p>
-        I'm not sure sure Marie's giving me a tremendous amount of value. I get Marie might have been there and done that, but I want more info about how she's done that.
-      </p>
-    </blockquote>
-
-    <blockquote>
-      <p>
-        I think it's one thing having your mum hammering you about how much you're saving. I'm not sure how I feel about having an actual person seeing whether I'm sticking to my goals. I think I'd prefer an automatic robot or something.
-      </p>
-    </blockquote>
-
-    <figure>
-      <img src="images/Assets/Level_up/meet-your-mentor.jpg" alt="Screenshot of the profile page for Marian, one of our fictional mentors" />
-      <figcaption>
-        People identified with Marian, but did not like the idea of her checking up on them.
-      </figcaption>
-    </figure>
-
-
-    <h2>People wanted to know more about investment after trying the prototype</h2>
-
-    <p>
-      Level Up did not do a good job of explaining how compound interest works. However, despite not grasping the central concept, our group were still interested and wanted more information about making investments.
-    </p>
-
-    <blockquote>
-      <p>It's not telling me where to invest that, or how. I have lots of questions now, where these numbers are coming from. What that is. How I do it, what's the minimum that I have to do. If there's a rainy day is there no way I can access it.
-      </p>
-    </blockquote>
-    <blockquote>
-      <p>I think it's a great idea because a lot of my friends are confused about bonds, isas, where to put your money initially, so I think this would be really handy. It's a great plan.
-      </p>
-    </blockquote>
-
-    <figure>
-      <img src="Assets/Level_up/lightening-talks.jpg" alt="Photo of a whiteboard sketch of ideas for ways to think about their needs, visualising the future and making progress towards a goal." />
-      <figcaption>
-        Interesting ways to measure progress towards a goal, and giving people only the information they need to make something relevant to them.
-      </figcaption>
-    </figure>
-
+      <figure>
+        <img src="Assets/Level_up/lightening-talks.jpg" alt="Photo of a whiteboard sketch of ideas for ways to think about their needs, visualising the future and making progress towards a goal." />
+        <figcaption>
+          Interesting ways to measure progress towards a goal, and giving people only the information they need to make something relevant to them.
+        </figcaption>
+      </figure>
 
     </section>
 
-    </section>
-  </article>
+
+
+
+
+  </section>
+</article>
 
     </a>
   </div>
@@ -850,74 +895,463 @@
     <a href="terms" class="scroll-container">
       <article>
   <section>
-    <h1 class="project-title"><span>Terms and reviewers</span></h1>
+
+    <header class="project-title">
+      <h1><span>Terms and reviewers</span></h1>
+      <time>December 2016</time>
+    </header>
+
     <section class="situation">
       <h2>'Smart' or safe?</h2>
       <p>
-        More of the things we buy for our homes connect to the internet. Part of the installation of these devices involves agreeing to terms and conditions - where many significan
+        More of the things we buy for our homes connect to the internet. Part of the installation of these devices involves agreeing to terms and conditions - and the sneaky clauses that allow our privacy to be compromised.
       </p>
     </section>
     <section class="complication">
       <h2>Deciding which TV to buy is hard enough</h2>
       <p>
-        People don’t take data privacy into account when buying connected devices - information about security is not often covered in product reviews and press coverage about new products.
-      </p>
-      <p>
-        We wanted to find out if we could encourage journalists who write product reviews to focus on security by showing them the dodgy clauses in manufacturers' terms and conditions.
+        People don’t take data security into account when buying connected devices. Product reviews and press coverage about new products focus on features and specifications, not privacy and invasive, confusing terms and conditions.
       </p>
     </section>
     <section class="what-we-did">
       <h2>Influencing consumers by influencing journalists</h2>
+      <p>
+        We wanted to find out if we could encourage the journalists who write product reviews to focus on security by showing them the dodgy clauses in manufacturers' terms and conditions.
+      </p>
+
+
 
       <p>
-        We showed X journalists and reviewers a prototype of Leglease, a community-driven terms and conditions analysis site where contributors annotate legal terms and leave questions for manufacturers to answer.
+        We showed 5 journalists and reviewers a prototype of Leglease, a community-driven terms and conditions analysis site where contributors annotate legal terms and leave questions for manufacturers to answer.
       </p>
+      <aside class="experiment-live desktop-embed">
+        <figure>
+          <div>
+            <iframe width="100%" height="600" frameborder="0" src="https://coopdigital.github.io/legalease/"></iframe>
+          </div>
+        </figure>
+      </aside>
     </section>
 
-    <section class="question">
-      <p>How do journalists write stories?</p>
 
     <section class="question">
-      <p>
-        Could we encourage product reviewers to talk about privacy and security?
-      </p>
+      <h2>How do journalists write stories?</h2>
     </section>
 
     <section class="answer">
+      <h2>Somewhere on the scale between objectivity and subjectivity</h2>
       <p>
-        We learned that it was clear what Legalease was for. However, participants’ reactions were mixed as to whether it was something they’d use during their writing process. They wanted to see stronger expert opinions and summaries (as opposed to commentary and questions) and worried about how qualified the contributors were.
-      </p>
-    </section>
-
-    <section class="question">
-      <p>How do journalists measure their impact?</p>
-    </section>
-
-    <section class="answer">
-      <p>
-        A mix of analytics and social media (they didn’t seem too concerned with this)
+        Different publications have different approaches. One of the journalists we spoke carried out with repeatable objective experiments to decide which product was best. Another wrote for a site where personal and political opinions are encouraged, and was able to bring his own views into his reviews.
       </p>
 
-    <section class="learning">
-      <h2>Objectivity and subjectivity</h2>
-      <p>
-        Different publications have different approaches. One of the journalists we spoke to wrote for a review site carried out with repeatable objective experiments to decide which product was best. Another wrote for a site where personal and political opinion is encouraged, and was able to bring his own views into his reviews.
-      </p>
+      <blockquote>
+        <p>
+          I love the fact that I’m able to write about stories that I care about personally. That I’m able to use my own opinion.
+        </p>
+      </blockquote>
 
-      <h2>Use personal or professional relationships to understand complex issues</h2>
+      <blockquote>
+        <p>
+          I’m also able to occasionally put my political slant on it, I think Brexit is a terrible idea… I wrote a story about a story that the iPhone is going to cost 20% more because of Brexit.
+        </p>
+      </blockquote>
+
+
+
+      <h2>Using personal and professional relationships to understand complex issues</h2>
 
       <p>
         The journalists we spoke to used different sources for their stories: PR agencies, manufacturers, their own research, awareness of trends through personal contacts and online communities (Reddit). Some were happy to be contacted by PR companies and manufacturers. Others deliberately avoided them, only contacting them to give them a chance to respond to a negative story.
       </p>
 
-      <h2>Accuracy and the right to reply are important</h2>
+      <blockquote>
+        <p>
+          I’ve seen PR companies get better at what they do...Generally products and stories get pitched. Could be research, tip or physical product.
+        </p>
+      </blockquote>
 
-      <p>
+      <blockquote>
+        <p>
+          If I was researching a story about this probably the first place I’d start is on Twitter I’d say “does anybody have a smart TV?” link to the privacy policy - “does it concern you?”.
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          One cultivates individuals in companies, contacts and one also sometimes you know very often you formally deal with a press team to get comment generally on stories which are adverse to them or where you’d be compromising into your contact to quote or whatever, to some extent you have to protect your sources … but again that’s just journalism.
+        </p>
+      </blockquote>
 
-      </p>
+      <blockquote>
+        <p>
+          If there’s a particularly troubling part of the Ts and Cs, I would get in touch with the manufacturer, I’d ask them to clarify it.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          Occasionally a great place to find breaking news is Twitter and Reddit, but you have to be extremely careful when using those sources. So you have to make the effort to corroborate it.
+        </p>
+      </blockquote>
 
 
     </section>
+
+    <section class="question">
+      <h2>How do journalists measure their impact?</h2>
+    </section>
+
+    <section class="answer">
+      <p>
+        The journalists we spoke to talked about the impact of their articles in terms of metrics (page views), and reactions on social media. They did not talk about seeing any kind of change in consumer behaviour based on what they had written.
+      </p>
+      <blockquote>
+        <p>
+          ...I rely on [Twitter] most in terms of trying to gauge reaction ... feedback and comments on articles is not necessarily a robust method of measuring … Commenters are in general are sort of 1% or less of readers ... The average value in most of the comments made is absolutely zero.
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          Obviously you’ve got statistics - you’ve got Google Analytics - that show how the page has done...and you’ve got other less data driven ways of telling how well a piece has done, comments, feedback, I quite often get emails from people saying, what a great piece that was or what a terrible piece that was.
+        </p>
+      </blockquote>
+
+    </section>
+
+    <section class="question">
+      <h2>Did the journalists take to our product?</h2>
+    </section>
+
+    <section class="answer">
+      <p>
+        They recognised it for what we intended it to be. The user comments highlighted ambiguity, but they didn’t find that useful. They were concerned about the validity of contributors; they to hear from experts and others with authority.
+      </p>
+      <blockquote>
+        <p>
+          I’m not a lawyer, and not qualified to independently offer analysis of a legal text.
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          Erm. I think, if there’s some sort of hover over JaneS’s profile and see that she was a lawyer or student lawyer or that she’s a security advocate. Verified profiles would be cool, like Twitter.
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          If someone’s going to be highlighting the most important parts of the Ts and Cs, the assumption is that they are qualified and they are competent to do that because they could get it wrong or miss something.
+        </p>
+      </blockquote>
+      <p>
+        Some of the people we spoke to felt that their audiences were not interested in data privacy unless it affected them in a tangible way, such as losing money or being annoyed by targetted ads.
+      </p>
+      <blockquote>
+        <p>
+          People tend to approach tech products with blind faith, that they do what they say they do.
+        </p>
+      </blockquote>
+
+    </section>
+
+    <section class="question">
+      <h2>
+        Could we encourage product reviewers to talk about privacy and security?
+      </h2>
+    </section>
+
+    <section class="answer">
+      <p>
+        No - not like this. It was clear what Legalease was for. However, participants’ reactions were mixed as to whether it was something they’d use during their writing process. They wanted to see stronger expert opinions and summaries (as opposed to commentary and questions) and worried about how qualified the contributors were.
+      </p>
+    </section>
+    <figure class="img-wide">
+      <img src="Assets/Legalease/guardian-story.png" alt="Screenshot of a story on the Guardian website with the headline Children in England sign over digital rights regularly and unknowingly" />
+      <figcaption>
+        Data privacy does make the headlines, but not often
+      </figcaption>
+    </figure>
+
+    <section class="learning">
+
+      <h2>
+        The story isn’t the lack of privacy, it’s the manifestation of that lack of privacy
+      </h2>
+
+      <p>
+        Some of the journalists we spoke to perceived their audience as either not caring about privacy issues, or being resigned to a lack of privacy. What does motivate their readers however are the more obvious, less conceptual problems - being bombarded by targeted ads, concerns about being ‘ripped off’. Our goal should be to connect the more abstract issues around data protection and privacy to the real-world manifestations of those issues. Only then should we explain why these annoying things keep happening - and in plain, everyday language.
+      </p>
+
+    </section>
+    <figure>
+      <img src="Assets/Legalease/performance-art.png" alt="Screenshot of a tweet showing a live reading of terms and conditions by the Norweigan Consumer Council" />
+      <figcaption>
+        The Norweigan Consumer Council stage a live reading of terms and conditions
+      </figcaption>
+    </figure>
+  </section>
+</article>
+
+    </a>
+  </div>
+  <div class="project" id="project-locally">
+    <a href="locally" class="scroll-container">
+      <article>
+  <section>
+
+    <header class="project-title">
+      <h1><span>Keeping money local</span></h1>
+      <time>November 2016</time>
+    </header>
+    
+    <section class="situation">
+      <p>Independents can't compete with online shops and global chains. And when those businesses shut down, they leave gaps in the local economy as well as the high street.
+      </p>
+    </section>
+    <section class="complication">
+      <h2>High streets are changing</h2>
+      <p>
+        As family businesses and independent shops close down, they are often replaced by e-cigarette shops and tattoo parlours, which serve a narrow market. In richer areas, shops are replaced by cafes, bars and restaurants, which shifts the economy from day to night.
+      </p>
+    </section>
+    <section class="what-we-did">
+      <h2>A shared loyalty scheme for independent retailers</h2>
+      <p>
+        We showed 6 independent retailers in Chorlton a prototype of Locally, a scheme that earns shoppers ‘perks’, redeemable in any participating business, when they shop with local independent retailers.
+      </p>
+      <figure class="img-wide">
+        <img src="Assets/Locally/using-the-app.png" alt="Close of a person using the Locally app to enter an amount" />
+        <figcaption>
+          Money spent in local shops earns perks that can be redeemed in any participating business
+        </figcaption>
+      </figure>
+
+    </section>
+    <section class="question">
+      <h2>
+        Could Co-op encourage shoppers to spend their money locally and support their local economy?
+      </h2>
+    </section>
+
+    <section class="answer">
+      <h2>Only if the scheme is fair for everyone</h2>
+      <p>
+        Reaction to the core concept (earning points with one business and getting the perk from another) was mixed, and there were concerns about the practicalities of asking staff to use an app.
+      </p>
+
+      <p>
+        Some local retailers were open to idea behind Locally, and were interesting in seeing the concept develop. However, most did not like the idea of shoppers earning perks in other shops and redeeming them in theirs, and felt the system could disadvantage them.
+      </p>
+
+      <p>
+        We heard mixed opinions about local business associations, that they were old fashioned and not very effective. Local business associations as technological platforms would be an interesting area for the Co-op to explore next.
+      </p>
+    </section>
+
+      <section class="question">
+        <h2>Would Locally benefit local retailers?</h2>
+      </section>
+
+      <section class="answer">
+        <h2>We have too many cards in our wallets already</h2>
+        <p>Retailers we spoke to felt there are already a lot of similar schemes in place, which made it hard for their customers to keep up. Another card-based scheme was not the answer.
+        </p>
+        <blockquote>
+          <p>
+            How many cards do you get these days? Do you always have it in your purse? I have about 15 different loyalty cards in my purse.
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            The card is nothing new - I don’t think it will make any difference.
+          </p>
+        </blockquote>
+
+      </section>
+
+      <section class="answer">
+        <h2>An app doesn't suit everybody</h2>
+        <p>Retailers were worried about how they and their staff would use the app. Some were worried about it being time consuming and fiddly, and others thought it would be wrong to ask staff to use their own data whilst using the app in the shop. We also heard that not all their customers had smartphones, and would therefore miss out.
+        </p>
+        <aside>
+          <figure>
+            <div class="embed">
+              <figure>
+                <img src="Assets/Locally/app-view.png" alt="Screenshot of the Locally mobile app, showing perks available for local shoppers, such as hair cuts and watch batteries" />
+                <figcaption>
+                  Locally rewarded people who shopped in independent businesses in their area.
+                </figcaption>
+              </figure>
+
+            </div>
+          </figure>
+        </aside>
+        <blockquote>
+          <p>
+            We get a lot of older people who don’t know how to use their phones - why should only the tech savvy people get the discount?
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            From a customer perspective, there might be a reluctance for a retailer to link to a phone. What details are they taking? I’d have security concerns as a customer.
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            I'm slightly nervous about phone my phone as well, I tend to keep it in my phone or in my pocket, if I was using that, no, sorry.... you're constantly distracted, and I'd be nervous about using my own phone and putting it down somewhere.
+          </p>
+        </blockquote>
+
+      </section>
+
+      <section class="answer">
+        <h2>Retailers worry about losing out</h2>
+        <p>
+          The goal of Locally was to increase local shopping overall, by offering rewards to people who shop with any local retailer. However, some the people we spoke to worried that they would lose out, that shoppers would earn their 'perks' in other shops and redeem them in their's. They were not convinced that they would benefit from new people coming into their shops.
+        </p>
+        <blockquote>
+          <p>
+            I have to give money to get people to come into our shop - which devalues all the hard work that we put in - it says that what we have isn’t enough. I don’t want to read any more. It instantly makes me go ugh.
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            If everyone goes for a haircut - and then they redeem the points at [my butchers] - I’d be fuming! I’d be unemployed! I’d have to work for Tesco!
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            I can't compete with that. I think people would come here, not to earn their points, but to use them, but they'd tell their kids they could use them in [partipant’s] shop.
+          </p>
+        </blockquote>
+      </section>
+
+      <section class="answer">
+        <h2>Not everyone feels a sense of community with other retailers</h2>
+        <p>Some retailers did talk about a community of shop keepers - but it wasn't universal. Retailers who where on the same street tended to be involved in their local area, but across the wider area there wasn't a sense of community.
+        </p>
+        <blockquote>
+          <p>
+            We're not close enough to Beech Road, they don't want us on that one, we're kind of left to our own devices.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            Local shops on their street work together - they put their own money into decorations.
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            Other shops? I’m quite insular - I’m not massively involved in what other people are doing.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            it’s like a community. We all knew each other and looked out for each other. Like an extended family.
+          </p>
+        </blockquote>
+
+        <aside>
+          
+          <figure>
+            <img src="Assets/Locally/chorlton-map.png" alt="Map showing the Chorlton area" />
+            <figcaption>
+              Location is important - neighbouring shops felt a kinship with each other, but across a wider area there was less community spirit
+            </figcaption>
+          </figure>
+
+          
+        </aside>
+
+      </section>
+
+      <section class="answer">
+        <h2>Retailers had their own schemes in place</h2>
+        <p>
+          Everyone we spoke to had some way of rewarding loyalty to their own business.
+        </p>
+        <blockquote>
+          <p>
+            We have a discount in the store. It's a bit like boots. They have an account in the store, and they acrue points. We didn't go down the route of cards, we just wanted a pin, it just puts the points on their account. They love it, and it keeps them coming back.
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            If a customer comes in and spends £500 - we’d offer a gift as a gesture - it’s an unexpected surprise - the cherry on the cake.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            We already offer a 10% discount, anything that’s full price. I don’t want to confuse things. I’d probably stick with that, stay the same.
+          </p>
+        </blockquote>
+
+      </section>
+
+      <section class="answer">
+        <h2>Trading associations are not working for everybody</h2>
+        <p>
+          We heard very mixed views about the local Traders Association. Some saw value in it and were active members, but others were critical, seeing the organisation as being old fashioned and not worth the cost of membership.
+        </p>
+        <blockquote>
+          <p>
+            I don’t participate in the Traders Association - it’s changed over the years - when I was having children they were trying to cover a bigger area - I was too tired and busy!
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            The only time they come knocking is money for Xmas lights. Trading Associations are not run properly. They're not run properly. No one has time to turn up after work. There needs to be a portal, or an app, where businesses can come together and talk, more like social media, maybe password protected. And free.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            We’re an active part of the Traders Association. It was important to me [and partner], that we could build up a rapport, and use their business and reach to them first, see if there’s anything we can work together.
+          </p>
+        </blockquote>
+
+      </section>
+      <section class="question">
+        <h2>Will retailers accept the Co-op’s involvement in this?</h2>
+      </section>
+
+      <section class="answer">
+        <h2>Yes, because of the strength of the brand</h2>
+        <p>
+          We showed the participants a version of the card and leaflet with the Co-op brand. Reactions to this were positive, and people felt that this was the right kind of area for the Co-op to move into, even if their didn't like the way the scheme was operated. They also thought that the size and reputation of the Co-op would help a scheme like this to be successful.
+        </p>
+
+        <blockquote>
+          <p>
+            I'd want to know it really would bring people to us. If it was run by the Co-op would you run a national advertisting campaign, tthat could be a good thing.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            I don't dislike the idea of the Co-op running a scheme that gets them to shop locally.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            I think, I feel comfortable seeing the Co-op logo, seeing the Co-operative being linked to… well anything really. It’s got such a good reputation. It’s a good thing. The only contradiction, is it doesn’t… well how can you have the Co-op linked to local businesses. … it might be that the Co-op shop is a bit of our competition. If it was Sainsbury’s or Tesco, that wouldn’t be good, but Co-op is different.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            If the Co-op are doing something like this, they are trying to keep money local and not give it to the big ones like Tesco and Morrisons. It’s all to do with money. Although I do notice that the Co-op have local charity on their notice board and different events - like at the moment a firework do in Beech road. They’re pretty good like that.
+          </p>
+        </blockquote>
+        <figure class="img-wide">
+          <img src="Assets/Locally/coop-version.jpg" alt="Leaflet explaining the Locally scheme with Co-op branding" />
+          <figcaption>
+            People responded well to the Co-op version - because of our reputation
+          </figcaption>
+        </figure>
+
+      </section>
   </section>
 </article>
 
