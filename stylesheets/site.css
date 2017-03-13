@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -409,7 +410,13 @@ div#wip {
   background: orange;
   color: #774d00;
   border-bottom: 1px solid #D08600;
-  line-height: 28px; }
+  line-height: 28px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 0.2rem;
+  width: auto;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1); }
   div#wip a {
     color: white; }
 
@@ -426,7 +433,7 @@ header#topnav {
       float: right; }
 
 body.about_index {
-  margin-top: 71px; }
+  margin-top: 42px; }
   body.about_index article {
     padding: 0.2rem 1.2rem;
     max-width: 800px;
@@ -439,13 +446,14 @@ body.about_index {
   width: auto;
   overflow: hidden;
   height: 100%;
-  margin-top: 71px; }
+  margin-top: 42px; }
   @media screen and (max-width: 767px) {
     #projects {
       overflow: visible;
       height: auto; } }
   #projects .project {
     display: table-cell;
+    vertical-align: top;
     width: 330px;
     min-width: 330px;
     max-width: 330px; }
@@ -488,17 +496,19 @@ body.about_index {
       background-color: rgba(0, 0, 0, 0.1); }
 
 body:not(.index):not(.about_index) {
-  margin-top: 71px; }
+  margin-top: 42px; }
   body:not(.index):not(.about_index) article {
     padding: 2rem;
     box-sizing: border-box; }
     body:not(.index):not(.about_index) article figure {
-      margin: 0 0 4rem 0; }
+      margin: 0 0 2rem 0; }
       @media screen and (min-width: 767px) {
         body:not(.index):not(.about_index) article figure.img-wide {
           margin-left: -8rem; }
           body:not(.index):not(.about_index) article figure.img-wide figcaption {
             margin-left: 8rem; } }
+      body:not(.index):not(.about_index) article figure figcaption {
+        margin-top: 0.8rem; }
     @media screen and (min-width: 767px) {
       body:not(.index):not(.about_index) article {
         float: right;
@@ -510,6 +520,45 @@ body:not(.index):not(.about_index) {
       body:not(.index):not(.about_index) article section p, body:not(.index):not(.about_index) article section blockquote, body:not(.index):not(.about_index) article section h2 {
         width: 90%; } }
     @media screen and (min-width: 767px) {
+      body:not(.index):not(.about_index) article section p {
+        margin: 0rem 0 2rem 0; } }
+    body:not(.index):not(.about_index) article section h2 {
+      margin-bottom: 0.4rem; }
+    body:not(.index):not(.about_index) article section blockquote {
+      quotes: "“" "”";
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      position: relative;
+      margin: 2.8rem;
+      padding: 0;
+      box-sizing: border-box;
+      width: 80%; }
+      @media screen and (min-width: 767px) {
+        body:not(.index):not(.about_index) article section blockquote {
+          width: 60%; } }
+      body:not(.index):not(.about_index) article section blockquote:before {
+        font-family: inherit;
+        content: open-quote;
+        font-size: 4rem;
+        position: absolute;
+        left: -2.4rem;
+        top: 1.2rem;
+        opacity: 0.2;
+        line-height: 0; }
+      body:not(.index):not(.about_index) article section blockquote p {
+        display: inline-block;
+        margin: 0 0 1rem 0; }
+      body:not(.index):not(.about_index) article section blockquote footer {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-top: 0.8rem;
+        opacity: 0.4; }
+        @media screen and (min-width: 767px) {
+          body:not(.index):not(.about_index) article section blockquote footer {
+            width: 60%; } }
+        body:not(.index):not(.about_index) article section blockquote footer cite {
+          font-style: inherit; }
+    @media screen and (min-width: 767px) {
       body:not(.index):not(.about_index) article section.situation {
         margin-top: 6rem; } }
     body:not(.index):not(.about_index) article section > header.project-title {
@@ -519,18 +568,29 @@ body:not(.index):not(.about_index) {
           margin-left: -50%; } }
     body:not(.index):not(.about_index) article section > section {
       margin-bottom: 8rem; }
+  body:not(.index):not(.about_index) blockquote.pull-quote {
+    display: none; }
+    @media screen and (min-width: 767px) {
+      body:not(.index):not(.about_index) blockquote.pull-quote {
+        display: block; }
+        body:not(.index):not(.about_index) blockquote.pull-quote:before {
+          display: none; }
+        body:not(.index):not(.about_index) blockquote.pull-quote p {
+          font-size: 3rem;
+          line-height: 4rem; } }
   @media screen and (min-width: 767px) {
-    body:not(.index):not(.about_index) aside {
+    body:not(.index):not(.about_index) aside, body:not(.index):not(.about_index) blockquote.pull-quote {
       width: 50%;
       margin-left: -60%;
       float: left; } }
   @media screen and (max-width: 766px) {
-    body:not(.index):not(.about_index) aside.experiment-live figure {
+    body:not(.index):not(.about_index) aside.experiment-live figure, body:not(.index):not(.about_index) blockquote.pull-quote.experiment-live figure {
       display: none; } }
-  body:not(.index):not(.about_index) aside.desktop-embed {
+  body:not(.index):not(.about_index) aside.desktop-embed, body:not(.index):not(.about_index) blockquote.pull-quote.desktop-embed {
+    margin-bottom: 4rem;
     width: 150%; }
     @media screen and (min-width: 767px) and (max-width: 1200px) {
-      body:not(.index):not(.about_index) aside.desktop-embed {
+      body:not(.index):not(.about_index) aside.desktop-embed, body:not(.index):not(.about_index) blockquote.pull-quote.desktop-embed {
         float: right;
         -ms-transform: scale(0.5);
         -moz-transform: scale(0.5);
@@ -542,25 +602,33 @@ body:not(.index):not(.about_index) {
         -o-transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
         transform-origin: 0 0; } }
-    body:not(.index):not(.about_index) aside.desktop-embed figure {
+    body:not(.index):not(.about_index) aside.desktop-embed figure > div, body:not(.index):not(.about_index) blockquote.pull-quote.desktop-embed figure > div {
       border-radius: 0.4rem;
       padding-top: 2rem;
-      background: #d0d0d0; }
+      background: #d0d0d0;
+      border: 1px solid #199b7e; }
       @media screen and (min-width: 767px) and (max-width: 1200px) {
-        body:not(.index):not(.about_index) aside.desktop-embed figure {
+        body:not(.index):not(.about_index) aside.desktop-embed figure > div, body:not(.index):not(.about_index) blockquote.pull-quote.desktop-embed figure > div {
           width: 120%; } }
+  body:not(.index):not(.about_index) aside figure.mobile-frame h2, body:not(.index):not(.about_index) blockquote.pull-quote figure.mobile-frame h2 {
+    margin: 0 0 2rem 2rem;
+    font-size: 1.4rem; }
   @media screen and (min-width: 767px) {
-    body:not(.index):not(.about_index) aside figure.mobile-frame {
+    body:not(.index):not(.about_index) aside figure.mobile-frame > div.frame, body:not(.index):not(.about_index) blockquote.pull-quote figure.mobile-frame > div.frame {
       background: black;
       padding: 4rem 1rem;
       border-radius: 2rem;
       max-width: 400px; } }
-  body:not(.index):not(.about_index) aside figure .embed {
+  @media screen and (min-width: 767px) {
+    body:not(.index):not(.about_index) aside figure.mobile-frame figcaption, body:not(.index):not(.about_index) blockquote.pull-quote figure.mobile-frame figcaption {
+      max-width: 80%;
+      margin: 2rem; } }
+  body:not(.index):not(.about_index) aside figure .embed, body:not(.index):not(.about_index) blockquote.pull-quote figure .embed {
     position: relative;
     padding-bottom: 160%;
     width: 100%;
     text-align: left; }
-    body:not(.index):not(.about_index) aside figure .embed iframe {
+    body:not(.index):not(.about_index) aside figure .embed iframe, body:not(.index):not(.about_index) blockquote.pull-quote figure .embed iframe {
       width: 100%;
       position: absolute;
       height: 100%;
@@ -602,6 +670,11 @@ body:not(.index):not(.about_index) {
       body:not(.index):not(.about_index) section.what-next section.view-experiment a {
         color: inherit; }
 
+.connected_index header#topnav {
+  background: #d3e4d7;
+  border-bottom-color: #d3e4d7; }
+  .connected_index header#topnav a {
+    color: #303832; }
 @media screen and (min-width: 767px) {
   .connected_index h1 {
     margin-top: 6rem; }
@@ -609,6 +682,9 @@ body:not(.index):not(.about_index) {
       position: relative;
       font-size: 6.8rem;
       line-height: 10rem; } }
+@media screen and (min-width: 767px) {
+  .connected_index section.situation p {
+    max-width: 75%; } }
 
 .connected_index,
 #project-connected-devices {
@@ -643,6 +719,11 @@ body:not(.index):not(.about_index) {
     .connected_index article blockquote,
     #project-connected-devices article blockquote {
       font-family: 'Playfair Display', serif; }
+      .connected_index article blockquote.pull-quote p span,
+      #project-connected-devices article blockquote.pull-quote p span {
+        background: #d3e4d7;
+        color: #242a26;
+        line-height: 4.4rem; }
     .connected_index article section.situation p,
     #project-connected-devices article section.situation p {
       font-weight: 500;
@@ -698,6 +779,11 @@ body:not(.index):not(.about_index) {
   #project-connected-devices article figure.alt img {
     margin-left: 0; }
 
+.financial-freedom_index header#topnav {
+  background: #131B43;
+  border-bottom-color: #131B43; }
+  .financial-freedom_index header#topnav a {
+    color: #DEF600; }
 @media screen and (min-width: 767px) {
   .financial-freedom_index article h1 {
     margin-top: 6rem; }
@@ -734,7 +820,17 @@ body:not(.index):not(.about_index) {
     .financial-freedom_index article h2,
     #project-financial-freedom article h2 {
       line-height: 2rem; }
+    .financial-freedom_index article blockquote.pull-quote p span,
+    #project-financial-freedom article blockquote.pull-quote p span {
+      color: #131B43;
+      background: #DEF600;
+      line-height: 4.4rem; }
 
+.group-trust_index header#topnav {
+  background: black;
+  border-bottom-color: black; }
+  .group-trust_index header#topnav a {
+    color: #c2e8fd; }
 @media screen and (min-width: 767px) {
   .group-trust_index article h1 {
     margin-top: 6rem; }
@@ -751,6 +847,10 @@ body:not(.index):not(.about_index) {
   .group-trust_index article section.situation p {
     font-size: 1.8rem;
     line-height: 2.4rem; } }
+.group-trust_index article blockquote.pull-quote p span {
+  background: black;
+  color: #f3fbff;
+  line-height: 4.6rem; }
 .group-trust_index .embed {
   background: white; }
 .group-trust_index section.what-next {
@@ -775,6 +875,11 @@ body:not(.index):not(.about_index) {
   font-size: 2.4rem;
   line-height: 3.6rem; }
 
+.terms_index header#topnav {
+  background: black;
+  border-bottom-color: black; }
+  .terms_index header#topnav a {
+    color: #20c7a1; }
 @media screen and (min-width: 767px) {
   .terms_index article h1 {
     margin-top: 6rem; }
@@ -782,6 +887,12 @@ body:not(.index):not(.about_index) {
       position: relative;
       font-size: 6.8rem;
       line-height: 10rem; } }
+.terms_index article blockquote.pull-quote p {
+  line-height: 1rem; }
+  .terms_index article blockquote.pull-quote p span {
+    color: white;
+    background: black;
+    line-height: 3.8rem; }
 @media screen and (min-width: 767px) {
   .terms_index article p {
     font-size: 1.4rem;
@@ -808,14 +919,9 @@ body:not(.index):not(.about_index) {
     #project-terms-reviewers article h1 span {
       background: black;
       color: white; }
-    .terms_index article figure::after,
-    #project-terms-reviewers article figure::after {
-      background: red;
-      width: 100%;
-      height: 100%;
-      display: block;
-      position: relative;
-      content: ''; }
+    .terms_index article h2,
+    #project-terms-reviewers article h2 {
+      font-weight: 500; }
 
 #project-terms-reviewers article h1 span {
   font-size: 2.4rem;
@@ -830,6 +936,11 @@ body:not(.index):not(.about_index) {
       position: relative;
       font-size: 6.8rem;
       line-height: 10rem; } }
+.locally_index article blockquote.pull-quote p {
+  line-height: 1rem; }
+  .locally_index article blockquote.pull-quote p span {
+    color: #242324;
+    background: #E9A45B; }
 @media screen and (min-width: 767px) {
   .locally_index article p {
     font-size: 1.4rem;
@@ -838,7 +949,8 @@ body:not(.index):not(.about_index) {
     font-size: 2.4rem; }
   .locally_index article section.situation p {
     font-size: 1.8rem;
-    line-height: 2.4rem; } }
+    line-height: 2.6rem;
+    max-width: 75%; } }
 .locally_index section.what-next {
   background: #242324 !important;
   color: white; }

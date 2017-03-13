@@ -40,9 +40,15 @@
 
       <aside class="experiment-live">
         <figure class="mobile-frame">
-          <div class="embed">
-            <iframe width="375" height="667" frameborder="0" src="https://coop-protect.herokuapp.com/"></iframe>
+          <h2>Try our experiment:</h2>
+          <div class="frame">
+            <div class="embed">
+              <iframe width="375" height="667" frameborder="0" src="https://coop-protect.herokuapp.com/"></iframe>
+            </div>
           </div>
+          <figcaption>
+          We built Protect Together to test whether people could trust each other enough to insure each other.
+          </figcaption>
         </figure>
       </aside>
 
@@ -68,8 +74,13 @@
 
         <blockquote>
           <p>
-            “I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.”
+            I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.
           </p>
+          <footer>-
+            <cite>
+              R, female, 26-35 year old, owns a laptop, tablet, phone, jewellery, TV
+            </cite>
+          </footer>
         </blockquote>
 
         <p>
@@ -78,8 +89,14 @@
 
         <blockquote>
           <p>
-            “I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.”
+            I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.
           </p>
+          <footer>-
+            <cite>
+              A, female, 26-35 year old, owns a phone
+            </cite>
+          </footer>
+
         </blockquote>
 
         <p>
@@ -88,8 +105,14 @@
 
         <blockquote>
           <p>
-            “It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.”
+            It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.
           </p>
+          <footer>-
+            <cite>
+              P, male, 36-45 year old, owns a phone
+            </cite>
+          </footer>
+
         </blockquote>
 
       </section>
@@ -103,20 +126,39 @@
 
         <h3 class="answer">Living close to someone isn’t a strong enough reason to trust them</h3>
 
+        <blockquote class="pull-quote">
+          <p>
+            <span>
+              Despite living in the same area, none of the respondents felt a particular affinity with our example group
+            </span>
+          </p>
+        </blockquote>
+
         <p>
           Despite living in the same area, none of the respondents felt a particular affinity with our example group (people renting flats in the Green Quarter, Manchester). They either felt that they didn’t know their neighbours, or that the age group wasn’t right for them.
         </p>
 
         <blockquote>
           <p>
-            “I wouldn’t trust my neighbours because I don’t know them.”
+            I wouldn’t trust my neighbours because I don’t know them.
           </p>
+          <footer>-
+            <cite>
+              R, female, 26-35 year old, owns a laptop, tablet, phone, jewellery, TV
+            </cite>
+          </footer>
         </blockquote>
 
         <blockquote>
           <p>
-            “I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!”
+            I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!
           </p>
+          <footer>-
+            <cite>
+              C, female, 36-45 year old, owns a laptop, tablet, bike, jewellery, TV
+            </cite>
+          </footer>
+
         </blockquote>
       </section>
     </section>
@@ -135,8 +177,13 @@
 
         <blockquote>
           <p>
-            “TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.”
+            TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.
           </p>
+          <footer>-
+            <cite>
+              A, female, 26-35 year old, owns a phone
+            </cite>
+          </footer>
         </blockquote>
 
       </section>
@@ -156,11 +203,24 @@
 
         <blockquote>
           <p>
-            “You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion”
+            You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion.
           </p>
+          <footer>-
+            <cite>
+              C, female, 36-45 year old, owns a laptop, tablet, bike, jewellery, TV
+            </cite>
+          </footer>
         </blockquote>
 
         <h3 class="answer">The perceived effort of participating in a group can be off putting</h3>
+
+        <blockquote class="pull-quote">
+          <p>
+            <span>
+              One participant was concerned that there might be a significant overhead in managing a group&hellip;
+            </span>
+          </p>
+        </blockquote>
 
         <p>
           One participant was concerned that there might be a significant overhead in managing a group, and that it might involve meeting up or other commitments.
@@ -168,8 +228,13 @@
 
         <blockquote>
           <p>
-            “For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.”
+            For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.
           </p>
+          <footer>-
+            <cite>
+              C, female, 18-25 year old, owns a phone, TV
+            </cite>
+          </footer>
         </blockquote>
       </section>
     </section>
