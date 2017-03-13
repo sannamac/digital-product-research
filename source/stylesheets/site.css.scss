@@ -653,6 +653,18 @@ $group-trust-reverse: black;
         }
       }
     }
+    blockquote {
+      &.pull-quote {
+        p {
+
+          span {
+            background: $group-trust-reverse;
+            color: $group-trust-secondary;
+            line-height: 4.6rem;
+          }
+        }
+      }
+    }
   }
 
   .embed {
