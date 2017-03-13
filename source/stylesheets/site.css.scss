@@ -196,6 +196,14 @@ body:not(.index):not(.about_index) {
           width: 90%;
         }
       }
+      p {
+        @media screen and (min-width: 767px) {
+          margin: 0rem 0 2rem 0;
+        }
+      }
+      h2 {
+        margin-bottom: 0.4rem;
+      }
       blockquote {
         quotes: "\201C""\201D";
         margin: 1.5em 10px;
@@ -386,6 +394,13 @@ body:not(.index):not(.about_index) {
 
 // Experiment page
 .connected_index {
+  header#topnav {
+    background: $connected-devices-reverse;
+    a {
+      color: $connected-devices-primary;
+    }
+    border-bottom-color: $connected-devices-reverse;
+  }
   h1 {
     @media screen and (min-width: 767px) {
       margin-top: 6rem;
@@ -393,6 +408,15 @@ body:not(.index):not(.about_index) {
         position: relative;
         font-size: 6.8rem;
         line-height: 10rem;
+      }
+    }
+  }
+  section {
+    &.situation {
+      p {
+        @media screen and (min-width: 767px) {
+          max-width: 75%;
+        }
       }
     }
   }
@@ -537,7 +561,13 @@ $financial-freedom-reverse: #ffffff;
 
 // Experiment page
 .financial-freedom_index {
-
+  header#topnav {
+    background: $financial-freedom-primary;
+    a {
+      color: $financial-freedom-secondary;
+    }
+    border-bottom-color: $financial-freedom-reverse;
+  }
   article {
     h1 {
       @media screen and (min-width: 767px) {
@@ -627,6 +657,13 @@ $group-trust-reverse: black;
 
 // Experiment page
 .group-trust_index {
+  header#topnav {
+    background: $group-trust-reverse;
+    a {
+      color: $group-trust-primary;
+    }
+    border-bottom-color: $group-trust-reverse;
+  }
   article {
     h1 {
       @media screen and (min-width: 767px) {
@@ -714,12 +751,18 @@ $group-trust-reverse: black;
 ////////////////
 
 $terms-primary: #50E3C2;
-$terms-secondary: #blue;
 $terms-reverse: black;
 
 
 // Experiment page
 .terms_index {
+  header#topnav {
+    background: $terms-reverse;
+    a {
+      color: darken($terms-primary, 15%);
+    }
+    border-bottom-color: $terms-reverse;
+  }
   article {
     h1 {
       @media screen and (min-width: 767px) {
@@ -771,6 +814,9 @@ $terms-reverse: black;
         background: $terms-reverse;
         color: white;
       }
+    }
+    h2 {
+      font-weight: 500;
     }
     figure {
       &::after {
@@ -833,7 +879,8 @@ $locally-primary: white;
         }
         p {
           font-size: 1.8rem;
-          line-height: 2.4rem;
+          line-height: 2.6rem;
+          max-width: 75%;
         }
       }
     }
