@@ -219,11 +219,17 @@ body:not(.index):not(.about_index) {
           line-height: 0;
         }
         p {
-          display: inline;
+          display: inline-block;
+          margin: 0 0 1rem 0;
         }
         footer {
           font-size: 1rem;
+          line-height: 1.4rem;
           margin-top: 0.8rem;
+          opacity: 0.4;
+          @media screen and (min-width: 767px) {
+            width: 60%;
+          }
           cite {
             font-style: inherit;
           }
@@ -246,8 +252,24 @@ body:not(.index):not(.about_index) {
     }
   }
 
+  blockquote.pull-quote {
+    display: none;
+    @media screen and (min-width: 767px) {
+      display: block;
+      &:before {
+        display: none;
+      }
+      p {
+        font-size: 3rem;
+        line-height: 4rem;
+        span {
 
-  aside {
+        }
+      }
+    }
+  }
+
+  aside, blockquote.pull-quote {
     @media screen and (min-width: 767px) {
       width: 50%;
       margin-left: -60%;
@@ -407,8 +429,18 @@ body:not(.index):not(.about_index) {
 
     blockquote {
       font-family: 'Playfair Display', serif;
-
+      &.pull-quote {
+        p {
+          span {
+            background: $connected-devices-reverse;
+            color: $connected-devices-secondary;
+            line-height: 4.4rem;
+          }
+        }
+      }
     }
+
+
 
     section {
       &.situation {
