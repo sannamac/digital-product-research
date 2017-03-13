@@ -177,7 +177,7 @@ body:not(.index):not(.about_index) {
   margin-top: 42px;
   article {
     figure {
-      margin: 0 0 4rem 0;
+      margin: 0 0 2rem 0;
       &.img-wide {
         @media screen and (min-width: 767px) {
           margin-left: -8rem;
@@ -185,6 +185,9 @@ body:not(.index):not(.about_index) {
             margin-left: 8rem;
           }
         }
+      }
+      figcaption {
+        margin-top: 0.8rem;
       }
     }
     padding: 2rem;
@@ -299,9 +302,10 @@ body:not(.index):not(.about_index) {
     }
 
     &.desktop-embed {
+      margin-bottom: 4rem;
       width: 150%;
         @media screen and (min-width: 767px) and (max-width: 1200px) {
-      float: right;
+          float: right;
           -ms-transform: scale(0.5);
           -moz-transform: scale(0.5);
           -o-transform: scale(0.5);
@@ -314,10 +318,11 @@ body:not(.index):not(.about_index) {
           -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
         }
-      figure {
+      figure > div {
         border-radius: 0.4rem;
         padding-top: 2rem;
         background: #d0d0d0;
+        border: 1px solid #199b7e;
         @media screen and (min-width: 767px) and (max-width: 1200px) {
           width: 120%;
           iframe {
@@ -328,11 +333,18 @@ body:not(.index):not(.about_index) {
 
     figure {
       &.mobile-frame {
-        @media screen and (min-width: 767px) {
-          background: black;
-          padding: 4rem 1rem;
-          border-radius: 2rem;
-          max-width: 400px;
+        > div.frame {
+          @media screen and (min-width: 767px) {
+            background: black;
+            padding: 4rem 1rem;
+            border-radius: 2rem;
+            max-width: 400px;
+          }
+        }
+        figcaption {
+          @media screen and (min-width: 767px) {
+            max-width: 80%;
+          }
         }
       }
       .embed {
@@ -573,7 +585,7 @@ $financial-freedom-reverse: #ffffff;
     a {
       color: $financial-freedom-secondary;
     }
-    border-bottom-color: $financial-freedom-reverse;
+    border-bottom-color: $financial-freedom-primary;
   }
   article {
     h1 {
@@ -826,14 +838,6 @@ $terms-reverse: black;
       font-weight: 500;
     }
     figure {
-      &::after {
-        background: red; 
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: relative;
-        content: '';
-      }
     }
   }
 
