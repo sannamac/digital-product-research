@@ -333,6 +333,10 @@ body:not(.index):not(.about_index) {
 
     figure {
       &.mobile-frame {
+        h2 {
+          margin: 0 0 2rem 2rem;
+          font-size: 1.4rem;
+        }
         > div.frame {
           @media screen and (min-width: 767px) {
             background: black;
@@ -344,6 +348,7 @@ body:not(.index):not(.about_index) {
         figcaption {
           @media screen and (min-width: 767px) {
             max-width: 80%;
+            margin: 2rem;
           }
         }
       }
