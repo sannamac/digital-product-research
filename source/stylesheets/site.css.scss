@@ -793,6 +793,18 @@ $terms-reverse: black;
         }
       }
     }
+    blockquote {
+      &.pull-quote {
+        p {
+          line-height: 1rem;
+          span {
+            color: white;
+            background: $terms-reverse;
+            line-height: 3.8rem;
+          }
+        }
+      }
+    }
     @media screen and (min-width: 767px) {
       p {
         font-size: 1.4rem;
@@ -876,6 +888,17 @@ $locally-primary: white;
           position: relative;
           font-size: 6.8rem;
           line-height: 10rem;
+        }
+      }
+    }
+    blockquote {
+      &.pull-quote {
+        p {
+          line-height: 1rem;
+          span {
+            color: $locally-secondary;
+            background: $locally-reverse;
+          }
         }
       }
     }
