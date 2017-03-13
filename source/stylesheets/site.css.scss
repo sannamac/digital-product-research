@@ -440,8 +440,6 @@ body:not(.index):not(.about_index) {
       }
     }
 
-
-
     section {
       &.situation {
         p {
@@ -596,6 +594,17 @@ $financial-freedom-reverse: #ffffff;
     h2 {
       line-height: 2rem;
     }
+    blockquote {
+      &.pull-quote {
+        p {
+          span {
+            color: $financial-freedom-primary;
+            background: $financial-freedom-secondary;
+            line-height: 4.4rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -641,6 +650,18 @@ $group-trust-reverse: black;
         p {
           font-size: 1.8rem;
           line-height: 2.4rem;
+        }
+      }
+    }
+    blockquote {
+      &.pull-quote {
+        p {
+
+          span {
+            background: $group-trust-reverse;
+            color: $group-trust-secondary;
+            line-height: 4.6rem;
+          }
         }
       }
     }
