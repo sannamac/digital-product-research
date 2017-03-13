@@ -219,11 +219,17 @@ body:not(.index):not(.about_index) {
           line-height: 0;
         }
         p {
-          display: inline;
+          display: inline-block;
+          margin: 0 0 1rem 0;
         }
         footer {
           font-size: 1rem;
+          line-height: 1.4rem;
           margin-top: 0.8rem;
+          opacity: 0.4;
+          @media screen and (min-width: 767px) {
+            width: 60%;
+          }
           cite {
             font-style: inherit;
           }
