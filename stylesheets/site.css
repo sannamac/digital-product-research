@@ -494,6 +494,8 @@ body.about_index {
         display: none; }
       #projects a.scroll-container article figure {
         margin: 0; }
+      #projects a.scroll-container article .pull-quote {
+        display: none; }
     #projects a.scroll-container:hover article {
       background-color: rgba(0, 0, 0, 0.1); }
 
