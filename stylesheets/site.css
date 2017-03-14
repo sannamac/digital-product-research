@@ -771,8 +771,7 @@ body:not(.index):not(.about_index) {
   line-height: 1.6rem; }
 #project-connected-devices article p, #project-connected-devices article blockquote {
   font-size: 1rem;
-  line-height: 1.4rem;
-  width: 100%; }
+  line-height: 1.4rem; }
 #project-connected-devices article figure {
   margin: 0; }
   #project-connected-devices article figure.alt::after {
