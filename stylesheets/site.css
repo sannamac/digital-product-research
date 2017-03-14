@@ -446,13 +446,15 @@ body.about_index {
   width: auto;
   overflow: hidden;
   height: 100%;
-  margin-top: 42px; }
+  margin-top: 42px;
+  counter-reset: project-count; }
   @media screen and (max-width: 767px) {
     #projects {
       overflow: visible;
       height: auto; } }
   #projects .project {
     display: table-cell;
+    position: relative;
     vertical-align: top;
     width: 330px;
     min-width: 330px;
@@ -689,10 +691,10 @@ body:not(.index):not(.about_index) {
 #project-connected-devices {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.4rem;
-  background: #242a26; }
+  background: #242a26;
+  color: #d3e4d7; }
   .connected_index article,
   #project-connected-devices article {
-    color: #d3e4d7;
     background: #303832; }
     .connected_index article h1, .connected_index article h2, .connected_index article h3, .connected_index article h4, .connected_index article h5, .connected_index article h6,
     #project-connected-devices article h1,
