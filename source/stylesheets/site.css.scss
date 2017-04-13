@@ -166,8 +166,6 @@ body.about_index {
               }
             }
           }
-          font-size: 1rem;
-          line-height: 1.6rem;
         }
         aside {
           &.experiment-live {
@@ -251,8 +249,6 @@ body:not(.index):not(.about_index) {
       }
     }
     section {
-      font-size: 1.2rem;
-      line-height: 2rem;
       header.project-title {
         @media screen and (min-width: 767px) {
           font-size: 2.4rem;
@@ -1078,3 +1074,112 @@ $locally-primary: white;
 }
 
 
+////////////////
+//////////////// AFTER WORK
+////////////////
+
+$after-work-primary: #c2e8fd;
+$after-work-secondary: #FFFFFF;
+$after-work-reverse: black;
+
+// Experiment page
+.after-work_index {
+  article {
+    background: $after-work-primary;
+    h1 {
+      @media screen and (min-width: 767px) {
+        margin-top: 6rem;
+        span {
+          position: relative;
+          font-size: 6.8rem;
+          line-height: 10rem;
+        }
+      }
+    }
+    blockquote {
+      &.pull-quote {
+        p {
+          line-height: 1rem;
+          span {
+            color: $after-work-secondary;
+            background: $after-work-reverse;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 767px) {
+      p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+      section.situation {
+        h2 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+          max-width: 75%;
+        }
+      }
+    }
+  }
+
+  section.what-next {
+    background: $after-work-reverse !important;
+    color: $after-work-primary;
+  }
+  section.methods {
+    background: #e6e6e6;
+    div {
+      background: $after-work-primary;
+      h2 {
+        font-size: 1.6rem;
+      }
+      p {
+        a {
+        }
+      }
+    }
+  }
+
+}
+
+// Experiment page AND index
+
+.after-work_index,
+#life-after-work {
+  font-family: 'Arimo', sans-serif;
+  background: darken($after-work-primary, 10%);
+  color: $after-work-reverse;
+  article {
+    background: $after-work-primary;
+    h1 {
+      span {
+        background: $after-work-reverse;
+        color: $after-work-secondary;
+      }
+    }
+  }
+
+}
+
+// Just index page
+#life-after-work {
+  article {
+    h1 span {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+    section.situation {
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+
+      }
+    }
+    p, blockquote {
+      line-height: 1.6rem;
+    }
+  }
+}
