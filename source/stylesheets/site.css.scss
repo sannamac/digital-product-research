@@ -67,13 +67,15 @@ div#wip {
 }
 
 header#topnav {
-  line-height: 36px;
+  line-height: 54px;
   padding: 0.2rem 1.2rem;
-  background: white;
   a, a:active, a:visited {
     color: inherit;
     font-weight: 500;
     text-decoration: none;
+    &:nth-of-type(1) {
+      margin-right: 1rem;
+    }
     &:nth-of-type(2) {
       float: right;
       @media screen and (max-width: 766px) {
@@ -82,13 +84,18 @@ header#topnav {
         right: 0;
       }
     }
-    margin-right: 1rem;
   }
-  border-bottom: 1px solid #DFDEDF;
   span {
     @media screen and (max-width: 766px) {
       display: inline-block;
       line-height: 1.4rem;
+    }
+  }
+  nav {
+    display: inline;
+    float: right;
+    span {
+      cursor: pointer;
     }
   }
 }
@@ -112,13 +119,18 @@ body.about_index {
   display: table;
   width: auto;
   overflow: hidden;
-  height: 100%;
+  height: calc(100% - 42px);
   margin-top: 42px;
+  border-collapse: separate;
+  border-spacing: 20px;
+
+  counter-reset: project-count;
+
   @media screen and (max-width: 767px) {
     overflow: visible;
     height: auto;
+
   }
-  counter-reset: project-count;
   .project {
     display: table-cell;
     position: relative;
@@ -126,22 +138,26 @@ body.about_index {
     width: 330px;
     min-width: 330px;
     max-width: 330px;
+
+    border-radius: 0.2rem;
+    overflow: hidden;
     @media screen and (max-width: 767px) {
       display: block;
       width: inherit;
       max-width: inherit;
     }
+
   }
 
   a {
     &.scroll-container {
       color: inherit;
-      height: 100%;
+      height: 84vh;
       display: block;
       overflow: hidden;
-      overflow-y: scroll;
       position: relative;
       text-decoration: none;
+
       @media screen and (max-width: 767px) {
         overflow-y: hidden;
         height: inherit;
@@ -1183,3 +1199,22 @@ $after-work-reverse: black;
     }
   }
 }
+
+
+.offer-pg-cont{
+    overflow-x: auto;
+}
+
+
+span.arrow-left,span.arrow-right{
+}
+span.arrow-left{
+    left: 0px;
+}
+span.arrow-right{
+    right: 0px;
+}
+span.arrow-left:hover,.offer-pg span.arrow-right:hover{
+    background-color: #333;
+}
+

@@ -17,8 +17,11 @@
     <div id="top">
       <div id="wip">This is a work in progress: <a href="https://docs.google.com/a/coopdigital.co.uk/forms/d/e/1FAIpQLSeD4Fbz0-RI8ltn_cuP7Xrcce4gr5hAEn0saGV_ELoAvL3oQw/viewform?usp=sf_link" target="_blank">Give feedback</a></div>
       <header id="topnav">
-        <%= link_to 'Digital Product Research', 'index.html' %><span>We’re a team at Co-op Digital and this is the archive of our experiments</span>
-        <%= link_to 'About', 'about' %>
+        <%= link_to 'Digital Product Research', 'index.html' %><span>We’re a team at Co-op Digital and this is the archive of our experiments&hellip; <%= link_to 'Read more', 'about' %></span>
+        <nav>
+          <span class='arrow-left'>&larr;</span>
+          <span class='arrow-right'>&rarr;</span>
+        </nav>
       </header>
     </div>
     <%= yield %>
