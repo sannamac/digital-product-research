@@ -67,7 +67,7 @@ div#wip {
 }
 
 header#topnav {
-  line-height: 54px;
+  line-height: 55px;
   padding: 0.2rem 1.2rem;
   a, a:active, a:visited {
     color: inherit;
@@ -96,6 +96,16 @@ header#topnav {
     float: right;
     span {
       cursor: pointer;
+      padding: 0.4rem 1rem;
+      border: 1px solid black;
+      box-sizing: border-box;
+      &:hover {
+        background: rgba(0,0,0,0.1)
+      }
+      &:active {
+        background: black;
+        color: white;
+      }
     }
   }
 }
@@ -115,14 +125,16 @@ body.about_index {
 
 // Index layout
 
+.offer-pg-cont{
+    overflow-x: auto;
+}
+
 #projects {
   display: table;
   width: auto;
   overflow: hidden;
   height: calc(100% - 42px);
   margin-top: 42px;
-  border-collapse: separate;
-  border-spacing: 20px;
 
   counter-reset: project-count;
 
@@ -139,6 +151,9 @@ body.about_index {
     min-width: 330px;
     max-width: 330px;
 
+    border-left: solid #efefef 20px;
+    border-top: solid #efefef 20px;
+
     border-radius: 0.2rem;
     overflow: hidden;
     @media screen and (max-width: 767px) {
@@ -152,7 +167,7 @@ body.about_index {
   a {
     &.scroll-container {
       color: inherit;
-      height: 84vh;
+      height: calc(100vh - 84px);
       display: block;
       overflow: hidden;
       position: relative;
