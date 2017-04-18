@@ -3,6 +3,12 @@ title: Digital Product Research
 ---
 
 <%= partial('partials/experiment/connected-devices') %>
+<section class="methods">
+  <div>
+    <h1>Our research</h1>
+    <%= partial('partials/methods/gv-sprint') %>
+  </div>
+</section>
 
 <section class="what-next">
   <section class="view-experiment">
@@ -11,11 +17,11 @@ title: Digital Product Research
   <section class="further-reading">
     <h1>Further reading</h1>
     <ul>
-      <li><a href="https://consumerist.com/2017/01/17/you-dont-care-about-your-friends-data-and-4-other-things-we-learned-from-privacy-experts/">You Don’t Care About Your Friends’ Data, And 4 Other Things We Learned From Privacy Experts</a></li>
-      <li><a href="http://www.darkreading.com/vulnerabilities---threats/do-gooder-worm-changes-default-passwords-in-vulnerable-iot-devices/d/d-id/1327341">'Do Gooder Worm' Changes Default Passwords In Vulnerable IoT Devices</a></li>
-      <li><a href="http://www.independent.co.uk/life-style/gadgets-and-tech/news/cayla-baby-doll-spying-hacking-germany-watchdog-parents-told-to-destroy-a7585211.html">Parents told to destroy baby doll because of spying fears</a></li>
-      <li><a href="https://medium.com/@getluma/the-state-of-security-in-the-connected-home-2a979b76f85b#.66j5nl2va">The State of Security in the Connected Home</a></li>
-      <li><a href="https://blogs.which.co.uk/technology/security-software/stop-hackers-hijacking-internet-connected-devices/">How to stop hackers hijacking your internet-connected devices</a></li>
+      <li><a href="https://consumerist.com/2017/01/17/you-dont-care-about-your-friends-data-and-4-other-things-we-learned-from-privacy-experts/" target="_blank">You Don’t Care About Your Friends’ Data, And 4 Other Things We Learned From Privacy Experts</a></li>
+      <li><a href="http://www.darkreading.com/vulnerabilities---threats/do-gooder-worm-changes-default-passwords-in-vulnerable-iot-devices/d/d-id/1327341" target="_blank">'Do Gooder Worm' Changes Default Passwords In Vulnerable IoT Devices</a></li>
+      <li><a href="http://www.independent.co.uk/life-style/gadgets-and-tech/news/cayla-baby-doll-spying-hacking-germany-watchdog-parents-told-to-destroy-a7585211.html" target="_blank">Parents told to destroy baby doll because of spying fears</a></li>
+      <li><a href="https://medium.com/@getluma/the-state-of-security-in-the-connected-home-2a979b76f85b#.66j5nl2va" target="_blank">The State of Security in the Connected Home</a></li>
+      <li><a href="https://blogs.which.co.uk/technology/security-software/stop-hackers-hijacking-internet-connected-devices/" target="_blank">How to stop hackers hijacking your internet-connected devices</a></li>
     </ul>
   </section>
   <section class="related-project">
@@ -23,6 +29,6 @@ title: Digital Product Research
     <h2>
       Keep reading
     </h2>
-    <a href="terms">Terms and reviewers</a>
+    <%= link_to 'Terms and reviewers', 'terms' %>
   </section>
 </section>

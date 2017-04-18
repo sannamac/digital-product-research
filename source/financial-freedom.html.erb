@@ -4,6 +4,13 @@ title: Digital Product Research
 
 <%= partial('partials/experiment/financial-freedom') %>
 
+<section class="methods">
+  <div>
+    <h1>Our research</h1>
+    <%= partial('partials/methods/gv-sprint') %>
+  </div>
+</section>
+
 <section class="what-next">
   <section class="view-experiment">
     <a class="experiment-link" href="https://coopdigital.github.io/dpr-level-up" target="_blank">Open experiment in a new window</a>
@@ -12,9 +19,9 @@ title: Digital Product Research
   <section class="further-reading">
     <h1>Further reading</h1>
     <ul>
-      <li><a href="http://www.mrmoneymustache.com/">Mr. Money Mustache</a></li>
-      <li><a href="https://ustwo.com/blog/5-lessons-old-money-banking-can-learn-from-new-tech-start-ups-today">5 Lessons Old Money Banking Can Learn from New Tech Start-Ups Today</a></li>
-      <li><a href="http://www.telegraph.co.uk/finance/personalfinance/10075722/Money-habits-are-formed-by-age-seven.html">Money habits are 'formed by age seven'</a></li>
+      <li><a href="http://www.mrmoneymustache.com/" target="_blank">Mr. Money Mustache</a></li>
+      <li><a href="https://ustwo.com/blog/5-lessons-old-money-banking-can-learn-from-new-tech-start-ups-today" target="_blank">5 Lessons Old Money Banking Can Learn from New Tech Start-Ups Today</a></li>
+      <li><a href="http://www.telegraph.co.uk/finance/personalfinance/10075722/Money-habits-are-formed-by-age-seven.html" target="_blank">Money habits are 'formed by age seven'</a></li>
     </ul>
   </section>
   <section class="related-project">
@@ -22,6 +29,6 @@ title: Digital Product Research
     <h2>
       Keep reading
     </h2>
-    <a href="terms">Terms and reviewers</a>
+    <%= link_to 'Terms and reviewers', 'terms' %>
   </section>
 </section>

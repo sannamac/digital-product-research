@@ -76,9 +76,21 @@ header#topnav {
     text-decoration: none;
     &:nth-of-type(2) {
       float: right;
+      @media screen and (max-width: 766px) {
+        top: 3px;
+        position: absolute;
+        right: 0;
+      }
     }
+    margin-right: 1rem;
   }
   border-bottom: 1px solid #DFDEDF;
+  span {
+    @media screen and (max-width: 766px) {
+      display: inline-block;
+      line-height: 1.4rem;
+    }
+  }
 }
 
 // About index
@@ -177,6 +189,36 @@ body.about_index {
 
 }
 
+body:not(.index) {
+  header#topnav {
+    span {
+      display: none;
+    }
+  }
+}
+
+section.methods {
+  width: 100%;
+  display: block;
+  float: left;
+  z-index: 1;
+  position: relative;
+  padding: 4rem 0;
+  div {
+    @media screen and (min-width: 767px) {
+      width: 60%;
+      margin: 0 auto;
+      float: right;
+    }
+    box-sizing: border-box;
+    padding: 2rem;
+    p {
+      width: 90%;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+}
 
 // These are consistent styles across all experiments
 body:not(.index):not(.about_index) {
@@ -271,6 +313,9 @@ body:not(.index):not(.about_index) {
       }
       > section {
         margin-bottom: 8rem;
+        &:last-of-type {
+          margin-bottom: 2rem;
+        }
       }
     }
   }
@@ -316,7 +361,7 @@ body:not(.index):not(.about_index) {
           -o-transform: scale(0.5);
           -webkit-transform: scale(0.5);
           transform: scale(0.5);
-          
+
           -ms-transform-origin: 0 0;
           -moz-transform-origin: 0 0;
           -o-transform-origin: 0 0;
@@ -408,11 +453,6 @@ body:not(.index):not(.about_index) {
 
 }
 
-<<<<<<< HEAD
-@import 'connected-devices';
-@import 'protect-together';
-@import 'financial-freedom';
-=======
 
 // These are experiment specific styles
 
@@ -450,6 +490,18 @@ body:not(.index):not(.about_index) {
       p {
         @media screen and (min-width: 767px) {
           max-width: 75%;
+        }
+      }
+    }
+  }
+  section.methods {
+    div {
+      h1 {
+        margin-top: 0;
+      }
+      background: $connected-devices-primary;
+      p {
+        a {
         }
       }
     }
@@ -622,7 +674,7 @@ $financial-freedom-reverse: #ffffff;
           p {
             font-size: 1.8rem;
             line-height: 2.6rem;
-            
+
           }
         }
       }
@@ -634,6 +686,11 @@ $financial-freedom-reverse: #ffffff;
     color: $financial-freedom-reverse;
     a:link {
       color: $financial-freedom-reverse;
+    }
+  }
+  section.methods {
+    div {
+      background: $financial-freedom-reverse;
     }
   }
 }
@@ -748,7 +805,15 @@ $group-trust-reverse: black;
       color: $financial-freedom-reverse;
     }
   }
-
+  section.methods {
+    div {
+      background: $group-trust-primary;
+      p {
+        a {
+        }
+      }
+    }
+  }
 }
 
 // Experiment page AND index
@@ -764,7 +829,7 @@ $group-trust-reverse: black;
         background: $group-trust-reverse;
         color: $group-trust-secondary;
       }
-    } 
+    }
   }
 
 }
@@ -841,6 +906,15 @@ $terms-reverse: black;
     color: $terms-primary;
     a:link {
       color: $terms-reverse;
+    }
+  }
+  section.methods {
+    div {
+      background: $terms-primary;
+      p {
+        a {
+        }
+      }
     }
   }
 
@@ -938,6 +1012,19 @@ $locally-primary: white;
     background: $locally-secondary !important;
     color: $locally-primary;
   }
+  section.methods {
+    background: #e6e6e6;
+    div {
+      background: $locally-primary;
+      h2 {
+        font-size: 1.6rem;
+      }
+      p {
+        a {
+        }
+      }
+    }
+  }
 
 }
 
@@ -955,7 +1042,7 @@ $locally-primary: white;
         background: $locally-reverse;
         color: $locally-secondary;
       }
-    } 
+    }
   }
 
 }
@@ -971,7 +1058,7 @@ $locally-primary: white;
       p {
         font-size: 1.2rem;
         line-height: 1.8rem;
-        
+
       }
     }
     p, blockquote {
