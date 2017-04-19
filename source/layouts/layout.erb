@@ -7,7 +7,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500|Playfair+Display|Overpass:400,700|Nunito:400,700|Arimo:400,700" rel="stylesheet">
 
-    <title><%= current_page.data.title || "Digital Product Research" %></title>
+    <title><%= current_page.data.title || "Digital product research" %></title>
+    <meta name="description"><%= current_page.data.desc || "Digital product research" %></meta>
+    <meta name="author"><%= current_page.data.auth || "Digital product research team at Co-op Digital" %></meta>
+
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
