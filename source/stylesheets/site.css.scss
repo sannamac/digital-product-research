@@ -19,16 +19,6 @@ body {
   height: 100%;
 }
 
-img {
-  max-width: 100%;
-  min-width: 100%;
-  border-radius: 0.2rem;
-}
-
-time {
-  font-size: 0.8rem;
-}
-
 div#top {
     position: fixed;
     top: 0;
@@ -147,6 +137,10 @@ body.about_index {
         height: inherit;
         display: block;
       }
+
+
+      // Index experiment styles
+
       article {
         padding: 1.2rem;
         width: auto;
@@ -176,7 +170,7 @@ body.about_index {
           margin: 0;
         }
         .pull-quote {
-          display: none;
+
         }
       }
       &:hover {
@@ -185,6 +179,8 @@ body.about_index {
         }
       }
     }
+
+    // END index experiment styles
   }
 
 }
@@ -197,89 +193,45 @@ body:not(.index) {
   }
 }
 
-section.methods {
-  width: 100%;
-  display: block;
-  float: left;
-  z-index: 1;
-  position: relative;
-  padding: 4rem 0;
-  div {
-    @media screen and (min-width: 767px) {
-      width: 60%;
-      margin: 0 auto;
-      float: right;
-    }
-    box-sizing: border-box;
-    padding: 2rem;
-    p {
-      width: 90%;
-      font-size: 1.4rem;
-      line-height: 2rem;
-    }
-  }
-}
+// BASE structure of experiment
 
-// These are consistent styles across all experiments
-body:not(.index):not(.about_index) {
-  margin-top: 42px;
+body {
   article {
-    figure {
-      margin: 0 0 2rem 0;
-      &.img-wide {
-        @media screen and (min-width: 767px) {
-          margin-left: -8rem;
-          figcaption {
-            margin-left: 8rem;
+    section {
+      header {
+        &.project-title {
+          h1 {
+            span {
+              background: black;
+              color: white;
+              
+            }
           }
         }
-      }
-      figcaption {
-        margin-top: 0.8rem;
-      }
-    }
-    padding: 2rem;
-    box-sizing: border-box;
-    @media screen and (min-width: 767px) {
-      float: right;
-      width: 60%;
-      > section {
-        max-width: 800px;
-        float: left;
-      }
-    }
-    section {
-      header.project-title {
-        @media screen and (min-width: 767px) {
-          font-size: 2.4rem;
-          line-height: 3rem;
+        time {
+          font-size: 0.8rem;
         }
       }
-      p, blockquote, h2 {
-        @media screen and (min-width: 767px) {
-          width: 90%;
-        }
+      img {
+        max-width: 100%;
+        min-width: 100%;
+        border-radius: 0.2rem;
       }
-      p {
-        @media screen and (min-width: 767px) {
-          margin: 0rem 0 2rem 0;
+      figure {
+        figcaption {
+          margin-top: 0.4rem;
+          
         }
-      }
-      h2 {
-        margin-bottom: 0.4rem;
       }
       blockquote {
         quotes: "\201C""\201D";
-        margin: 1.5em 10px;
+        margin: 1.5rem 10px;
         padding: 0.5em 10px;
         position: relative;
         margin: 2.8rem;
         padding: 0;
         box-sizing: border-box;
         width: 80%;
-        @media screen and (min-width: 767px) {
-          width: 60%;
-        }
         &:before {
           font-family: inherit;
           content: open-quote;
@@ -295,30 +247,76 @@ body:not(.index):not(.about_index) {
           margin: 0 0 1rem 0;
         }
         footer {
-          font-size: 1rem;
-          line-height: 1.4rem;
           opacity: 0.4;
-          @media screen and (min-width: 767px) {
-            width: 60%;
-          }
+          max-width: 260px;
           cite {
             font-style: inherit;
           }
         }
       }
-      &.situation {
-        @media screen and (min-width: 767px) {
-          margin-top: 6rem;
-        }
+    }
+
+  }
+
+}
+
+
+
+// These are consistent styles across all experiment pages
+body:not(.index):not(.about_index) {
+  margin-top: 42px;
+  article {
+    padding: 2rem;
+    box-sizing: border-box;
+    @media screen and (min-width: 767px) {
+      float: right;
+      width: 60%;
+      > section {
+        max-width: 800px;
+        float: left;
       }
-      > header.project-title {
+    }
+    header {
+      &.project-title {
         @media screen and (min-width: 767px) {
           margin-left: -50%;
+          z-index: 1;
         }
-        z-index: 1;
+        h1 {
+          @media screen and (min-width: 767px) {
+            margin-top: 6rem;
+            span {
+              position: relative;
+              font-size: 6.8rem;
+              line-height: 9rem;
+            }
+          }
+        }
       }
+    }
+    figure {
+      margin: 0 0 2rem 0;
+      &.img-wide {
+        @media screen and (min-width: 767px) {
+          margin-left: -8rem;
+          figcaption {
+            margin-left: 8rem;
+          }
+        }
+      }
+      figcaption {
+        margin-top: 0.8rem;
+      }
+    }
+    section {
+      p, blockquote, h2 {
+        @media screen and (min-width: 767px) {
+          width: 90%;
+        }
+      }
+
       > section {
-        margin-bottom: 8rem;
+
         &:last-of-type {
           margin-bottom: 2rem;
         }
@@ -341,6 +339,13 @@ body:not(.index):not(.about_index) {
         }
       }
     }
+    p {
+      span {
+        background: black;
+        color: white;
+      }
+    }
+    
   }
 
   aside, blockquote.pull-quote {
@@ -362,16 +367,7 @@ body:not(.index):not(.about_index) {
       width: 150%;
         @media screen and (min-width: 767px) and (max-width: 1200px) {
           float: right;
-          -ms-transform: scale(0.5);
-          -moz-transform: scale(0.5);
-          -o-transform: scale(0.5);
-          -webkit-transform: scale(0.5);
           transform: scale(0.5);
-
-          -ms-transform-origin: 0 0;
-          -moz-transform-origin: 0 0;
-          -o-transform-origin: 0 0;
-          -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
         }
       figure > div {
@@ -391,7 +387,6 @@ body:not(.index):not(.about_index) {
       &.mobile-frame {
         h2 {
           margin: 0 0 2rem 2rem;
-          font-size: 1.4rem;
         }
         > div.frame {
           @media screen and (min-width: 767px) {
@@ -423,12 +418,32 @@ body:not(.index):not(.about_index) {
     }
   }
 
+  section.methods,
   section.what-next {
     width: 100%;
     display: block;
     float: left;
     z-index: 1;
     position: relative;
+  }
+
+  section.methods {
+    padding: 4rem 0;
+    div {
+      @media screen and (min-width: 767px) {
+        width: 60%;
+        margin: 0 auto;
+        float: right;
+      }
+      box-sizing: border-box;
+      padding: 2rem;
+      p {
+        width: 90%;
+      }
+    }
+  }
+
+  section.what-next {
     background: white;
     padding: 4rem 0 10rem 0;
     section.further-reading,
@@ -446,740 +461,11 @@ body:not(.index):not(.about_index) {
       }
       ul {
         li {
-          line-height: 1.4em;
-          margin-bottom: 1.2rem;
         }
-        margin-bottom: 4rem;
       }
       a {
         color: inherit;
       }
-    }
-  }
-
-}
-
-
-// These are experiment specific styles
-
-
-////////////////
-//////////////// CONNECTED DEVICES
-////////////////
-
-  $connected-devices-primary: #303832;
-  $connected-devices-secondary: darken($connected-devices-primary, 5%);
-  $connected-devices-reverse: #d3e4d7;
-
-
-// Experiment page
-.connected_index {
-  header#topnav {
-    background: $connected-devices-reverse;
-    a {
-      color: $connected-devices-primary;
-    }
-    border-bottom-color: $connected-devices-reverse;
-  }
-  h1 {
-    @media screen and (min-width: 767px) {
-      margin-top: 6rem;
-      span {
-        position: relative;
-        font-size: 6.8rem;
-        line-height: 10rem;
-      }
-    }
-  }
-  section {
-    &.situation {
-      p {
-        @media screen and (min-width: 767px) {
-          max-width: 75%;
-        }
-      }
-    }
-  }
-  section.methods {
-    div {
-      h1 {
-        margin-top: 0;
-      }
-      background: $connected-devices-primary;
-      p {
-        a {
-        }
-      }
-    }
-  }
-}
-
-// Experiment page AND index
-.connected_index,
-#project-connected-devices {
-
-  font-family: 'Source Code Pro', monospace;
-  font-size: 1.4rem;
-  background: $connected-devices-secondary;
-  color: $connected-devices-reverse;
-
-  article {
-    background: $connected-devices-primary;
-
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: 500;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      span {
-        background: $connected-devices-reverse;
-        color: $connected-devices-secondary;
-      }
-    }
-    p, blockquote {
-      font-weight: 300;
-      font-size: 1.2rem;
-      line-height: 2rem;
-    }
-
-    blockquote {
-      font-family: 'Playfair Display', serif;
-      &.pull-quote {
-        p {
-          span {
-            background: $connected-devices-reverse;
-            color: $connected-devices-secondary;
-            line-height: 4.4rem;
-          }
-        }
-      }
-    }
-
-    section {
-      &.situation {
-        p {
-          font-weight: 500;
-          font-size: 1.6rem;
-          line-height: 2.4rem;
-        }
-      }
-    }
-    figure {
-      &.alt {
-        position: relative;
-        &::after {
-          content: '02/04/2016';
-          background: black;
-          display: block;
-          position: absolute;
-          top: 1rem;
-          left: 1rem;
-          z-index: 1;
-        }
-      }
-      img {
-        mix-blend-mode: difference;
-        opacity: 0.8;
-      }
-      figcaption {
-        margin: 0.6rem 0 0 0;
-        color: darken($connected-devices-reverse, 40%);
-        font-size: 1rem;
-        a {
-          color: darken($connected-devices-reverse, 40%);
-        }
-      }
-    }
-  }
-
-  section.what-next {
-    background: darken($connected-devices-primary, 20%) !important;
-    color: $connected-devices-reverse;
-    a:link {
-      color: inherit;
-    }
-  }
-
-}
-
-// Just index page
-
-#project-connected-devices {
-  article {
-    h1  {
-      span {
-        font-size: 2.4rem;
-        line-height: 3.4rem;
-      }
-    }
-    section {
-      &.situation {
-        p {
-          font-weight: 500;
-          font-size: 1.2rem;
-          line-height: 1.6rem;
-        }
-      }
-    }
-    p, blockquote {
-      font-size: 1rem;
-      line-height: 1.4rem;
-    }
-    figure {
-      margin: 0;
-      &.alt {
-        &::after {
-          left: 0;
-        }
-        img {
-          margin-left: 0;
-        }
-      }
-    }
-  }
-}
-
-
-////////////////
-//////////////// FINANCIAL FREEDOM
-////////////////
-
-
-$financial-freedom-primary: #131B43;
-$financial-freedom-secondary: #DEF600;
-$financial-freedom-reverse: #ffffff;
-
-// Experiment page
-.financial-freedom_index {
-  header#topnav {
-    background: $financial-freedom-primary;
-    a {
-      color: $financial-freedom-secondary;
-    }
-    border-bottom-color: $financial-freedom-primary;
-  }
-  article {
-    h1 {
-      @media screen and (min-width: 767px) {
-        margin-top: 6rem;
-        span {
-          position: relative;
-          font-size: 6.8rem;
-          line-height: 10rem;
-        }
-      }
-    }
-    section {
-      p, blockquote {
-        font-size: 1.4rem;
-        line-height: 2rem;
-      }
-      &.situation {
-        @media screen and (min-width: 767px) {
-          p {
-            font-size: 1.8rem;
-            line-height: 2.6rem;
-
-          }
-        }
-      }
-    }
-  }
-
-  section.what-next {
-    background: $financial-freedom-primary !important;
-    color: $financial-freedom-reverse;
-    a:link {
-      color: $financial-freedom-reverse;
-    }
-  }
-  section.methods {
-    div {
-      background: $financial-freedom-reverse;
-    }
-  }
-}
-
-// Experiment page AND index
-.financial-freedom_index,
-#project-financial-freedom {
-  font-family: 'Overpass', sans-serif;
-
-  img {
-    filter: grayscale(100%);
-  }
-  article {
-    color: $financial-freedom-primary;
-    background: $financial-freedom-reverse;
-    h1 {
-      span {
-        background: $financial-freedom-secondary;
-      }
-    }
-    h2 {
-      line-height: 2rem;
-    }
-    blockquote {
-      &.pull-quote {
-        p {
-          span {
-            color: $financial-freedom-primary;
-            background: $financial-freedom-secondary;
-            line-height: 4.4rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-// Just index page
-#project-financial-freedom {
-  h1 {
-
-  }
-}
-
-
-////////////////
-//////////////// GROUP TRUST
-////////////////
-
-$group-trust-primary: #c2e8fd;
-$group-trust-secondary: lighten($group-trust-primary, 10%);
-$group-trust-reverse: black;
-
-
-// Experiment page
-.group-trust_index {
-  header#topnav {
-    background: $group-trust-reverse;
-    a {
-      color: $group-trust-primary;
-    }
-    border-bottom-color: $group-trust-reverse;
-  }
-  article {
-    h1 {
-      @media screen and (min-width: 767px) {
-        margin-top: 6rem;
-        span {
-          position: relative;
-          font-size: 6.8rem;
-          line-height: 10rem;
-        }
-      }
-    }
-    @media screen and (min-width: 767px) {
-      p {
-        font-size: 1.4rem;
-        line-height: 2rem;
-      }
-      section.situation {
-        h2 {
-          font-size: 2.4rem;
-        }
-        p {
-          font-size: 1.8rem;
-          line-height: 2.4rem;
-        }
-      }
-    }
-    blockquote {
-      &.pull-quote {
-        p {
-
-          span {
-            background: $group-trust-reverse;
-            color: $group-trust-secondary;
-            line-height: 4.6rem;
-          }
-        }
-      }
-    }
-  }
-
-  .embed {
-    background: white;
-  }
-
-  section.what-next {
-    background: $group-trust-reverse !important;
-    color: $group-trust-primary;
-    a:link {
-      color: $financial-freedom-reverse;
-    }
-  }
-  section.methods {
-    div {
-      background: $group-trust-primary;
-      p {
-        a {
-        }
-      }
-    }
-  }
-}
-
-// Experiment page AND index
-
-.group-trust_index,
-#project-protect-together {
-  font-family: 'Nunito', sans-serif;
-  background: darken($group-trust-primary, 10%);
-  article {
-    background: $group-trust-primary;
-    h1 {
-      span {
-        background: $group-trust-reverse;
-        color: $group-trust-secondary;
-      }
-    }
-  }
-
-}
-
-// Just index page
-#project-protect-together {
-  article {
-    h1 span {
-      font-size: 2.4rem;
-      line-height: 3.6rem;
-    }
-  }
-}
-
-////////////////
-//////////////// TERMS
-////////////////
-
-$terms-primary: #50E3C2;
-$terms-reverse: black;
-
-
-// Experiment page
-.terms_index {
-  header#topnav {
-    background: $terms-reverse;
-    a {
-      color: darken($terms-primary, 15%);
-    }
-    border-bottom-color: $terms-reverse;
-  }
-  article {
-    h1 {
-      @media screen and (min-width: 767px) {
-        margin-top: 6rem;
-        span {
-          position: relative;
-          font-size: 6.8rem;
-          line-height: 10rem;
-        }
-      }
-    }
-    blockquote {
-      &.pull-quote {
-        p {
-          line-height: 1rem;
-          span {
-            color: white;
-            background: $terms-reverse;
-            line-height: 3.8rem;
-          }
-        }
-      }
-    }
-    @media screen and (min-width: 767px) {
-      p {
-        font-size: 1.4rem;
-        line-height: 2rem;
-      }
-      section.situation {
-        h2 {
-          font-size: 2.4rem;
-        }
-        p {
-          font-size: 1.8rem;
-          line-height: 2.4rem;
-        }
-      }
-    }
-  }
-
-  section.what-next {
-    background: $terms-reverse !important;
-    color: $terms-primary;
-    a:link {
-      color: $terms-reverse;
-    }
-  }
-  section.methods {
-    div {
-      background: $terms-primary;
-      p {
-        a {
-        }
-      }
-    }
-  }
-
-}
-
-// Experiment page AND index
-
-.terms_index,
-#project-terms-reviewers {
-  font-family: "Times New Roman", Times, serif;
-  background: darken($terms-primary, 10%);
-  article {
-    background: $terms-primary;
-    h1 {
-      span {
-        background: $terms-reverse;
-        color: white;
-      }
-    }
-    h2 {
-      font-weight: 500;
-    }
-    figure {
-    }
-  }
-
-}
-
-// Just index page
-#project-terms-reviewers {
-  article {
-    h1 span {
-      font-size: 2.4rem;
-      line-height: 3rem;
-    }
-    p, blockquote {
-      line-height: 1.6rem;
-    }
-  }
-}
-
-
-////////////////
-//////////////// LOCALLY
-////////////////
-
-$locally-secondary: #242324;
-$locally-reverse: #E9A45B;
-$locally-primary: white;
-
-
-// Experiment page
-.locally_index {
-  article {
-    h1 {
-      @media screen and (min-width: 767px) {
-        margin-top: 6rem;
-        span {
-          position: relative;
-          font-size: 6.8rem;
-          line-height: 10rem;
-        }
-      }
-    }
-    blockquote {
-      &.pull-quote {
-        p {
-          line-height: 1rem;
-          span {
-            color: $locally-secondary;
-            background: $locally-reverse;
-          }
-        }
-      }
-    }
-    @media screen and (min-width: 767px) {
-      p {
-        font-size: 1.4rem;
-        line-height: 2rem;
-      }
-      section.situation {
-        h2 {
-          font-size: 2.4rem;
-        }
-        p {
-          font-size: 1.8rem;
-          line-height: 2.6rem;
-          max-width: 75%;
-        }
-      }
-    }
-  }
-
-  section.what-next {
-    background: $locally-secondary !important;
-    color: $locally-primary;
-  }
-  section.methods {
-    background: #e6e6e6;
-    div {
-      background: $locally-primary;
-      h2 {
-        font-size: 1.6rem;
-      }
-      p {
-        a {
-        }
-      }
-    }
-  }
-
-}
-
-// Experiment page AND index
-
-.locally_index,
-#project-locally {
-  font-family: 'Arimo', sans-serif;
-  background: darken($locally-primary, 10%);
-  color: $locally-secondary;
-  article {
-    background: $locally-primary;
-    h1 {
-      span {
-        background: $locally-reverse;
-        color: $locally-secondary;
-      }
-    }
-  }
-
-}
-
-// Just index page
-#project-locally {
-  article {
-    h1 span {
-      font-size: 2.4rem;
-      line-height: 3rem;
-    }
-    section.situation {
-      p {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-
-      }
-    }
-    p, blockquote {
-      line-height: 1.6rem;
-    }
-  }
-}
-
-
-////////////////
-//////////////// AFTER WORK
-////////////////
-
-$after-work-primary: #c2e8fd;
-$after-work-secondary: #FFFFFF;
-$after-work-reverse: black;
-
-// Experiment page
-.after-work_index {
-  article {
-    background: $after-work-primary;
-    h1 {
-      @media screen and (min-width: 767px) {
-        margin-top: 6rem;
-        span {
-          position: relative;
-          font-size: 6.8rem;
-          line-height: 10rem;
-        }
-      }
-    }
-    blockquote {
-      &.pull-quote {
-        p {
-          line-height: 1rem;
-          span {
-            color: $after-work-secondary;
-            background: $after-work-reverse;
-          }
-        }
-      }
-    }
-    @media screen and (min-width: 767px) {
-      p {
-        font-size: 1.4rem;
-        line-height: 2rem;
-      }
-      section.situation {
-        h2 {
-          font-size: 2.4rem;
-        }
-        p {
-          font-size: 1.8rem;
-          line-height: 2.6rem;
-          max-width: 75%;
-        }
-      }
-    }
-  }
-
-  section.what-next {
-    background: $after-work-reverse !important;
-    color: $after-work-primary;
-  }
-  section.methods {
-    background: #e6e6e6;
-    div {
-      background: $after-work-primary;
-      h2 {
-        font-size: 1.6rem;
-      }
-      p {
-        a {
-        }
-      }
-    }
-  }
-
-}
-
-// Experiment page AND index
-
-.after-work_index,
-#life-after-work {
-  font-family: 'Arimo', sans-serif;
-  background: darken($after-work-primary, 10%);
-  color: $after-work-reverse;
-  article {
-    background: $after-work-primary;
-    h1 {
-      span {
-        background: $after-work-reverse;
-        color: $after-work-secondary;
-      }
-    }
-  }
-
-}
-
-// Just index page
-#life-after-work {
-  article {
-    h1 span {
-      font-size: 2.4rem;
-      line-height: 3rem;
-    }
-    section.situation {
-      p {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-
-      }
-    }
-    p, blockquote {
-      line-height: 1.6rem;
     }
   }
 }
