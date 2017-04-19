@@ -1,31 +1,29 @@
 ---
 title: Digital product research
 ---
-<div class="offer-pg-cont">
-
-  <div id="projects" class="offer-pg">
+  <div id="projects">
     <div class="project" id="project-connected-devices">
-      <a href="connected" class="scroll-container" title="Read about our experiment into connected devices">
+      <a href="connected" title="Read about our experiment into connected devices">
         <%= partial('partials/experiment/connected-devices') %>
       </a>
     </div>
     <div class="project" id="project-protect-together">
-      <a href="group-trust" class="scroll-container" title="Read about our experiment into protecting your stuff as a group">
+      <a href="group-trust" title="Read about our experiment into protecting your stuff as a group">
         <%= partial('partials/experiment/group-trust') %>
       </a>
     </div>
     <div class="project" id="project-financial-freedom">
-      <a href="financial-freedom" class="scroll-container" title="Read about our experiment into financial freedom through early planning">
+      <a href="financial-freedom" title="Read about our experiment into financial freedom through early planning">
         <%= partial('partials/experiment/financial-freedom') %>
       </a>
     </div>
     <div class="project" id="project-terms-reviewers">
-      <a href="terms" class="scroll-container" title="Read about our experiment into the terms and conditions behind connected devices">
+      <a href="terms" title="Read about our experiment into the terms and conditions behind connected devices">
         <%= partial('partials/experiment/terms-reviewers') %>
       </a>
     </div>
     <div class="project" id="project-locally">
-      <a href="locally" class="scroll-container" title="Read about our experiment into keeping money in the local economy">
+      <a href="locally" title="Read about our experiment into keeping money in the local economy">
         <%= partial('partials/experiment/locally') %>
       </a>
     </div>
@@ -36,34 +34,31 @@ title: Digital product research
     </div>
 
     <div class="project" id="project-connected-devices">
-      <a href="connected" class="scroll-container">
+      <a href="connected">
         <%= partial('partials/experiment/connected-devices') %>
       </a>
     </div>
     <div class="project" id="project-protect-together">
-      <a href="group-trust" class="scroll-container">
+      <a href="group-trust">
         <%= partial('partials/experiment/group-trust') %>
       </a>
     </div>
     <div class="project" id="project-financial-freedom">
-      <a href="financial-freedom" class="scroll-container">
+      <a href="financial-freedom">
         <%= partial('partials/experiment/financial-freedom') %>
       </a>
     </div>
     <div class="project" id="project-terms-reviewers">
-      <a href="terms" class="scroll-container">
+      <a href="terms">
         <%= partial('partials/experiment/terms-reviewers') %>
       </a>
     </div>
     <div class="project" id="project-locally">
-      <a href="locally" class="scroll-container">
+      <a href="locally">
         <%= partial('partials/experiment/locally') %>
       </a>
     </div>
   </div>
-
-
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -71,7 +66,7 @@ title: Digital product research
 
         //cache our items and containers
         var items = $(".project");
-        var scrollContainer = $(".offer-pg-cont");
+        var scrollContainer = $("#projects");
 
 
         /**

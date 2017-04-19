@@ -17,6 +17,7 @@ body {
 .index {
   display: block;
   height: 100%;
+  overflow-x: auto;
 }
 
 img {
@@ -125,34 +126,34 @@ body.about_index {
 
 // Index layout
 
-.offer-pg-cont{
-    overflow-x: auto;
-}
 
 #projects {
-  display: table;
+  overflow-x: auto;
+  display: flex;
   width: auto;
-  overflow: hidden;
-  height: calc(100% - 42px);
-  margin-top: 42px;
-
-  counter-reset: project-count;
+  margin-top: 4rem;
+  height: calc(100% - 5rem);
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 767px) {
     overflow: visible;
     height: auto;
 
   }
+  &:last-child {
+    margin-right: 1rem;
+  }
   .project {
-    display: table-cell;
+    // display: table-cell;
     position: relative;
-    vertical-align: top;
+    // vertical-align: top;
     width: 330px;
     min-width: 330px;
     max-width: 330px;
+    margin-left: 1rem;
 
-    border-left: solid #efefef 20px;
-    border-top: solid #efefef 20px;
+    // border-left: solid #efefef 20px;
+    // border-top: solid #efefef 20px;
 
     border-radius: 0.2rem;
     overflow: hidden;
@@ -165,9 +166,7 @@ body.about_index {
   }
 
   a {
-    &.scroll-container {
       color: inherit;
-      height: calc(100vh - 84px);
       display: block;
       overflow: hidden;
       position: relative;
@@ -215,7 +214,6 @@ body.about_index {
           background-color: rgba(0, 0, 0, 0.1);
         }
       }
-    }
   }
 
 }
