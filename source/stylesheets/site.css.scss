@@ -23,7 +23,7 @@ body {
 img {
   max-width: 100%;
   min-width: 100%;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
 }
 
 time {
@@ -140,7 +140,7 @@ body.about_index {
     height: auto;
 
   }
-  &:last-child {
+  > div:last-of-type {
     margin-right: 1rem;
   }
   .project {
