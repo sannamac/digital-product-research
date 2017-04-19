@@ -16,8 +16,11 @@
   <body class="<%= page_classes %>">
     <div id="top">
       <header id="topnav">
-        <%= link_to 'Digital Product Research', 'index.html' %><span>We’re a team at Co-op Digital and this is the archive of our experiments</span>
-        <%= link_to 'About', 'about' %>
+        <%= link_to 'Digital Product Research', 'index.html' %><span>We’re a team at Co-op Digital and this is the archive of our experiments&hellip; <%= link_to 'Read more', 'about' %></span>
+        <nav>
+          <span class='arrow-left'>&larr;</span>
+          <span class='arrow-right'>&rarr;</span>
+        </nav>
       </header>
     </div>
     <%= yield %>
