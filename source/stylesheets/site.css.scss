@@ -308,7 +308,6 @@ body {
 
 // These are consistent styles across all experiment pages
 body:not(.index):not(.about_index) {
-  margin-top: 42px;
   @media screen and (min-width: 767px) {
     font-size: 24px;
     line-height: 1.4;
@@ -325,9 +324,10 @@ body:not(.index):not(.about_index) {
     color: inherit;
   }
   article {
-    padding: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
     @media screen and (min-width: 767px) {
+      padding: 2rem;
       float: right;
       width: 60%;
       > section {
@@ -372,8 +372,10 @@ body:not(.index):not(.about_index) {
       > section {
         margin-bottom: 4rem;
         &.situation {
-          font-size: 2.2rem;
-          font-weight: 400;
+          @media screen and (min-width: 767px) {
+            font-size: 2.2rem;
+            font-weight: 400;
+          }
         }
         &:last-of-type {
           margin-bottom: 2rem;
@@ -432,7 +434,7 @@ body:not(.index):not(.about_index) {
         border-radius: 0.4rem;
         padding-top: 2rem;
         background: #d0d0d0;
-        border: 1px solid #199b7e;
+        border: 1px solid black;
         @media screen and (min-width: 767px) and (max-width: 1200px) {
           width: 120%;
           iframe {
@@ -492,9 +494,15 @@ body:not(.index):not(.about_index) {
   }
 
   section.methods {
-    padding: 4rem 0;
+    padding: 1rem 0;
+    @media screen and (min-width: 767px) {
+      padding: 2rem 0;
+    }
     div {
+      box-sizing: border-box;
+      padding: 1rem;
       @media screen and (min-width: 767px) {
+        padding: 2rem;
         width: 60%;
         margin: 0 auto;
         float: right;
@@ -504,8 +512,6 @@ body:not(.index):not(.about_index) {
           padding-right: 10%;
         }
       }
-      box-sizing: border-box;
-      padding: 2rem;
     }
   }
 
