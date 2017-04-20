@@ -385,18 +385,6 @@ body:not(.index):not(.about_index) {
           }
           
         }
-        &:last-of-type {
-          > p {
-            &:last-of-type {
-              &:after {
-                content: '⇥';
-                opacity: 0.5;
-                position: relative;
-                display: inline;
-              }
-            }
-          }
-        }
 
         &.situation {
           @media screen and (min-width: 767px) {
