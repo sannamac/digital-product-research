@@ -32,24 +32,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: auto;
 }
 
-
-header#topnav {
-  width: 100%;
-  font-family: $sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  box-sizing: border-box;
-  @media screen and (min-width: 766px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-}
-
 div#wip {
   position: fixed;
   padding: 0rem 1.2rem;
@@ -69,8 +51,22 @@ div#wip {
 }
 
 header#topnav {
+  width: 100%;
+  font-family: $sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  box-sizing: border-box;
   line-height: 55px;
   padding: 0.2rem 1.2rem;
+  @media screen and (min-width: 766px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
   a, a:active, a:visited {
     color: inherit;
     font-weight: 500;
