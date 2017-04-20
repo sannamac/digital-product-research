@@ -32,15 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: auto;
 }
 
-div#top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
 
-div#wip,
 header#topnav {
   width: 100%;
   font-family: $sans-serif;
@@ -49,6 +41,13 @@ header#topnav {
   font-variant: normal;
   font-weight: 400;
   box-sizing: border-box;
+  @media screen and (min-width: 766px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
 }
 
 div#wip {
@@ -95,8 +94,11 @@ header#topnav {
     }
   }
   nav {
-    display: inline;
     float: right;
+    display: none;
+    @media screen and (min-width: 766px) {
+      display: inline;
+    }
     span {
       cursor: pointer;
       padding: 0.4rem 1rem;
@@ -133,34 +135,30 @@ body.about_index {
 
 
 #projects {
-  overflow-x: auto;
-  display: flex;
-  width: auto;
-  margin-top: 4rem;
-  height: calc(100% - 5rem);
-  margin-bottom: 1rem;
-
-  @media screen and (max-width: 767px) {
-    overflow: visible;
-    height: auto;
-
+  overflow: visible;
+  height: auto;
+  @media screen and (min-width: 767px) {
+    display: flex;
+    overflow-x: auto;
+    width: auto;
+    margin-top: 4rem;
+    height: calc(100% - 5rem);
+    margin-bottom: 1rem;
   }
   > div:last-of-type {
     margin-right: 1rem;
   }
   .project {
     position: relative;
-    width: 330px;
-    min-width: 330px;
-    max-width: 330px;
-    margin-left: 1rem;
+    margin: 0 1rem 1rem 1rem;
     border-radius: 0.2rem;
     overflow: hidden;
     background: white;
-    @media screen and (max-width: 767px) {
-      display: block;
-      width: inherit;
-      max-width: inherit;
+    @media screen and (min-width: 767px) {
+      width: 330px;
+      min-width: 330px;
+      max-width: 330px;
+      margin: 0 0 0 1rem;
     }
 
   }
@@ -243,11 +241,6 @@ body {
   li {
     margin-bottom: 0.6rem;
   }
-  p, blockquote, h2, h3 {
-    @media screen and (min-width: 767px) {
-      width: 80%;
-    }
-  }
   article {
     section {
       header {
@@ -312,7 +305,6 @@ body {
     }
 
   }
-
 }
 
 // These are consistent styles across all experiment pages
@@ -323,6 +315,11 @@ body:not(.index):not(.about_index) {
     line-height: 1.4;
     h1, h2 {
       line-height: 1.2;
+    }
+    p, blockquote, h2, h3 {
+      @media screen and (min-width: 767px) {
+        width: 80%;
+      }
     }
   }
   a {
