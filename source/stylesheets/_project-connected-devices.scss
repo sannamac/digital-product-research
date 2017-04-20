@@ -1,0 +1,62 @@
+$colour-project-connected-devices: $base-thumb;
+
+body {
+  &.index {
+    #project-connected-devices {
+      > a > article {
+        background: $colour-project-connected-devices;
+        header.project-title {
+          h1 {
+            span {
+              background: darken($colour-project-connected-devices, 15%);
+            }
+          }
+        }
+        > section > section {
+          &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+            &:after {
+              color: darken($colour-project-connected-devices, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.connected_index {
+    background: darken($colour-project-connected-devices, 4%);
+    header#topnav {
+      background: darken($colour-project-connected-devices, 15%);
+    }
+    header.project-title {
+      h1 {
+        span {
+          background: darken($colour-project-connected-devices, 15%);
+        }
+      }
+    }
+    > article {
+      > section > section {
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+          &:after {
+            color: darken($colour-project-connected-devices, 10%);
+          }
+        }
+      }
+    }
+    > article, > section > div {
+      background: $colour-project-connected-devices;
+    }
+    > section {
+      &.what-next {
+        background: darken($colour-project-connected-devices, 20%);
+      }
+    }
+    blockquote.pull-quote {
+      h1 {
+        span {
+          background: darken($colour-project-connected-devices, 15%);
+        }
+      }
+    }
+  }
+}

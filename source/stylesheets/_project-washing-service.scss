@@ -1,0 +1,62 @@
+$colour-project-washing-service: $base-tan;
+
+body {
+  &.index {
+    #project-washing-service {
+      > a > article {
+        background: $colour-project-washing-service;
+        header.project-title {
+          h1 {
+            span {
+              background: darken($colour-project-washing-service, 15%);
+            }
+          }
+        }
+        > section > section {
+          &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+            &:after {
+              color: darken($colour-project-washing-service, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.washing-service_index {
+    background: darken($colour-project-washing-service, 4%);
+    header#topnav {
+      background: darken($colour-project-washing-service, 15%);
+    }
+    header.project-title {
+      h1 {
+        span {
+          background: darken($colour-project-washing-service, 15%);
+        }
+      }
+    }
+    > article {
+      > section > section {
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+          &:after {
+            color: darken($colour-project-washing-service, 10%);
+          }
+        }
+      }
+    }
+    > article, > section > div {
+      background: $colour-project-washing-service;
+    }
+    > section {
+      &.what-next {
+        background: darken($colour-project-washing-service, 20%);
+      }
+    }
+    blockquote.pull-quote {
+      h1 {
+        span {
+          background: darken($colour-project-washing-service, 15%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+$colour-project-financial-freedom: $base-cadillac;
+
+body {
+  &.index {
+    #project-financial-freedom {
+      > a > article {
+        background: $colour-project-financial-freedom;
+        header.project-title {
+          h1 {
+            span {
+              background: darken($colour-project-financial-freedom, 15%);
+            }
+          }
+        }
+        > section > section {
+          &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+            &:after {
+              color: darken($colour-project-financial-freedom, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.financial-freedom_index {
+    background: darken($colour-project-financial-freedom, 4%);
+    header#topnav {
+      background: darken($colour-project-financial-freedom, 15%);
+    }
+    header.project-title {
+      h1 {
+        span {
+          background: darken($colour-project-financial-freedom, 15%);
+        }
+      }
+    }
+    > article {
+      > section > section {
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+          &:after {
+            color: darken($colour-project-financial-freedom, 10%);
+          }
+        }
+      }
+    }
+    > article, > section > div {
+      background: $colour-project-financial-freedom;
+    }
+    > section {
+      &.what-next {
+        background: darken($colour-project-financial-freedom, 20%);
+      }
+    }
+    blockquote.pull-quote {
+      h1 {
+        span {
+          background: darken($colour-project-financial-freedom, 15%);
+        }
+      }
+    }
+  }
+}
