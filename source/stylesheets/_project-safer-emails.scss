@@ -40,7 +40,7 @@ body {
   &.safer-emails_index {
     background: darken($colour-project-safer-emails, 4%);
     header#topnav {
-      background: darken($colour-project-safer-emails, 15%);
+      background: darken($colour-project-safer-emails, 10%);
     }
     header.project-title {
       h1 {
@@ -63,14 +63,12 @@ body {
     }
     > section {
       &.what-next {
-        background: darken($colour-project-safer-emails, 20%);
+        background: darken($colour-project-safer-emails, 15%);
       }
     }
     blockquote.pull-quote {
-      h1 {
-        span {
-          background: darken($colour-project-safer-emails, 15%);
-        }
+      span {
+        background: darken($colour-project-safer-emails, 10%);
       }
     }
   }
