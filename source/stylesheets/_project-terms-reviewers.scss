@@ -1,0 +1,62 @@
+$colour-project-terms-reviewers: $base-kashmir;
+
+body {
+  &.index {
+    #project-terms-reviewers {
+      > a > article {
+        background: $colour-project-terms-reviewers;
+        header.project-title {
+          h1 {
+            span {
+              background: darken($colour-project-terms-reviewers, 15%);
+            }
+          }
+        }
+        > section > section {
+          &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+            &:after {
+              color: darken($colour-project-terms-reviewers, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.terms_index {
+    background: darken($colour-project-terms-reviewers, 4%);
+    header#topnav {
+      background: darken($colour-project-terms-reviewers, 15%);
+    }
+    header.project-title {
+      h1 {
+        span {
+          background: darken($colour-project-terms-reviewers, 15%);
+        }
+      }
+    }
+    > article {
+      > section > section {
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+          &:after {
+            color: darken($colour-project-terms-reviewers, 10%);
+          }
+        }
+      }
+    }
+    > article, > section > div {
+      background: $colour-project-terms-reviewers;
+    }
+    > section {
+      &.what-next {
+        background: darken($colour-project-terms-reviewers, 20%);
+      }
+    }
+    blockquote.pull-quote {
+      h1 {
+        span {
+          background: darken($colour-project-terms-reviewers, 15%);
+        }
+      }
+    }
+  }
+}

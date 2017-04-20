@@ -5,6 +5,9 @@ $serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "Deja
 $sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 $monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
+$base-black: #282828;
+$base-grey: #F3F4F6;
+
 $base-cadillac: #9f4d73;
 $base-meteorite: #4B2574;
 $base-biscay: #1c3b6b;
@@ -15,6 +18,14 @@ $base-oregon: #9e3705;
 $base-tan: #610F1A;
 
 @import "project-shared-energy";
+@import "project-financial-freedom";
+@import "project-life-after-work";
+@import "project-protect-together";
+@import "project-terms-reviewers";
+@import "project-connected-devices";
+@import "project-connected-devices";
+@import "project-locally";
+@import "project-washing-service";
 
 
 /* general
@@ -22,7 +33,7 @@ $base-tan: #610F1A;
 html {
   overflow-y: scroll;
   height:100%;
-  background: #efefef;
+  background: $base-grey;
   text-rendering: optimizeLegibility;
 }
 
@@ -92,13 +103,13 @@ header#topnav {
     span {
       cursor: pointer;
       padding: 0.4rem 1rem;
-      border: 1px solid black;
+      border: 1px solid $base-black;
       box-sizing: border-box;
       &:hover {
         background: rgba(0,0,0,0.1)
       }
       &:active {
-        background: black;
+        background: $base-black;
         color: white;
       }
     }
@@ -220,7 +231,7 @@ body:not(.index) {
     span {
       display: none;
     }
-    background: black;
+    background: $base-black;
     color: white;
   }
 }
@@ -237,7 +248,7 @@ body {
         &.project-title {
           h1 {
             span {
-              background: black;
+              background: $base-black;
               color: white;
               line-height: 2.6rem;
             }
@@ -418,7 +429,7 @@ body:not(.index):not(.about_index) {
     }
     p {
       span {
-        background: black;
+        background: $base-black;
         color: white;
       }
     }
@@ -451,7 +462,7 @@ body:not(.index):not(.about_index) {
         border-radius: 0.4rem;
         padding-top: 2rem;
         background: #d0d0d0;
-        border: 1px solid black;
+        border: 1px solid $base-black;
         @media screen and (min-width: 767px) and (max-width: 1200px) {
           width: 120%;
           iframe {
@@ -467,7 +478,7 @@ body:not(.index):not(.about_index) {
         }
         > div.frame {
           @media screen and (min-width: 767px) {
-            background: black;
+            background: $base-black;
             padding: 4rem 1rem;
             border-radius: 2rem;
             max-width: 400px;

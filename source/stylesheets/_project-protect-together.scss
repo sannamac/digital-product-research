@@ -1,0 +1,62 @@
+$colour-project-protect-together: $base-biscay;
+
+body {
+  &.index {
+    #project-protect-together {
+      > a > article {
+        background: $colour-project-protect-together;
+        header.project-title {
+          h1 {
+            span {
+              background: darken($colour-project-protect-together, 15%);
+            }
+          }
+        }
+        > section > section {
+          &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+            &:after {
+              color: darken($colour-project-protect-together, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.group-trust_index {
+    background: darken($colour-project-protect-together, 4%);
+    header#topnav {
+      background: darken($colour-project-protect-together, 15%);
+    }
+    header.project-title {
+      h1 {
+        span {
+          background: darken($colour-project-protect-together, 15%);
+        }
+      }
+    }
+    > article {
+      > section > section {
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+          &:after {
+            color: darken($colour-project-protect-together, 10%);
+          }
+        }
+      }
+    }
+    > article, > section > div {
+      background: $colour-project-protect-together;
+    }
+    > section {
+      &.what-next {
+        background: darken($colour-project-protect-together, 20%);
+      }
+    }
+    blockquote.pull-quote {
+      h1 {
+        span {
+          background: darken($colour-project-protect-together, 15%);
+        }
+      }
+    }
+  }
+}
