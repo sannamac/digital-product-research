@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import "normalize";
 
+$serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
 /* general
 --------------------------------------------------*/
 html {
@@ -14,6 +18,12 @@ body {
   overflow: auto;
   font-size: 16px;
   line-height: 1.4;
+  font-family: $sans-serif; 
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
 }
 
 .index {
@@ -33,7 +43,7 @@ div#top {
 div#wip,
 header#topnav {
   width: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $sans-serif;
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -107,12 +117,15 @@ header#topnav {
 
 body.about_index {
   margin-top: 42px;
-  article {
-    padding: 0.2rem 1.2rem;
-    max-width: 800px;
-    font-size: 2.4rem;
-    line-height: 3.4rem;
-    margin-bottom: 8rem;
+  @media screen and (min-width: 767px) {
+    article {
+      font-size: 24px;
+      padding: 2rem 1.2rem;
+      max-width: 600px;
+      a {
+        color: inherit;
+      }
+    }
   }
 }
 
@@ -175,6 +188,7 @@ body.about_index {
         section {
           &.situation {
             font-size: 1.2rem;
+            font-weight: 500;
           }
         }
         @media screen and (max-width: 767px) {
@@ -218,6 +232,8 @@ body:not(.index) {
     span {
       display: none;
     }
+    background: black;
+    color: white;
   }
 }
 
@@ -253,6 +269,7 @@ body {
         }
       }
       blockquote {
+        font-family: $serif;
         quotes: "\201C""\201D";
         margin: 1.5rem 10px;
         padding: 0.5em 10px;
@@ -277,9 +294,10 @@ body {
         footer {
           opacity: 0.4;
           max-width: 260px;
+          font-family: $sans-serif;
           font-size: 1rem;
           cite {
-            font-style: inherit;
+            font-style: normal;
           }
         }
       }
@@ -356,6 +374,7 @@ body:not(.index):not(.about_index) {
         margin-bottom: 4rem;
         &.situation {
           font-size: 2.2rem;
+          font-weight: 400;
         }
         &:last-of-type {
           margin-bottom: 2rem;
@@ -509,21 +528,3 @@ body:not(.index):not(.about_index) {
     }
   }
 }
-
-.offer-pg-cont{
-    overflow-x: auto;
-}
-
-
-span.arrow-left,span.arrow-right{
-}
-span.arrow-left{
-    left: 0px;
-}
-span.arrow-right{
-    right: 0px;
-}
-span.arrow-left:hover,.offer-pg span.arrow-right:hover{
-    background-color: #333;
-}
-
