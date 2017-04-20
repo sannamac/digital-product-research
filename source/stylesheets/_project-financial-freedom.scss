@@ -3,6 +3,21 @@ $colour-project-financial-freedom: $base-cadillac;
 body {
   &.index {
     #project-financial-freedom {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-financial-freedom,0), $colour-project-financial-freedom, $colour-project-financial-freedom);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-financial-freedom, 4%),0), darken($colour-project-financial-freedom, 4%), darken($colour-project-financial-freedom, 4%));
+            }
+              > article {
+                background: darken($colour-project-financial-freedom, 4%);
+              }
+          }
+        }
+      }
       > a > article {
         background: $colour-project-financial-freedom;
         header.project-title {

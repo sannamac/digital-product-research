@@ -3,6 +3,21 @@ $colour-project-protect-together: $base-biscay;
 body {
   &.index {
     #project-protect-together {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-protect-together,0), $colour-project-protect-together, $colour-project-protect-together);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-protect-together, 4%),0), darken($colour-project-protect-together, 4%), darken($colour-project-protect-together, 4%));
+            }
+              > article {
+                background: darken($colour-project-protect-together, 4%);
+              }
+          }
+        }
+      }
       > a > article {
         background: $colour-project-protect-together;
         header.project-title {

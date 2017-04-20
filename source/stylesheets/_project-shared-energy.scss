@@ -3,6 +3,21 @@ $colour-project-shared-energy: $base-surfie;
 body {
   &.index {
     #project-shared-energy {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-shared-energy,0), $colour-project-shared-energy, $colour-project-shared-energy);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-shared-energy, 4%),0), darken($colour-project-shared-energy, 4%), darken($colour-project-shared-energy, 4%));
+            }
+              > article {
+                background: darken($colour-project-shared-energy, 4%);
+              }
+          }
+        }
+      }
       > a > article {
         background: $colour-project-shared-energy;
         header.project-title {

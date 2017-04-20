@@ -105,9 +105,6 @@ header#topnav {
       padding: 0.4rem 1rem;
       border: 1px solid $base-black;
       box-sizing: border-box;
-      &:hover {
-        background: rgba(0,0,0,0.1)
-      }
       &:active {
         background: $base-black;
         color: white;
@@ -160,22 +157,37 @@ body.about_index {
       max-width: 330px;
       margin: 0 0 0 1rem;
     }
+    a {
+      color: inherit;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      color: white;
+      @media screen and (min-width: 767px) {
+        &:after {
+          content: 'Read more →';
+          color: white;
+          display: block;
+          position: absolute;
+          top: calc(100vh - 17rem);
+          left: 0;
+          width: 100%;
+          height: 12rem;
+          box-sizing: border-box;
+          padding: 1.2rem;
+          line-height: 18;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        overflow-y: hidden;
+        height: inherit;
+        display: block;
+      }
 
   }
 
-  a {
-    color: inherit;
-    display: block;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    color: white;
-
-    @media screen and (max-width: 767px) {
-      overflow-y: hidden;
-      height: inherit;
-      display: block;
-    }
 
     // Index experiment styles
 

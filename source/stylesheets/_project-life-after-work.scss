@@ -3,6 +3,21 @@ $colour-project-life-after-work: $base-meteorite;
 body {
   &.index {
     #project-life-after-work {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-life-after-work,0), $colour-project-life-after-work, $colour-project-life-after-work);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-life-after-work, 4%),0), darken($colour-project-life-after-work, 4%), darken($colour-project-life-after-work, 4%));
+            }
+              > article {
+                background: darken($colour-project-life-after-work, 4%);
+              }
+          }
+        }
+      }
       > a > article {
         background: $colour-project-life-after-work;
         header.project-title {

@@ -3,6 +3,21 @@ $colour-project-terms-reviewers: $base-kashmir;
 body {
   &.index {
     #project-terms-reviewers {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-terms-reviewers,0), $colour-project-terms-reviewers, $colour-project-terms-reviewers);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-terms-reviewers, 4%),0), darken($colour-project-terms-reviewers, 4%), darken($colour-project-terms-reviewers, 4%));
+            }
+              > article {
+                background: darken($colour-project-terms-reviewers, 4%);
+              }
+          }
+        }
+      }
       > a > article {
         background: $colour-project-terms-reviewers;
         header.project-title {
