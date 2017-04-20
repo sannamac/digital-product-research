@@ -5,27 +5,22 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500|Playfair+Display|Overpass:400,700|Nunito:400,700|Arimo:400,700" rel="stylesheet">
-
     <title><%= current_page.data.title || "Digital product research" %></title>
-    <meta name="description"><%= current_page.data.desc || "Digital product research" %></meta>
-    <meta name="author"><%= current_page.data.auth || "Digital product research team at Co-op Digital" %></meta>
-
+    <meta name="description" content="<%= current_page.data.desc || "Digital product research" %>">
+    <meta name="author" content="<%= current_page.data.auth || "Digital product research team at Co-op Digital" %>">
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
   </head>
 
   <body class="<%= page_classes %>">
-    <div id="top">
-      <header id="topnav">
-        <%= link_to 'Digital Product Research', 'index.html' %><span>We’re a team at Co-op Digital and this is the archive of our experiments&hellip; <%= link_to 'Read more', 'about' %></span>
-        <nav>
-          <span class='arrow-left'>&larr;</span>
-          <span class='arrow-right'>&rarr;</span>
-        </nav>
-      </header>
-    </div>
+    <header id="topnav">
+      <%= link_to 'Digital Product Research', 'index.html' %><span>We’re a team at Co-op Digital and this is the archive of our experiments&hellip; <%= link_to 'Read more', 'about' %></span>
+      <nav>
+        <span class='arrow-left'>&larr;</span>
+        <span class='arrow-right'>&rarr;</span>
+      </nav>
+    </header>
     <%= yield %>
     <div id="wip">This is a work in progress: <a href="https://docs.google.com/a/coopdigital.co.uk/forms/d/e/1FAIpQLSeD4Fbz0-RI8ltn_cuP7Xrcce4gr5hAEn0saGV_ELoAvL3oQw/viewform?usp=sf_link" target="_blank">Give feedback</a></div>
   </body>
