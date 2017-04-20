@@ -56,16 +56,15 @@ div#wip {
   color: #774d00;
   border-bottom: 1px solid #D08600;
   line-height: 28px;
-  a {
-    color: white;
-  }
-
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   border-radius: 0.2rem;
   width: auto;
   box-shadow: 0 2px 2px 2px rgba(0,0,0,0.1);
+  a {
+    color: white;
+  }
 }
 
 header#topnav {
