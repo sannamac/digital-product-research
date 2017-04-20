@@ -49,12 +49,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-.index {
-  display: block;
-  height: 100%;
-  overflow-x: auto;
-}
-
 header#topnav {
   width: 100%;
   font-family: $sans-serif;
@@ -111,6 +105,24 @@ header#topnav {
       &:active {
         background: $base-black;
         color: white;
+      }
+    }
+  }
+}
+
+.index {
+  display: block;
+  height: 100%;
+  overflow-x: auto;
+  header#topnav {
+    margin-bottom: 1rem;
+    @media screen and (max-width: 766px) {
+      font-size: 1.2rem;
+      span {
+        line-height: 1.4;
+        a {
+          display: block;
+        }
       }
     }
   }
