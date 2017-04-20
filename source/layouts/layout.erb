@@ -8,9 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500|Playfair+Display|Overpass:400,700|Nunito:400,700|Arimo:400,700" rel="stylesheet">
 
     <title><%= current_page.data.title || "Digital product research" %></title>
-    <meta name="description"><%= current_page.data.desc || "Digital product research" %></meta>
-    <meta name="author"><%= current_page.data.auth || "Digital product research team at Co-op Digital" %></meta>
-
+    <meta name="description" content="<%= current_page.data.desc || "Digital product research" %>">
+    <meta name="author" content="<%= current_page.data.auth || "Digital product research team at Co-op Digital" %>">
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
