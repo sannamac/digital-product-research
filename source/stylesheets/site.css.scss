@@ -344,14 +344,40 @@ body:not(.index):not(.about_index) {
         margin-top: 0.8rem;
       }
     }
-    section {
+    > section {
 
       > section {
-        margin-bottom: 4rem;
+        position: relative;
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+
+          &:after {
+            content: '⩗⩘ ⩗⩘ ⩗⩘';
+            opacity: 0.2;
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 2rem 0;
+          }
+          
+        }
+        &:last-of-type {
+          > p {
+            &:last-of-type {
+              &:after {
+                content: '⇥';
+                opacity: 0.2;
+                position: relative;
+                display: inline;
+              }
+            }
+          }
+        }
+
         &.situation {
           @media screen and (min-width: 767px) {
             font-size: 2.2rem;
             font-weight: 400;
+            margin-bottom: 4rem;
           }
         }
         &:last-of-type {
