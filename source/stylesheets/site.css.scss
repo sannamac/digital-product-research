@@ -326,13 +326,16 @@ body:not(.index):not(.about_index) {
   @media screen and (min-width: 767px) {
     font-size: 24px;
     line-height: 1.4;
-    h1, h2 {
+  }
+  h1, h2 {
+    @media screen and (min-width: 767px) {
       line-height: 1.2;
     }
-    p, blockquote, h2, h3 {
-      @media screen and (min-width: 767px) {
-        width: 80%;
-      }
+  }
+  p, blockquote, h2, h3 {
+    width: 90%;
+    @media screen and (min-width: 767px) {
+      width: 80%;
     }
   }
   a {
@@ -357,6 +360,7 @@ body:not(.index):not(.about_index) {
           z-index: 1;
         }
         h1 {
+          width: 90%;
           @media screen and (min-width: 767px) {
             margin-top: 6rem;
             span {
