@@ -554,6 +554,13 @@ body.washing-service_index {
   body.washing-service_index blockquote.pull-quote h1 span {
     background: #1f0508; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-safer-emails > a:before {
+    background: linear-gradient(180deg, rgba(64, 106, 145, 0), #406A91, #406A91); }
+  body.index #project-safer-emails > a:hover:before {
+    background: linear-gradient(180deg, rgba(58, 96, 131, 0), #3a6083, #3a6083); }
+  body.index #project-safer-emails > a:hover > a > article {
+    background: #3a6083; } }
 body.index #project-safer-emails > a > article {
   background: #406A91; }
   body.index #project-safer-emails > a > article header.project-title h1 span {
@@ -643,8 +650,6 @@ header#topnav {
       padding: 0.4rem 1rem;
       border: 1px solid #282828;
       box-sizing: border-box; }
-      header#topnav nav span:hover {
-        background: rgba(0, 0, 0, 0.1); }
       header#topnav nav span:active {
         background: #282828;
         color: white; }
@@ -691,6 +696,19 @@ body.about_index {
     position: relative;
     text-decoration: none;
     color: white; }
+    @media screen and (min-width: 767px) {
+      #projects a:before {
+        content: 'Read more →';
+        color: white;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 8rem;
+        box-sizing: border-box;
+        padding: 1.2rem;
+        line-height: 10; } }
     @media screen and (max-width: 767px) {
       #projects a {
         overflow-y: hidden;
