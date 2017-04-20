@@ -3,6 +3,21 @@ $colour-project-locally: $base-oregon;
 body {
   &.index {
     #project-locally {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-locally,0), $colour-project-locally, $colour-project-locally);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-locally, 4%),0), darken($colour-project-locally, 4%), darken($colour-project-locally, 4%));
+            }
+              > article {
+                background: darken($colour-project-locally, 4%);
+              }
+          }
+        }
+      }
       > a > article {
         background: $colour-project-locally;
         header.project-title {

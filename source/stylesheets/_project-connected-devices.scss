@@ -3,6 +3,21 @@ $colour-project-connected-devices: $base-thumb;
 body {
   &.index {
     #project-connected-devices {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-connected-devices,0), $colour-project-connected-devices, $colour-project-connected-devices);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-connected-devices, 4%),0), darken($colour-project-connected-devices, 4%), darken($colour-project-connected-devices, 4%));
+            }
+              > article {
+                background: darken($colour-project-connected-devices, 4%);
+              }
+          }
+        }
+      }
       > a > article {
         background: $colour-project-connected-devices;
         header.project-title {

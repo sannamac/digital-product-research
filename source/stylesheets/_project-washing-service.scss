@@ -3,6 +3,21 @@ $colour-project-washing-service: $base-tan;
 body {
   &.index {
     #project-washing-service {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-washing-service,0), $colour-project-washing-service, $colour-project-washing-service);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-washing-service, 4%),0), darken($colour-project-washing-service, 4%), darken($colour-project-washing-service, 4%));
+            }
+              > article {
+                background: darken($colour-project-washing-service, 4%);
+              }
+          }
+        }
+      }
       > a > article {
         background: $colour-project-washing-service;
         header.project-title {
