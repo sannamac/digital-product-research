@@ -49,12 +49,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-.index {
-  display: block;
-  height: 100%;
-  overflow-x: auto;
-}
-
 header#topnav {
   width: 100%;
   font-family: $sans-serif;
@@ -116,18 +110,36 @@ header#topnav {
   }
 }
 
+.index {
+  display: block;
+  height: 100%;
+  overflow-x: auto;
+  header#topnav {
+    margin-bottom: 1rem;
+    @media screen and (max-width: 766px) {
+      span {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 // About index
 
 body.about_index {
-  margin-top: 42px;
-  @media screen and (min-width: 767px) {
-    article {
+  article {
+    padding: 1rem;
+    @media screen and (min-width: 767px) {
       font-size: 24px;
       padding: 2rem 1.2rem;
       max-width: 600px;
-      a {
-        color: inherit;
-      }
+    }
+    a {
+      color: inherit;
     }
   }
 }
@@ -314,13 +326,16 @@ body:not(.index):not(.about_index) {
   @media screen and (min-width: 767px) {
     font-size: 24px;
     line-height: 1.4;
-    h1, h2 {
+  }
+  h1, h2 {
+    @media screen and (min-width: 767px) {
       line-height: 1.2;
     }
-    p, blockquote, h2, h3 {
-      @media screen and (min-width: 767px) {
-        width: 80%;
-      }
+  }
+  p, blockquote, h2, h3 {
+    width: 90%;
+    @media screen and (min-width: 767px) {
+      width: 80%;
     }
   }
   a {
@@ -345,6 +360,7 @@ body:not(.index):not(.about_index) {
           z-index: 1;
         }
         h1 {
+          width: 90%;
           @media screen and (min-width: 767px) {
             margin-top: 6rem;
             span {
@@ -381,7 +397,10 @@ body:not(.index):not(.about_index) {
             position: relative;
             display: block;
             width: 100%;
-            padding: 2rem 0;
+            padding: 1rem 0;
+            @media screen and (min-width: 767px) {
+              padding: 2rem 0;
+            }
           }
           
         }
