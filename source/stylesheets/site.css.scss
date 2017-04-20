@@ -393,7 +393,10 @@ body:not(.index):not(.about_index) {
             position: relative;
             display: block;
             width: 100%;
-            padding: 2rem 0;
+            padding: 1rem 0;
+            @media screen and (min-width: 767px) {
+              padding: 2rem 0;
+            }
           }
           
         }
