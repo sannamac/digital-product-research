@@ -117,8 +117,8 @@ header#topnav {
   header#topnav {
     margin-bottom: 1rem;
     @media screen and (max-width: 766px) {
-      font-size: 1.2rem;
       span {
+        font-size: 1.2rem;
         line-height: 1.4;
         a {
           display: block;
@@ -131,15 +131,15 @@ header#topnav {
 // About index
 
 body.about_index {
-  margin-top: 42px;
-  @media screen and (min-width: 767px) {
-    article {
+  article {
+    padding: 1rem;
+    @media screen and (min-width: 767px) {
       font-size: 24px;
       padding: 2rem 1.2rem;
       max-width: 600px;
-      a {
-        color: inherit;
-      }
+    }
+    a {
+      color: inherit;
     }
   }
 }
