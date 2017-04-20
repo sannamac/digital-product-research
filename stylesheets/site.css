@@ -365,6 +365,13 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+@media screen and (min-width: 767px) {
+  body.index #project-shared-energy > a:after {
+    background: linear-gradient(180deg, rgba(17, 126, 128, 0), #117e80, #117e80); }
+  body.index #project-shared-energy > a:hover:after {
+    background: linear-gradient(180deg, rgba(15, 108, 110, 0), #0f6c6e, #0f6c6e); }
+  body.index #project-shared-energy > a:hover > article {
+    background: #0f6c6e; } }
 body.index #project-shared-energy > a > article {
   background: #117e80; }
   body.index #project-shared-energy > a > article header.project-title h1 span {
@@ -386,6 +393,13 @@ body.shared-energy_index {
   body.shared-energy_index blockquote.pull-quote h1 span {
     background: #083c3c; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-financial-freedom > a:after {
+    background: linear-gradient(180deg, rgba(159, 77, 115, 0), #9f4d73, #9f4d73); }
+  body.index #project-financial-freedom > a:hover:after {
+    background: linear-gradient(180deg, rgba(145, 70, 105, 0), #914669, #914669); }
+  body.index #project-financial-freedom > a:hover > article {
+    background: #914669; } }
 body.index #project-financial-freedom > a > article {
   background: #9f4d73; }
   body.index #project-financial-freedom > a > article header.project-title h1 span {
@@ -407,6 +421,13 @@ body.financial-freedom_index {
   body.financial-freedom_index blockquote.pull-quote h1 span {
     background: #6b344e; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-life-after-work > a:after {
+    background: linear-gradient(180deg, rgba(75, 37, 116, 0), #4B2574, #4B2574); }
+  body.index #project-life-after-work > a:hover:after {
+    background: linear-gradient(180deg, rgba(65, 32, 101, 0), #412065, #412065); }
+  body.index #project-life-after-work > a:hover > article {
+    background: #412065; } }
 body.index #project-life-after-work > a > article {
   background: #4B2574; }
   body.index #project-life-after-work > a > article header.project-title h1 span {
@@ -428,6 +449,13 @@ body.after-work_index {
   body.after-work_index blockquote.pull-quote h1 span {
     background: #26133a; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-protect-together > a:after {
+    background: linear-gradient(180deg, rgba(28, 59, 107, 0), #1c3b6b, #1c3b6b); }
+  body.index #project-protect-together > a:hover:after {
+    background: linear-gradient(180deg, rgba(24, 50, 91, 0), #18325b, #18325b); }
+  body.index #project-protect-together > a:hover > article {
+    background: #18325b; } }
 body.index #project-protect-together > a > article {
   background: #1c3b6b; }
   body.index #project-protect-together > a > article header.project-title h1 span {
@@ -449,6 +477,13 @@ body.group-trust_index {
   body.group-trust_index blockquote.pull-quote h1 span {
     background: #0c1a2e; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-terms-reviewers > a:after {
+    background: linear-gradient(180deg, rgba(64, 106, 145, 0), #406A91, #406A91); }
+  body.index #project-terms-reviewers > a:hover:after {
+    background: linear-gradient(180deg, rgba(58, 96, 131, 0), #3a6083, #3a6083); }
+  body.index #project-terms-reviewers > a:hover > article {
+    background: #3a6083; } }
 body.index #project-terms-reviewers > a > article {
   background: #406A91; }
   body.index #project-terms-reviewers > a > article header.project-title h1 span {
@@ -470,6 +505,13 @@ body.terms_index {
   body.terms_index blockquote.pull-quote h1 span {
     background: #29435c; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-connected-devices > a:after {
+    background: linear-gradient(180deg, rgba(46, 72, 52, 0), #2E4834, #2E4834); }
+  body.index #project-connected-devices > a:hover:after {
+    background: linear-gradient(180deg, rgba(38, 60, 43, 0), #263c2b, #263c2b); }
+  body.index #project-connected-devices > a:hover > article {
+    background: #263c2b; } }
 body.index #project-connected-devices > a > article {
   background: #2E4834; }
   body.index #project-connected-devices > a > article header.project-title h1 span {
@@ -491,6 +533,13 @@ body.connected_index {
   body.connected_index blockquote.pull-quote h1 span {
     background: #101912; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-connected-devices > a:after {
+    background: linear-gradient(180deg, rgba(46, 72, 52, 0), #2E4834, #2E4834); }
+  body.index #project-connected-devices > a:hover:after {
+    background: linear-gradient(180deg, rgba(38, 60, 43, 0), #263c2b, #263c2b); }
+  body.index #project-connected-devices > a:hover > article {
+    background: #263c2b; } }
 body.index #project-connected-devices > a > article {
   background: #2E4834; }
   body.index #project-connected-devices > a > article header.project-title h1 span {
@@ -512,6 +561,13 @@ body.connected_index {
   body.connected_index blockquote.pull-quote h1 span {
     background: #101912; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-locally > a:after {
+    background: linear-gradient(180deg, rgba(158, 55, 5, 0), #9e3705, #9e3705); }
+  body.index #project-locally > a:hover:after {
+    background: linear-gradient(180deg, rgba(138, 48, 4, 0), #8a3004, #8a3004); }
+  body.index #project-locally > a:hover > article {
+    background: #8a3004; } }
 body.index #project-locally > a > article {
   background: #9e3705; }
   body.index #project-locally > a > article header.project-title h1 span {
@@ -533,6 +589,13 @@ body.locally_index {
   body.locally_index blockquote.pull-quote h1 span {
     background: #541d03; }
 
+@media screen and (min-width: 767px) {
+  body.index #project-washing-service > a:after {
+    background: linear-gradient(180deg, rgba(97, 15, 26, 0), #610F1A, #610F1A); }
+  body.index #project-washing-service > a:hover:after {
+    background: linear-gradient(180deg, rgba(79, 12, 21, 0), #4f0c15, #4f0c15); }
+  body.index #project-washing-service > a:hover > article {
+    background: #4f0c15; } }
 body.index #project-washing-service > a > article {
   background: #610F1A; }
   body.index #project-washing-service > a > article header.project-title h1 span {
@@ -555,11 +618,11 @@ body.washing-service_index {
     background: #1f0508; }
 
 @media screen and (min-width: 767px) {
-  body.index #project-safer-emails > a:before {
+  body.index #project-safer-emails > a:after {
     background: linear-gradient(180deg, rgba(64, 106, 145, 0), #406A91, #406A91); }
-  body.index #project-safer-emails > a:hover:before {
+  body.index #project-safer-emails > a:hover:after {
     background: linear-gradient(180deg, rgba(58, 96, 131, 0), #3a6083, #3a6083); }
-  body.index #project-safer-emails > a:hover > a > article {
+  body.index #project-safer-emails > a:hover > article {
     background: #3a6083; } }
 body.index #project-safer-emails > a > article {
   background: #406A91; }
@@ -599,11 +662,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
-
-.index {
-  display: block;
-  height: 100%;
-  overflow-x: auto; }
 
 header#topnav {
   width: 100%;
@@ -654,15 +712,28 @@ header#topnav {
         background: #282828;
         color: white; }
 
-body.about_index {
-  margin-top: 42px; }
+.index {
+  display: block;
+  height: 100%;
+  overflow-x: auto; }
+  .index header#topnav {
+    margin-bottom: 1rem; }
+    @media screen and (max-width: 766px) {
+      .index header#topnav span {
+        font-size: 1.2rem;
+        line-height: 1.4; }
+        .index header#topnav span a {
+          display: block; } }
+
+body.about_index article {
+  padding: 1rem; }
   @media screen and (min-width: 767px) {
     body.about_index article {
       font-size: 24px;
       padding: 2rem 1.2rem;
-      max-width: 600px; }
-      body.about_index article a {
-        color: inherit; } }
+      max-width: 600px; } }
+  body.about_index article a {
+    color: inherit; }
 
 #projects {
   overflow: visible;
@@ -689,53 +760,53 @@ body.about_index {
         min-width: 330px;
         max-width: 330px;
         margin: 0 0 0 1rem; } }
-  #projects a {
-    color: inherit;
-    display: block;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    color: white; }
-    @media screen and (min-width: 767px) {
-      #projects a:before {
-        content: 'Read more →';
-        color: white;
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 8rem;
-        box-sizing: border-box;
-        padding: 1.2rem;
-        line-height: 10; } }
-    @media screen and (max-width: 767px) {
-      #projects a {
-        overflow-y: hidden;
-        height: inherit;
-        display: block; } }
-    #projects a article {
+    #projects .project a {
+      color: inherit;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      color: white; }
+      @media screen and (min-width: 767px) {
+        #projects .project a:after {
+          content: 'Read more →';
+          color: white;
+          display: block;
+          position: absolute;
+          top: calc(100vh - 17rem);
+          left: 0;
+          width: 100%;
+          height: 12rem;
+          box-sizing: border-box;
+          padding: 1.2rem;
+          line-height: 18; } }
+      @media screen and (max-width: 767px) {
+        #projects .project a {
+          overflow-y: hidden;
+          height: inherit;
+          display: block; } }
+    #projects .project article {
       padding: 1.2rem;
       width: auto;
       float: none; }
-      #projects a article section section.situation {
+      #projects .project article section section.situation {
         font-size: 1.2rem;
         font-weight: 500; }
       @media screen and (max-width: 767px) {
-        #projects a article section * {
+        #projects .project article section * {
           display: none; }
-        #projects a article section header.project-title {
+        #projects .project article section header.project-title {
           display: block; }
-          #projects a article section header.project-title h1, #projects a article section header.project-title time {
+          #projects .project article section header.project-title h1, #projects .project article section header.project-title time {
             display: block; }
-          #projects a article section header.project-title span {
+          #projects .project article section header.project-title span {
             display: inline; } }
-      #projects a article aside.experiment-live {
+      #projects .project article aside.experiment-live {
         display: none; }
-      #projects a article figure {
+      #projects .project article figure {
         margin: 0;
         font-size: 0.8rem; }
-    #projects a:hover article {
+    #projects .project:hover article {
       background-color: rgba(0, 0, 0, 0.1); }
 
 body:not(.index) header#topnav {
@@ -796,13 +867,15 @@ body:not(.index):not(.about_index) {
   @media screen and (min-width: 767px) {
     body:not(.index):not(.about_index) {
       font-size: 24px;
-      line-height: 1.4; }
-      body:not(.index):not(.about_index) h1, body:not(.index):not(.about_index) h2 {
-        line-height: 1.2; } }
-  @media screen and (min-width: 767px) and (min-width: 767px) {
-    body:not(.index):not(.about_index) p, body:not(.index):not(.about_index) blockquote, body:not(.index):not(.about_index) h2, body:not(.index):not(.about_index) h3 {
-      width: 80%; } }
-
+      line-height: 1.4; } }
+  @media screen and (min-width: 767px) {
+    body:not(.index):not(.about_index) h1, body:not(.index):not(.about_index) h2 {
+      line-height: 1.2; } }
+  body:not(.index):not(.about_index) p, body:not(.index):not(.about_index) blockquote, body:not(.index):not(.about_index) h2, body:not(.index):not(.about_index) h3 {
+    width: 90%; }
+    @media screen and (min-width: 767px) {
+      body:not(.index):not(.about_index) p, body:not(.index):not(.about_index) blockquote, body:not(.index):not(.about_index) h2, body:not(.index):not(.about_index) h3 {
+        width: 80%; } }
   body:not(.index):not(.about_index) a {
     color: inherit; }
   body:not(.index):not(.about_index) article {
@@ -820,13 +893,15 @@ body:not(.index):not(.about_index) {
       body:not(.index):not(.about_index) article header.project-title {
         margin-left: -50%;
         z-index: 1; } }
-    @media screen and (min-width: 767px) {
-      body:not(.index):not(.about_index) article header.project-title h1 {
-        margin-top: 6rem; }
-        body:not(.index):not(.about_index) article header.project-title h1 span {
-          position: relative;
-          font-size: 6.8rem;
-          line-height: 9rem; } }
+    body:not(.index):not(.about_index) article header.project-title h1 {
+      width: 90%; }
+      @media screen and (min-width: 767px) {
+        body:not(.index):not(.about_index) article header.project-title h1 {
+          margin-top: 6rem; }
+          body:not(.index):not(.about_index) article header.project-title h1 span {
+            position: relative;
+            font-size: 6.8rem;
+            line-height: 9rem; } }
     body:not(.index):not(.about_index) article figure {
       margin: 0 0 2rem 0; }
       @media screen and (min-width: 767px) {
@@ -843,12 +918,10 @@ body:not(.index):not(.about_index) {
         position: relative;
         display: block;
         width: 100%;
-        padding: 2rem 0; }
-      body:not(.index):not(.about_index) article > section > section:last-of-type > p:last-of-type:after {
-        content: '⇥';
-        opacity: 0.5;
-        position: relative;
-        display: inline; }
+        padding: 1rem 0; }
+        @media screen and (min-width: 767px) {
+          body:not(.index):not(.about_index) article > section > section:not(.situation):not(.question):not(.answer):not(:last-of-type):after {
+            padding: 2rem 0; } }
       @media screen and (min-width: 767px) {
         body:not(.index):not(.about_index) article > section > section.situation {
           font-size: 2.2rem;
