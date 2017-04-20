@@ -1,668 +1,454 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500|Playfair+Display|Overpass:400,700|Nunito:400,700|Arimo:400,700" rel="stylesheet">
-
-    <title>Digital Product Research</title>
+    <title>Digital product research</title>
+    <meta name="description" content="Digital product research">
+    <meta name="author" content="Digital product research team at Co-op Digital">
 
     <link href="stylesheets/site.css" rel="stylesheet" />
     <script src="javascripts/all.js"></script>
   </head>
 
   <body class="index">
-    <div id="top">
-      <div id="wip">This is a work in progress: <a href="https://docs.google.com/a/coopdigital.co.uk/forms/d/e/1FAIpQLSeD4Fbz0-RI8ltn_cuP7Xrcce4gr5hAEn0saGV_ELoAvL3oQw/viewform?usp=sf_link" target="_blank">Give feedback</a></div>
-      <header id="topnav">
-        <a href="https://coopdigital.github.io/digital-product-research/">Digital Product Research</a>
-        <a href="https://coopdigital.github.io/digital-product-research/about">About</a>
-      </header>
-    </div>
-    <div id="projects">
-  <div class="project" id="project-connected-devices">
-    <a href="connected" class="scroll-container">
-      <article>
+    <header id="topnav">
+      <a href="./">Digital Product Research</a><span>We’re a team at Co-op Digital and this is the archive of our experiments&hellip; <a href="about/">Read more</a></span>
+      <nav>
+        <span class='arrow-left'>&larr;</span>
+        <span class='arrow-right'>&rarr;</span>
+      </nav>
+    </header>
+      <div id="projects">
+    <div class="project" id="project-safer-emails">
+      <a href="safer-emails" title="Read about our experiment into safely sending documents by email">
+        <article>
   <section>
 
     <header class="project-title">
-      <h1><span>Everything is connected</span></h1>
-      <time>November 2016</time>
+      <h1><span>Sending safer emails</span></h1>
+      <time>April 2017</time>
     </header>
 
     <section class="situation">
       <p>
-        Many of the things in our homes connect to the internet, allowing us to control them with our phones via an app, to be part of an online community or to access content online.
+        At many times in our lives we’re required to share personal information with organisations to prove our identity, income or otherwise. As the world turned digital, that increasingly moved from paper-based copies to scans over email. At the same time, email inboxes have grown, allowing us to archive, not delete.
       </p>
-      <figure class="img-wide">
-        <img src="Assets/Scout/100-connected.jpg" alt="100 connected" />
-        <figcaption>
-          LG's announcement at CES, photo by Karissa Bell
-        </figcaption>
-      </figure>
+    </section>
+    <section class="complication">
+      <p>
+        Sometimes organisations aren’t as careful with our data as we’d like them to be. Often people just need to get the job done, and that can mean good security practices fall by the wayside.
+      </p>
+      <p>
+        Suppose a mortgage advisor’s inbox was hacked: how many people’s identifying information would be sitting in their archive, waiting to be misused? How much personal information is lying around in your sent items, long forgotten, but rich pickings for an identity thief?
+      </p>
+      <p>
+        At the sharper end, we met a Venezuelan human rights worker at the Internet Freedom Festival who told us about lawyers sending sensitive personal information about clients using hotmail. In a regime where human rights lawyers are routinely targeted, and that information would put the client’s life at risk, the stakes are high.
+      </p>
     </section>
 
-
-    <section class="complication">
-
-      <h2>Everything's sharing everything</h2>
+    <section class="question">
+      <h2>Can we build tools that are safe enough for high-risk individuals <em>and</em> useable enough for the mainstream?</h2>
       <p>
-        Many of these devices have cameras and microphones, capturing highly personal information inside the home.
+        By designing for the hardest case, if we were able to build something that gave value to others too, we felt we would have built something quite unusual.
       </p>
 
-      <p>
-      It's not always clear that data is being captured, how that information
-      is used, or  who has access to it. This is often hidden inside
-      complicated terms and
-      conditions.
-      </p>
+    </section>
+
+    <section class="answer">
+      <h2>We built Atbash, a “secure attachment” browser extension</h2>
+
       <aside>
-        <figure class="alt">
-          <img src="Assets/Scout/image02.jpg" alt="A smart television with a Google terms and conditions dialog box" />
-          <figcaption>
-            Google terms and conditions dialog box
-          </figcaption>
+        <figure>
+          <img src="Assets/Atbash/atbash.gif" alt="Gif showing how to add an encrypted link instead of an attachment using Atbash" />
+        <figcaption>
+          Atbash lets you add a link to an encrypted file instead of an attachment
+        </figcaption>
         </figure>
       </aside>
 
 
       <p>
-      For some devices, the manufacturer's business model is selling personal information on to others
+        We started with the case where a Gmail user is asked to send over a scan of their passport. The person is in their inbox, and the simplest thing is to hit “reply”, attach the file and hit send.
+      </p>
+      <p>
+        We thought this was a good point to intervene in the user’s behaviour - what if we replaced their “attach a file” button with an alternative?
+      </p>
+      <p>
+        We built Atbash (a curious word referring to an ancient cipher) as an extension for the Chrome browser which modifies the Gmail web interface to do just that.
+      </p>
 
-       <em>"If you're not the customer, you're the product"</em>
+      <h2>We learned from organisations trusted by human rights groups</h2>
+      <blockquote class="pull-quote">
+        <p>
+          <span>
+            It’s not good enough for products to say “we won’t look at your stuff, honest” - that claim needs to be verifiable.
+          </span>
+        </p>
+      </blockquote>
+
+      <p>
+        Human rights groups have stricter requirements for trust than most people and organisations due to the nature of their work. When an NGO is working against abuses by their own government, it’s unlikely they’ll trust a company that could be forced by that government to act against them.
+      </p>
+      <p>
+        This community is suspicious of services that they can’t assess and understand. It’s not good enough for products to say “we won’t look at your stuff, honest” - that claim needs to be verifiable.
+      </p>
+      <p>
+        We looked at organisations like Open Whisper Systems who make the Signal messaging app for inspiration. Signal is developed entirely in the open, allowing anyone to see all the thinking, discussion and code that makes up the app. That’s important as it makes it practically difficult for the Signal developers to write malicious code without leaving traces. It also helps people understand the personal motivations and thought patterns of those developers, which also builds trust.
+      </p>
+      <p>
+        Furthermore, if you’ve got the skills, you can download and modify Signal and make it work the way you’d like it to. That’s an important freedom that helps build trust: if Signal were to turn bad in the future, the community could “fork” it and continue developing it under a new guise.
+      </p>
+
+      <blockquote>
+        <p>
+          We are a community and we can change things.
+        </p>
+        <footer>-
+          <cite>
+            P, male, 50s, sends files using email and SSH file transfer protocol
+          </cite>
+        </footer>
+
+      </blockquote>
+
+      <p>
+        We built Atbash, a Chrome browser extension, along the same principles. Even though it was a small prototype, we started it as a public Github repository. Anyone who wants to understand it better is able to look back through the repository and see a complete history of every line of code.
+      </p>
+
+      <h2>We designed for end-to-end encryption</h2>
+      <blockquote class="pull-quote">
+        <p>
+          <span>
+            There’s a big difference between “we <em>can’t</em> look at your stuff” and “we <em>won’t</em> look at your stuff”. Services like Google Drive and Dropbox take the “won’t” approach, and you have to trust them to keep that promise.
+          </span>
+        </p>
+      </blockquote>
+
+      <p>
+        Atbash was a prototype service for sending sensitive personal information to another person. There was no need for the service to be able to access that information, so we designed Atbash in a way that prevents that.
       </p>
 
       <p>
-        Finally, many of these devices have security vulnerabilities, opening them up to attackers on the internet.
+        There’s a big difference between “we <em>can’t</em> look at your stuff” and “we <em>won’t</em> look at your stuff”. Services like Google Drive and Dropbox take the “won’t” approach, and you have to trust them to keep that promise.
       </p>
 
 
+      <p>
+        End-to-end encrypted services are designed so they “can’t” see your stuff - at least not without sneakily altering the way the service works, which may be detected.
+      </p>
+      <p>
+        We designed Atbash so the server would hold encrypted files, but that the key would only ever be transmitted between the user and their contact. In that way, the server never holds both the encrypted file and the key at the same time.
+      </p>
+
+    </section>
+
+    <section class="learning">
+
+      <h2>
+        People felt uncomfortable
+      </h2>
+      <blockquote>
+        <p>
+          We all sent pictures of our passports over facebook messenger. I looked back and thought "why have I sent it like that?"
+        </p>
+        <footer>-
+          <cite>
+            F, female, 20s, has sent files by email and Facebook messenger
+          </cite>
+        </footer>
+      </blockquote>
+
+      <h2>
+        People took guidance from their own networks
+      </h2>
+      <p>
+        A common theme was that people used those around them to guide decisions about what services to use.
+      </p>
+      <blockquote>
+        <p>
+          I ask other people I trust, do you trust this?
+        </p>
+        <p>
+          I would ask other people to have a look and ask my white hat to try to hack it.
+        </p>
+        <footer>-
+          <cite>
+            P, male, 50s, sends files using email and SSH file transfer protocol
+          </cite>
+        </footer>
+      </blockquote>
+      <blockquote>
+        <p>
+          I’ve left computer stuff to other people and let them tell me what to do
+        </p>
+        <footer>-
+          <cite>
+            M, male, 40s, sends files using email and WeTransfer
+          </cite>
+        </footer>
+      </blockquote>
+      <blockquote>
+        <p>
+          It’s one of the world’s most used browsers, everyone I know uses Chrome
+        </p>
+        <footer>-
+          <cite>
+            F, female, 20s, has sent files by email and Facebook messenger
+          </cite>
+        </footer>
+      </blockquote>
+      <h2>
+        There was a mixed understanding of “open source”
+      </h2>
+      <p>
+        One participant strongly believed that open source software was more reliable due to the community nature of the development.
+      </p>
+      <blockquote>
+        <p>
+          Every line is crawled over by many people. If anyone tries to sneak bad code in it will be spotted
+        </p>
+        <p>
+          [having lots of security bugs is] absolutely linked to them being closed
+        </p>
+        <footer>-
+          <cite>
+            P, male, 50s, sends files using email and SSH file transfer protocol
+          </cite>
+        </footer>
+      </blockquote>
+      <p>
+        Other participants were unfamiliar with the concept of open source.
+      </p>
+      <blockquote>
+        <p>
+          It’s not a phrase that I’ve come across before
+        </p>
+        <footer>-
+          <cite>
+            F, female, 20s, has sent files by email and Facebook messenger
+          </cite>
+        </footer>
+      </blockquote>
+      <h2>Co-op members trusted the co-op to build strong services</h2>
+      <blockquote>
+        <p>
+          I don’t think Atbash is a good name because it doesn’t say Co-op and people trust Co-op. In that respect you’re doing it a disservice.
+        </p>
+        <footer>-
+          <cite>
+            P, male, 50s, sends files using email and SSH file transfer protocol
+          </cite>
+        </footer>
+      </blockquote>
+      <blockquote>
+        <p>
+          I trust Co-op because they seem a very fair company, they have a good reputation.
+        </p>
+        <footer>-
+          <cite>
+            M, male, 40s, sends files using email and WeTransfer
+          </cite>
+        </footer>
+      </blockquote>
+      <h2>Brand and reputation was strongly related to trust</h2>
+      <blockquote>
+        <p>
+          I don’t think I’ve used Firefox before but I’ve heard of it. What brand is it from? Because I’ve heard of the others and used them that’s why [I don’t trust them as much]
+        </p>
+        <p>
+          &hellip;I’d say Apple mail is the most secure because it’s all they kind of do really if they got hacked it would be their entire business
+        </p>
+        <footer>-
+          <cite>
+            I, male, 20s, sends files using email, social media and Google Drive
+          </cite>
+        </footer>
+      </blockquote>
+      <blockquote>
+        <p>
+          Microsoft have still to produce a piece of code that isn’t vulnerable
+        </p>
+        <footer>-
+          <cite>
+            P, male, 50s, sends files using email and SSH file transfer protocol
+          </cite>
+        </footer>
+      </blockquote>
+
+
+
+
+
+    </section>
+  </section>
+</article>
+
+      </a>
+    </div>
+    <div class="project" id="project-shared-energy">
+      <a href="shared-energy" title="Read about our experiment into a washing subscription service">
+        <article>
+  <section>
+    <header class="project-title">
+      <h1><span>Cheaper, greener energy through smart behaviour</span></h1>
+      <time>April 2017</time>
+    </header>
+
+    <section class="situation">
+      <p>
+        People install solar panels and wind turbines on their homes and community buildings, but renewable energy generation is variable. Often the installations make more energy than the people who own them can use or the energy is made at a time when it’s not needed on-site.
+      </p>
+    </section>
+
+    <section class="complication">
+      <h2>A waste of energy</h2>
+      <p>
+        There is no cheap way to store this energy so people sell it back to the grid at a low price. Meanwhile their neighbours are paying 2 to 3 times more to buy it back off the grid again when they use electricity at the same time.
+      </p>
     </section>
 
     <section class="what-we-did">
-      <h2>We showed people problems in their home</h2>
-
-
+      <h2>We got people together to talk about community energy</h2>
       <p>
-        We prototyped Scout, a service that monitors devices connected to a home wifi
-        network, and showed it to four people who use these kinds of devices in
-        their homes.
+        We prototyped Power Pack, an energy sharing club that brings local renewable energy producers and consumers together, and showed it to 13 people in the Sheffield area. We also published it nationally using Google ads to encourage people to visit.
       </p>
+      <figure class="img-wide">
+        <img src="Assets/Power_Pack/group-discussion.jpg" alt="A group of people talking in a farmhouse kitchen" />
+        <figcaption>
+          The group talking about Power Pack
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="question">
+      <h2>
+        How might we design a scalable proposition that encourages people to switch energy provider for the benefit of their community?
+      </h2>
+    </section>
+
+    <aside class="experiment-live">
+      <figure class="mobile-frame">
+        <h2>Try our experiment:</h2>
+        <div class="frame">
+          <div class="embed">
+            <iframe width="375" height="667" frameborder="0" src="http://powerpack.org.uk"></iframe>
+          </div>
+        </div>
+        <figcaption>
+          We built a website to prototype a platform supporting local renewable energy sharing clubs
+        </figcaption>
+      </figure>
+    </aside>
+
+    <section class="answer">
+      <h3>By keeping it local</h3>
+      <p>Inspired by successful local energy trading pilots in Bethesda and Shrivenham, we came up with Power Pack. Power Pack lets people set up an energy sharing club in their area to buy and sell energy with their neighbours. It offers a better price for everyone. Generators earn more for exporting and buyers pay less than the standard tariff. </p>
+
+      <p>To help us gauge interest we built a website to explain Power Pack and make it feel as though there are Power Packs around the UK.</p>
+
+      <h3>By making it feel real</h3>
+      <p>We set up some Google ads to direct people to the Power Pack website, where a postcode search delivers a page which shows the user that a Power Pack in their area is a real possibility.</p>
+
+      <p>We’ve given people the opportunity to sign up (pledge) to join Power Pack, we also installed customer support software that allows us to chat to people as they are on the website.</p>
+
+      <h3>Knocking on doors</h3>
+      <p>We had doorstep conversations with nine people in a street in Sheffield. We gave them the opportunity to sign up to Power Pack and spoke to them about community renewable energy.</p>
+
+      <h3>Minimum viable community</h3>
+      <p>We also brought a group of producers and consumers of local renewable energy together. We wanted to learn whether people would join and if they'd be happy to take on some responsibility. We didn't try to simulate the platform technology. Instead we recruited our group and spent time with them on a field trip.</p>
+
+      <h3>Finding a renewable producer</h3>
+      <p>We needed to find someone who was producing renewable energy in Sheffield and selling their excess back to the grid to host our field trip. We found a few different types of business with solar panels and wind turbines; utilities companies, sports stadiums, warehouses, bus stations and farms. Eventually we found a farmer who was happy to show us around his installation and host our field trip.</p>
+
+      <h3>A trip to the farm</h3>
+      <p>Povey Farm is a pig farm on the outskirts of Sheffield in the Moss Valley. The farmer, Stephen Thompson has installed two wind turbines, PV solar panels and a straw burner. Stephen was happy to show a group of people around his farm, talk about his renewable energy production, and host a follow-up group discussion in his kitchen.</p>
 
       <figure class="img-wide">
-        <img src="Assets/Scout/image01.png" alt="Image01" />
+        <img src="Assets/Power_Pack/turbine.gif" alt="Moving image of a group of people standing in a field by a wind turbine" />
         <figcaption>
-          A fridge magnet could alert the homeowner to new vulnerabilities on their network
+          People finding out about wind turbines
         </figcaption>
       </figure>
 
-      <p>
-        We showed them some potential vulnerabilities in a home network that was similar to their own. They saw how personal information was transferred to a third party company, allowed via a clause buried deep within a product’s terms and conditions.
-      </p>
+      <p>We recruited our group by promoting the trip to relevant groups and individuals in the Sheffield area. We ran two trips, one mid week which eight people came to and one at the weekend which five attended; a good turn-out, given that we publicised them at fairly short notice.</p>
 
-    </section>
-
-    <section>
-      <h2 class="question">
-          How much do people understand about the risks of connected devices?
-        </h2>
-      <section class="answer">
+      <blockquote class="pull-quote">
         <p>
-          Most of our participants had not thought about how secure or private the connection between their devices and the internet was.
+          <span>
+            &hellip;people were enthusiastic and interested to find out more
+          </span>
         </p>
+      </blockquote>
 
-
-        <blockquote>
-          <p>
-            No I didn’t realise. It’s quite scary actually.
-          </p>
-          <footer>-
-            <cite>
-              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
-          </cite>
-          </footer>
-        </blockquote>
-
+      <blockquote>
         <p>
-          Some knew there were risks, but not the specifics.
+          Amazing to see the project in action and find out real world stories from Stephen the farmer regarding ups and downs.
         </p>
+        <footer>-
+          <cite>
+            S, board member of a local creative arts charity, thinking of installing solar panels
+        </cite>
+        </footer>
+      </blockquote>
 
-        <blockquote>
-          <p>
-            More things are becoming connected to the internet. You hear more stories of people hacking into things, the more secure you can be the better.
-          </p>
-          <footer>-
-            <cite>
-              D, male, 26-35 year old, owns LG Smart TV, Playstation 3, Hive 2
-            </cite>
-          </footer>
-        </blockquote>
+        <p>Everyone who came along was already interested in renewable energy. There were lots of detailed questions about the technology and finances. After the tour the group discussed similar projects, attendees’ own renewable energy technology and the role of the Co-op in such a scheme.</p>
 
-
+        <p>After the events we surveyed the attendees to see if they’d be willing to join Power Pack in Sheffield. Four out of eight people completed the survey. Two attendees saying they would be willing to join, and two were interested if they had more information about the costs involved.</p>
       </section>
-    </section>
-
-      <figure class="img-wide alt">
-        <img src="Assets/Scout/image06.png" alt="Image06" />
-        <figcaption>
-          The team reviewing the research findings
-        </figcaption>
-      </figure>
-
-    <section>
-      <h2 class="question">Can we make security exploits visible and understandable?</h2>
-
-      <aside class="experiment-live">
-        <figure class="mobile-frame">
-          <h2>Try our experiment:</h2>
-          <div class="frame">
-            <div class="embed">
-              <iframe width="375" height="667" frameborder="0" src="https://scout-dashboard.herokuapp.com/1.html"></iframe>
-            </div>
-          </div>
-          <figcaption>
-            We built Scout to test whether we could help people understand security exploits.
-          </figcaption>
-        </figure>
-
-      </aside>
-
-      <section class="answer">
-        <p>
-        When we showed them the Scout prototype, our participants immediately
-        understood the implications for their individual situation.
-        </p>
-
-        <blockquote>
-          <p>
-            It sounds like, when you’re sitting in a room with a smart TV, it could potentially be sent to a third party.
-          </p>
-          <footer>-
-            <cite>
-              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
-          </cite>
-          </footer>
-
-        </blockquote>
-
-        <blockquote>
-          <p>
-          You could be buying something over the phone, doing your insurance, giving your credit card information to pay for your insurance. If someone has intercepted that, they could commit fraud on my account.
-          </p>
-          <footer>-
-            <cite>
-              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
-          </cite>
-          </footer>
-
-        </blockquote>
-
-      </section>
-    </section>
-
-    <section>
-      <h2 class="question">
-          Would people "downgrade" their devices to make them more private?
-      </h2>
-
-      <section class="answer">
-
-        <p>
-          Despite our participants obvious discomfort at learning about the flaws
-          in devices they had bought, they weighed up their options and broadly
-          decided to take no action.
-        </p>
-
-        <p>
-          Cost was a factor; smart devices had been a significant outlay, and the
-          idea of reducing their functionality was not appealling.
-        </p>
-
-        <blockquote class="pull-quote">
-          <p>
-            <span>
-              &hellip;they weighed up their options and broadly
-              decided to take no action
-            </span>
-          </p>
-        </blockquote>
-
-        <blockquote>
-          <p>
-            But again, if I’ve spent a lot of money on it. I don’t know if I would. I don’t know. Just stick to it and take the risk, potentially.
-          </p>
-          <footer>-
-            <cite>
-              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
-          </cite>
-          </footer>
-
-        </blockquote>
-
-        <p>
-          Once informed, people were very good at balancing the risks against the
-          benefits they get from their devices.
-        </p>
-
-        <blockquote>
-          <p>
-            I wouldn’t take it back for a refund because he likes it too much. It’s like big brother. He feels safer with it.
-          </p>
-          <footer>-
-            <cite>
-              W, female, 26-36 year old, owns Samsung smart TV, Playstation 4, Hikvision security camera
-            </cite>
-          </footer>
-        </blockquote>
-
-
-      </section>
-    </section>
-
-    <section>
-      <h2 class="question">
-        Can we help people work together to influence
-        manufacturers?
-      </h2>
-
-      <section class="answer">
-        <p>
-        People were interested in the idea of lobbying manufacturers to change their practices through the service. We thought this might be a good way to link in with membership and the wider Co-op campaigning work.
-        </p>
-
-        <blockquote>
-          <p>
-            I would assume that the team behind Scout would contact British Gas that people aren’t happy about them sharing their data. I’d click on the join option.
-          </p>
-          <footer>-
-            <cite>
-              D, male, 26-35 year old, owns LG Smart TV, Playstation 3, Hive 2
-            </cite>
-          </footer>
-        </blockquote>
-
-        <blockquote>
-          <p>
-            I would join 3865 people asking Samsung to change this.
-          </p>
-          <footer>-
-            <cite>
-              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
-          </cite>
-          </footer>
-
-        </blockquote>
-      </section>
-    </section>
-
-    <section>
 
       <section class="learning">
 
         <h2>
-          There was a mistrust of companies
+          It's a good story for a business
         </h2>
 
+        <p>People and organisations generating renewable energy are generally open and happy to talk about it. They are proud of what they are doing. However, the larger the organisation the harder it is to navigate through customer service channels to find the right person to talk to.</p>
+
+        <h2>It feels believable</h2>
+
+        <p>We spoke to people in Sheffield on their doorsteps and found them enthusiastic. 6 out of 9 people signed up to Power Pack. They weren’t too bothered about understanding the technicalities, and were satisfied we knew what we were doing. Similarly, the people who attended our field trip to Povey Farm were happy to sign up and take part in a discussion - even with minimal information before the event.</p>
+
+        <h2>Previous trials prove it could work</h2>
+
+        <p>Once we had explained the idea behind Power Pack in more detail, no-one had any concerns. We discussed challenges but no-one dismissed the idea. Successful trials in Shrivenham and Bethesda validated the idea of a local energy trading club. Some attendees were interested in making solar installations financially viable, others liked the idea of supporting people in their community.</p>
+
         <blockquote>
           <p>
-            You don’t know who to believe. Samsung are saying they’re not breaking laws, this article is saying that it is.
+            Interesting to see the energy set up and mix of solutions they're using and also really valuable to chat to all the people and get a bit better informed.
           </p>
           <footer>-
-            <cite>
-              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
+          <cite>
+              L, member of a local community renewable energy group
           </cite>
           </footer>
+        </blockquote>
 
-        </blockquote>
-        <blockquote>
-          <p>
-            But deep down they would probably do that [share data with third parties] anyway without asking permission.
-          </p>
-          <footer>-
-            <cite>
-              D, male, 26-35 year old, owns LG Smart TV, Playstation 3, Hive 2
-            </cite>
-          </footer>
-        </blockquote>
+        <h2>No-one mentioned climate change</h2>
+
+        <p>Many people in the group were interested in the technology and engineering challenges without making any explicit references to environmental issues such as climate change. The challenge of setting up renewable energy schemes, and the rewards in terms of the money saved seemed to be motivation enough for some of the attendees.</p>
 
       </section>
 
-      <section class="learning">
+      <section class="next-steps">
 
-        <h2>There was a clear difference between inside and outside the home</h2>
+        <h2>Where we want to go next</h2>
 
-          <blockquote>
-            <p>
-              My sister doesn’t use it all, she doesn’t like the idea of having cameras in the house.
-            </p>
-            <footer>-
-              <cite>
-                M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
-            </cite>
-            </footer>
-          </blockquote>
+        <p>If this is going to become a real scheme we need to understand more about the barriers between where we are and where we want to be.</p>
 
-          <blockquote>
-            <p>
-              If it’s purely that they can look at what’s on the CCTV, that’s only outside the house so that’s OK.
-            </p>
-            <footer>-
-              <cite>
-                W, female, 26-36 year old, owns Samsung smart TV, Playstation 4, Hikvision security camera
-              </cite>
-            </footer>
-          </blockquote>
+        <p>We are going to keep in touch with the people who've signed up. We would like them to become the founding members of Power Packs in their areas.</p>
 
       </section>
-      <section class="learning">
-
-        <h2>People have a very individual view of what is private</h2>
-
-        <blockquote>
-          <p>
-            If you read out credit card details it would be a problem but normal conversations, not that bothered.
-          </p>
-          <footer>-
-            <cite>
-              D, male, 26-35 year old, owns LG Smart TV, Playstation 3, Hive 2
-            </cite>
-          </footer>
-        </blockquote>
-        <blockquote>
-          <p>
-            I did hear about this, smart TVs recording private conversations. It’s a bit Orwellian.
-          </p>
-          <p>
-            In principle I don’t think this is OK, even if they don’t do anything with it.
-          </p>
-          <p>
-            It doesn’t matter that much if people can see my photos.
-          </p>
-          <p>
-            If the government wanted to use it for a purpose that might make me think it’s ok but not just corporates.
-          </p>
-          <footer>-
-            <cite>
-              A, female, 26-35 year old, owns LG smart TV, Playstation 4 and XBox, BabyMoov wifi monitor
-            </cite>
-          </footer>
-        </blockquote>
-      </section>
-
-    </section>
   </section>
 </article>
 
-    </a>
-  </div>
-  <div class="project" id="project-protect-together">
-    <a href="group-trust" class="scroll-container">
-      <article>
-  <section>
-
-    <header class="project-title">
-      <h1><span>Protecting your stuff</span></h1>
-      <time>December 2016</time>
-    </header>
-
-    <section class="situation">
-      <h2>A lack of trust has broken insurance</h2>
-      <p>
-        People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to.
-      </p>
-      <p>
-        Insurers don't trust customers. Customers don't trust insurers. Insurers collude to raise prices and don't trust each another... And the regulators don't trust the insurers.
-      </p>
-    </section>
-
-    <section class="complication">
-      <p>
-        There’s space for Co-op to take a radically new approach to insurance: local, mutual, community focused and owned by members.
-      </p>
-    </section>
-
-    <section class="what-we-did">
-      <p>
-        In collaboration with colleagues in Co-op insurance, we explored this alternative model built on trust. If people with similar risks could form groups and insure each other, they might be more likely to trust one another.
-      </p>
-    </section>
-
-    <section class="question-and-answer">
-      <h2 class="question">
-        How might we create an insurance model where people trust each other, and where members feel confident making claims?
-      </h2>
-    </section>
-
-    <section class="what-we-did">
-      <h2>Small groups with something in common</h2>
-
-
-      <aside class="experiment-live">
-        <figure class="mobile-frame">
-          <h2>Try our experiment:</h2>
-          <div class="frame">
-            <div class="embed">
-              <iframe width="375" height="667" frameborder="0" src="https://coop-protect.herokuapp.com/"></iframe>
-            </div>
-          </div>
-          <figcaption>
-          We built Protect Together to test whether people could trust each other enough to insure each other.
-          </figcaption>
-        </figure>
-      </aside>
-
-      <p>
-        We created a prototype of Protect Together. Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to six people who fit the requirements for our example group.
-      </p>
-    </section>
-
-
-    <section class="question-and-answer">
-    <figure>
-      <img src="Assets/Protect/image01.jpg" alt="A woman tests out the Protct Together prototype on a laptop guided by one of our team" />
-    </figure>
-      <h2 class="question">
-        Could we explain the concept?
-      </h2>
-
-      <section class="answer">
-        <h3 class="answer">A new model of insurance needs a new way to explain it</h3>
-        <p>
-          The Protect Together home page did a poor job of explaining what the service was at a glance. While all respondents recognised it was something to do with insurance, none were entirely clear how it worked.
-        </p>
-
-        <blockquote>
-          <p>
-            I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.
-          </p>
-          <footer>-
-            <cite>
-              R, female, 26-35 year old, owns a laptop, tablet, phone, jewellery, TV
-            </cite>
-          </footer>
-        </blockquote>
-
-        <p>
-          Having started to sign up and clicked through a few of the screens, respondents then understood more clearly what Protect Together was. They all felt it aligned with the Co-op’s overall values.
-        </p>
-
-        <blockquote>
-          <p>
-            I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.
-          </p>
-          <footer>-
-            <cite>
-              A, female, 26-35 year old, owns a phone
-            </cite>
-          </footer>
-
-        </blockquote>
-
-        <p>
-          Respondents saw the difference from traditional insurance.
-        </p>
-
-        <blockquote>
-          <p>
-            It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.
-          </p>
-          <footer>-
-            <cite>
-              P, male, 36-45 year old, owns a phone
-            </cite>
-          </footer>
-
-        </blockquote>
-
-      </section>
-    </section>
-
-    <section class="question-and-answer">
-      <h2 class="question">
-        Could we create trust? How do we define communities and groups?
-      </h2>
-      <section class="answer">
-
-        <h3 class="answer">Living close to someone isn’t a strong enough reason to trust them</h3>
-
-        <blockquote class="pull-quote">
-          <p>
-            <span>
-              Despite living in the same area, none of the respondents felt a particular affinity with our example group
-            </span>
-          </p>
-        </blockquote>
-
-        <p>
-          Despite living in the same area, none of the respondents felt a particular affinity with our example group (people renting flats in the Green Quarter, Manchester). They either felt that they didn’t know their neighbours, or that the age group wasn’t right for them.
-        </p>
-
-        <blockquote>
-          <p>
-            I wouldn’t trust my neighbours because I don’t know them.
-          </p>
-          <footer>-
-            <cite>
-              R, female, 26-35 year old, owns a laptop, tablet, phone, jewellery, TV
-            </cite>
-          </footer>
-        </blockquote>
-
-        <blockquote>
-          <p>
-            I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!
-          </p>
-          <footer>-
-            <cite>
-              C, female, 36-45 year old, owns a laptop, tablet, bike, jewellery, TV
-            </cite>
-          </footer>
-
-        </blockquote>
-      </section>
-    </section>
-
-    <section class="question-and-answer">
-      <h2 class="question">
-        Is there a need for this type of insurance?
-      </h2>
-      <section class="answer">
-
-        <h3 class="answer">Renters don’t feel that they have a lot that’s worth insuring</h3>
-
-        <p>
-          We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
-        </p>
-
-        <blockquote>
-          <p>
-            TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.
-          </p>
-          <footer>-
-            <cite>
-              A, female, 26-35 year old, owns a phone
-            </cite>
-          </footer>
-        </blockquote>
-
-      </section>
-    </section>
-
-    <section class="question-and-answer">
-      <h2 class="question">
-        Should members of the group be visible to each other? Is transparency better than anonymity?
-      </h2>
-      <section class="answer">
-
-        <h3 class="answer">People felt they’d need to talk to the group</h3>
-
-        <p>
-          When presented with the emails explaining a vote or action was required, four respondents weren’t comfortable with voting. They indicated they’d want to sound out the group in advance, or talk to people before making a decision. They seemed to assume the group was about 10 - 15 people strong.
-        </p>
-
-        <blockquote>
-          <p>
-            You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion.
-          </p>
-          <footer>-
-            <cite>
-              C, female, 36-45 year old, owns a laptop, tablet, bike, jewellery, TV
-            </cite>
-          </footer>
-        </blockquote>
-
-        <h3 class="answer">The perceived effort of participating in a group can be off putting</h3>
-
-        <blockquote class="pull-quote">
-          <p>
-            <span>
-              One participant was concerned that there might be a significant overhead in managing a group&hellip;
-            </span>
-          </p>
-        </blockquote>
-
-        <p>
-          One participant was concerned that there might be a significant overhead in managing a group, and that it might involve meeting up or other commitments.
-        </p>
-
-        <blockquote>
-          <p>
-            For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.
-          </p>
-          <footer>-
-            <cite>
-              C, female, 18-25 year old, owns a phone, TV
-            </cite>
-          </footer>
-        </blockquote>
-      </section>
-    </section>
-
-    <section class="next-steps">
-      <h2>Things we'd like to try next</h2>
-
-      <p>
-        Experiment with other ways of communicating the concept. A short 1 minute animation explaining Protect Together might be more effective at communicating the various parts to it. For a good example, see https://vimeo.com/62806565
-      </p>
-
-      <p>
-        Explore different types of groups that people might associate with. We should experiment with whether individuals associate and trust other people based on age, salary, job, interests. We could also look at whether it makes a difference if the group already know each other in another context or come together specifically to take part in the scheme.
-      </p>
-
-      <p>
-        Explore different sizes of groups that people might join. We didn’t explicitly show the size of the Green Quarter group. A future design sprint might present respondents with different size groups to better understand how they feel about this and how they might communicate.
-      </p>
-    </section>
-  </section>
-</article>
-
-    </a>
-  </div>
-  <div class="project" id="project-financial-freedom">
-    <a href="financial-freedom" class="scroll-container">
-      <article>
+      </a>
+    </div>
+    <div class="project" id="project-financial-freedom">
+      <a href="financial-freedom" title="Read about our experiment into financial freedom through early planning">
+        <article>
   <section>
     <header class="project-title">
       <h1><span>Financial freedom through early planning</span></h1>
@@ -874,7 +660,7 @@
 
       <aside>
         <figure>
-          <img src="Assets/Level_up/things-i-could-quit.jpg" alt="Handwritten list of ideas for things we could go without: coffee, buying lunch, booze, magazone subscriptions, bottled water, fizzy drinks, living in London, owning a car" />
+          <img src="Assets/Level_up/things-i-could-quit.jpg" alt="Photo of a handwritten list of things we could do without" />
         <figcaption>
           We thought about the types of things that people stop buying or doing to save money.
         </figcaption>
@@ -1170,7 +956,7 @@
       </blockquote>
 
       <figure>
-        <img src="Assets/Level_up/lightening-talks.jpg" alt="Photo of a whiteboard sketch of ideas for ways to think about their needs, visualising the future and making progress towards a goal." />
+        <img src="Assets/Level_up/lightening-talks.jpg" alt="Photo of a sketch about visualising the future and progressing towards a goal" />
         <figcaption>
           Interesting ways to measure progress towards a goal, and giving people only the information they need to make something relevant to them.
         </figcaption>
@@ -1185,11 +971,680 @@
   </section>
 </article>
 
-    </a>
-  </div>
-  <div class="project" id="project-terms-reviewers">
-    <a href="terms" class="scroll-container">
-      <article>
+      </a>
+    </div>
+    <div class="project" id="project-life-after-work">
+      <a href="after-work" title="Read about our experiment into life after work">
+        <article>
+  <section>
+
+    <header class="project-title">
+      <h1><span>Life after work</span></h1>
+      <time>January 2017</time>
+    </header>
+
+    <section class="situation">
+      <p>
+        Aging well is as much about happiness and relationships as it is about being financially secure.
+      </p>
+    </section>
+    <section class="complication">
+      <h2>The way we live now</h2>
+      <p>
+        Younger people face the prospect of aging in much reduced financial circumstances in comparison to their parents and grandparents. And the way we live now makes it harder to maintain friendship and family bonds - which we now know are so vital for physical and mental health.
+      </p>
+    </section>
+    <section class="what-we-did">
+      <h2>Facing the future</h2>
+      <aside>
+        <figure>
+          <img src="Assets/Retirement/recruit-form.png" alt="Screenshot of online form used for recruiting research participants" />
+        <figcaption>
+          We recruited some people who had recently stopped work to take part in an informal interview.
+        </figcaption>
+        </figure>
+      </aside>
+
+      <p>
+        Is there something the Co-op can do to help our members and others face their later years with a degree of confidence that their social, emotional and financial needs will be taken care of? We carried out some early discovery research as a starting point for a more targeted experiment.
+      </p>
+
+      <p>
+        We spoke to 5 people in their 50s and 60s who had recently stopped working. We also spoke to a number of people who work or volunteer with older people: a GP, a travel agent and representatives from the WI, U3A and Age UK.
+      </p>
+
+      <p>
+        We asked people about their perceptions of <q>retirement</q> and how people can make plans for their lives after they finish working.
+      </p>
+
+    </section>
+    <section class="question">
+      <h2>
+        What are the needs of people planning for and living through older age?
+      </h2>
+    </section>
+
+    <section class="answer">
+      <h3>Having someone looking out for you</h3>
+      <aside>
+        <figure>
+          <img src="Assets/Retirement/womens-institute.png" alt="Logo of the Womens Institute Manchester" />
+        <figcaption>
+          Organisations like the Women's Institute play an important role in the lives of people of all ages, but especially after work stops.
+        </figcaption>
+        </figure>
+      </aside>
+
+      <p>
+        Retired people worry about being forgotten. They appreciate the friends, family and volunteers who advise them on their emotional, physical and financial welfare. And they want their needs to be understood and anticipated by the people around them.
+      </p>
+
+      <p>
+        Contact with friends, family, volunteers and professionals is important. People like the WI groups that check up on members who miss meetings. Family who encourage exercise and activity. Peers who can relate and advise. Church groups that organise tea parties in people’s houses; support that starts in the home makes trying new things less daunting.
+      </p>
+      <blockquote>
+        <p>
+          I talked to members of my family when I was planning retirement, I trust their judgement more than anybody.
+        </p>
+        <footer>-
+          <cite>
+            M, female, 55, stopped work in January 2017
+          </cite>
+        </footer>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          The thing that has the most impact from [older people's] sense of wellbeing was how they interacted with the community around them. It could be as basic as having a conversation with somebody.
+        </p>
+        <footer>-
+          <cite>
+            Jessica, CEO Brighton &amp; Hove Age UK
+          </cite>
+        </footer>
+      </blockquote>
+    </section>
+
+    </section>
+
+      <section class="answer">
+        <h3>Stuff to give me an identity and purpose</h3>
+        <aside>
+          <figure>
+            <img src="Assets/Retirement/age-uk.png" alt="Photo of the exterior of an Age UK charity shop" />
+          <figcaption>
+            As we help others, we also help ourselves
+          </figcaption>
+          </figure>
+        </aside>
+
+        <p>
+          <q>Who the hell am I?</q> Our working lives define us, whether we enjoy them or not. As work ends, it’s harder to define ourselves and understand our value. Making a contribution to society;  having a reason to get out of bed in the morning. Finding a post-work identity can mean re-inventing yourself, which takes courage and effort. It's a two-way process too. We need signals back from the outside world to confirm we are useful and relevant.
+        </p>
+
+        <p>
+          Doing new stuff helps. Taking on projects, learning a new skill, spending time with family and volunteering gives meaning to post-work lives. People who were new to post-work life told us that extra time with grandchildren, tackling ambitious home renovations and doing courses gave them joy and purpose. For people who are used to joining clubs it comes easier, for others it’s harder to <q>get off your backside</q>.
+        </p>
+        <blockquote>
+          <p>
+            It seems a bit odd not going to work - I've worked full time since I was 16 - is very odd not having to work. But I can rationalise - I've saved, I won’t starve - but it takes time to get your head around it.
+          </p>
+          <footer>-
+            <cite>
+              L, female, 64, stopped work in December 2016
+            </cite>
+          </footer>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            We have one lady who is 92 and she runs a Tai Chi class ... she talks about her 'old ladies' ... she’s talking about older people as if that’s not her ... people don’t define themselves by their ages, it’s their purpose and how active they are.
+          </p>
+          <footer>-
+            <cite>
+              Jessica, CEO Brighton &amp; Hove Age UK
+            </cite>
+          </footer>
+        </blockquote>
+
+      </section>
+
+      <section class="answer">
+        <h3>Changing working practices</h3>
+        <p>
+          Being able to make changes to the way you work as you get older is important. <q>Politics</q> at work and stress can mar the later years of working life. Retirees talked about having to adapt to changing working practices and falling out with colleagues, prompting their decision to stop working.
+        </p>
+
+        <p>
+          Working less and working differently enables a gentler transition into post-work life. Taking on a less physical or less stressful role within the same company, or for a new company. A few retirees told us they enjoyed reducing their hours as they got older, and one person in a senior management role told us they planned to work as a delivery driver - a low-stress job that finished at the end of the working day.
+        </p>
+
+        <blockquote>
+          <p>
+            I would have gone on another 6 months but there were changes at work I didn’t like, and didn’t want to learn new ways of working, so I decided to stop.
+         </p>
+          <footer>-
+            <cite>
+              L, female, 64, stopped work in December 2016
+            </cite>
+          </footer>
+        </blockquote>
+        <blockquote>
+          <p>
+            There was lots of politics at work and I’m not interested in that sort of thing.
+         </p>
+          <footer>-
+            <cite>
+              M, female, 55, stopped work in January 2017
+            </cite>
+          </footer>
+        </blockquote>
+
+      </section>
+
+      <section class="answer">
+        <h3>Conscious decision making </h3>
+        <blockquote class="pull-quote">
+          <p>
+            <span>
+              Retirement requires compromising between living in the present and planning for the future
+            </span>
+          </p>
+        </blockquote>
+
+        <p>
+          Years of financial diligence and awareness of the choices available at the time of retirement both make a big difference to people feeling secure and ready to retire. 'Owning' the decision to retire lessens the shock of the lifestyle change. Making decisions with a partner is common; many delayed or brought forward their own retirement in order to retire at the same time as their partner.
+        </p>
+
+        <p>
+          If you have a long term workplace pension, the financial safety net enables shrugging off workplace political tensions by deciding to leave work. One woman in less secure employment struggled with feeling that her time at work had ended prematurely. Age is less of a barrier to staying in work than attitude: <q>If you’re not ready to retire, then don’t!</q>.
+        </p>
+
+        <p>
+          Some reported having chased higher paid management positions in the years running up to retirement, in order to boost their pensions - even if they didn’t enjoy the work. Retirement requires compromising between living in the present and planning for the future.
+        </p>
+        <blockquote>
+          <p>
+            [in the last 5 years] we had both been promoted into higher management jobs - it was quite stressful - we were starting to think about retiring and appreciating this time as we are still quite young and wanting to appreciate it. We were starting the countdown.
+         </p>
+          <footer>-
+            <cite>
+              A, male, 54, stopped work in 2015
+            </cite>
+          </footer>
+        </blockquote>
+
+      </section>
+
+      <section class="answer">
+        <h3>Help with financial planning</h3>
+
+        <p>
+          Paying off the mortgage is the primary trigger to begin thinking about retirement. Without that monthly obligation, a lower monthly income becomes a feasible option.
+        </p>
+        <p>
+          Everyone acknowledged the drop in income that comes in retirement. That can make a discernable difference to daily life, but tended not to cause extreme anxiety. One retiree told us about how much more careful she is when food shopping. Another told us that <q>I always worry about how we’ll manage, but I think we’ll be OK</q>.
+        </p>
+        <p>
+          Retirees talked about <q>checking out their options</q> to find out how much they’d receive in retirement before deciding what to do. Those with final salary pensions knew that they were lucky: they received a good monthly income, and they had never had to worry about how much they were saving.
+        </p>
+        <p>
+          Financial advice came from family members, friends, ex-colleagues, and from company pension schemes. One man meets up with ex-colleagues (he didn’t call them friends) to discuss financial tips and tricks, like receiving National Insurance credits for looking after grandchildren. He trusted peer advice over the financial advisor who turned up for an appointment in a Porsche.
+        </p>
+        <blockquote>
+          <p>
+            The realisation that I can actually survive on this amount of money if I’m careful - I don’t buy anything if it’s not on my shopping list. I bought a bottle of Tia Maria recently, but I wouldn’t do that every week, that’ll probably last me for a year
+         </p>
+          <footer>-
+            <cite>
+              M, female, 55, stopped work in January 2017
+            </cite>
+          </footer>
+        </blockquote>
+        <blockquote>
+          <p>
+            We've spent a bit of the lump sum and our savings on extension and holidays - we know we'll need to cut back a bit in the future but we're OK for now.
+          </p>
+          <footer>-
+            <cite>
+              A, male, 54, stopped work in 2015
+            </cite>
+          </footer>
+        </blockquote>
+        <blockquote>
+          <p>
+            I had a pension from her employer - I didn’t have to worry - I know I'm very fortunate.
+           </p>
+          <footer>-
+            <cite>
+              L, female, 64, stopped work in December 2016
+            </cite>
+          </footer>
+        </blockquote>
+
+
+      </section>
+
+      <section class="answer">
+        <h3>Being active</h3>
+
+        <blockquote class="pull-quote">
+          <p>
+            <span>
+              Staying inside on your own might be the easiest option, but&hellip;
+            </span>
+          </p>
+        </blockquote>
+
+        <p>
+          Those having a happy retirement know that they need to keep themselves busy, even if their natural instincts to <q>sit on my bum, listen to the radio or read a book</q>. Staying inside on your own might be the easiest option, but <q>your life will be shortened considerably if you don’t [go out]</q>.
+        </p>
+        <p>
+          For some, they are as busy retired as they were when they were working. One retiree told us of a friend who <q>practically works full time</q> with voluntary work. Looking after grandchildren, housework, photography courses, lunch with friends and generally <q>pottering about</q> make some retirees wonder how they could ever have fit in full time work.
+        </p>
+        <p>
+          We saw a loose correlation between income levels during working lives and happiness in retirement. Retirees with income above the state pension have more options available to them, and make plans accordingly. Those without extra income have fewer options. A GP in Sheffield told us about patients living on the state pension struggling to stay active without work filling their days, and booking GP appointments just for a chat. This lack of activity and social interaction leads to feelings of depression and hopelessness.
+        </p>
+        <p>
+          Whoever you are, though, days can be long. A motivated morning spent renovating the house can slip into an afternoon watching quiz shows. For retirees without a partner, evenings can drag on. We heard a lot about social lunches and coffees - and not very much about dinner.
+        </p>
+
+      </section>
+
+      <section class="answer">
+        <h3>Meeting new and existing friends</h3>
+        <blockquote>
+          <p>
+            When you retire your world shrinks. I was working with people all over the world. We all have our own friends, but your world suddenly shrinks. You need to make new friends.
+          </p>
+          <footer>-
+            <cite>
+              Marlene, CEO of Salford University of the Third Age
+            </cite>
+          </footer>
+        </blockquote>
+
+        <p>
+          Retiring means that people no longer see their colleagues day in day out. If people’s social networks were predominantly work based, this can come as quite a shock.
+        </p>
+        <p>
+          Some of the participants that were enjoying retirement described how they put effort into meeting up with old friends and colleagues at lunch socials, or monthly meals out. Others talked about how they joined clubs or took up volunteering opportunities as a way to meet new people and make new friends.
+        </p>
+        <p>
+          The Chair of the University of the Third Age described how she thought that joining groups and making friends was particularly harder for men of her generation and observed that two thirds of their group were women. This is common across the organisation.
+        </p>
+        <blockquote>
+          <p>
+            It’s about the social side - I’d work for free and made tea and do admin - just to stay busy.
+          </p>
+          <footer>-
+            <cite>
+              Marlene, CEO of Salford University of the Third Age
+            </cite>
+          </footer>
+        </blockquote>
+
+      </section>
+
+      <section class="answer">
+        <h3>Don’t stop dreaming</h3>
+        <p>
+          Some participants told us how the move into retirement offered them the opportunity to redefine themselves. Every participant suggested that you should plan for this shift, not only financially but also by reflecting on what you enjoy doing and what makes you happy.
+        </p>
+        <p>
+          Leaving work, as we’ve heard, on the one hand can take away a sense of purpose for the day, however presents plenty of time for fulfilling activities.
+        </p>
+        <p>
+          One participant described his dreams of flying around South Africa or Australia once he retires. He recognises this will take money, but is also in the privileged position where he can take a cash lump sum from his pension when he hits 60.
+        </p>
+        <p>
+          Those participants that were enjoying retirement weren’t afraid to have big dreams.
+        </p>
+        <blockquote>
+          <p>
+            We go touring - did 6 weeks in California - next one will be Italy.
+          </p>
+          <footer>-
+            <cite>
+              A, male, 54, stopped work in 2015
+            </cite>
+          </footer>
+        </blockquote>
+
+      </section>
+      <section class="answer">
+        <h3>Empathy with others</h3>
+        <blockquote>
+          <p>
+            On a personal level you need to be able to voice those fears to somebody, with people who can understand. Some sort of support network is really important.
+          </p>
+          <footer>-
+            <cite>
+              Marlene, CEO of Salford University of the Third Age
+            </cite>
+          </footer>
+        </blockquote>
+
+        <p>
+          Going through retirement is clearly an emotional time. Retirees really appreciated being able to share their experiences with others going through the same thing. This might be ex-colleagues, friends or a partner.
+        </p>
+        <p>
+          It felt more challenging for people when they themselves had retired but their partner hadn’t yet. Some participants felt like they were waiting, in limbo, and one lady described herself as <q>spending a lot of time on my own</q>. While one person had thrown herself into helping revive a Church in London she recognised that most of the other volunteers there were in their 20s or 30s and she missed being able to talk about how she was feeling going into later life.
+        </p>
+      </section>
+      <section class="answer">
+        <h3>Introducing structure after work</h3>
+        <blockquote>
+          <p>
+            I find it a very stark transition. A speech in the office, a piss up on Friday night, and the following Monday you’ve got nothing to do. You could go off the rails with that. It could take a long time to adjust.
+          </p>
+          <footer>-
+            <cite>
+              Robert, Pensions expert
+            </cite>
+          </footer>
+        </blockquote>
+
+        <p>
+          The work routine can be a bit of a <q>crutch</q>, in that you don’t have to think about it. You get up, you get out there, you come home and you have a glass of wine to relax. Losing that routine can be challenging. Retirees who fared best found new ways of introducing routines into their lives: grandchildren on certain days, weekly classes, monthly lunches.
+        </p>
+        <p>
+          One man described how he was thinking of driving a courier van for two days a week. He wanted to fill his time with a combination of part time work and voluntary work. It was important to him that is was an undemanding role that he could walk away from at the end of the day.
+        </p>
+        <blockquote>
+          <p>
+             If you’re going to do anything - like work on the house - you start at 10, take 1 hour for lunch and finish by 4pm.
+          </p>
+          <footer>-
+            <cite>
+              A, male, stopped work in 2015
+            </cite>
+          </footer>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            The difficulty comes when you’re doing the Monday to Friday, 9-5, full working week, and then suddenly that drops off completely. That’s where there’s a feeling of disjointed and disconnected, because you were this person and now you’ve got to find who this new person is.
+          </p>
+          <footer>-
+            <cite>
+              Jessica, CEO, Brighton &amp; Hove Age UK
+            </cite>
+          </footer>
+        </blockquote>
+      </section>
+
+  </section>
+</article>
+
+      </a>
+    </div>
+    <div class="project" id="project-protect-together">
+      <a href="group-trust" title="Read about our experiment into protecting your stuff as a group">
+        <article>
+  <section>
+
+    <header class="project-title">
+      <h1><span>Protecting your stuff</span></h1>
+      <time>December 2016</time>
+    </header>
+
+    <section class="situation">
+      <h2>A lack of trust has broken insurance</h2>
+      <p>
+        People make fraudulent claims, which means insurers create policies that make it harder to claim, which means bona fide customers can’t make a claim when they need to.
+      </p>
+      <p>
+        Insurers don't trust customers. Customers don't trust insurers. Insurers collude to raise prices and don't trust each another... And the regulators don't trust the insurers.
+      </p>
+    </section>
+
+    <section class="complication">
+      <p>
+        There’s space for Co-op to take a radically new approach to insurance: local, mutual, community focused and owned by members.
+      </p>
+    </section>
+
+    <section class="what-we-did">
+      <p>
+        In collaboration with colleagues in Co-op insurance, we explored this alternative model built on trust. If people with similar risks could form groups and insure each other, they might be more likely to trust one another.
+      </p>
+    </section>
+
+    <section class="question-and-answer">
+      <h2 class="question">
+        How might we create an insurance model where people trust each other, and where members feel confident making claims?
+      </h2>
+    </section>
+
+    <section class="what-we-did">
+      <h2>Small groups with something in common</h2>
+
+
+      <aside class="experiment-live">
+        <figure class="mobile-frame">
+          <h2>Try our experiment:</h2>
+          <div class="frame">
+            <div class="embed">
+              <iframe width="375" height="667" frameborder="0" src="https://coop-protect.herokuapp.com/"></iframe>
+            </div>
+          </div>
+          <figcaption>
+          We built Protect Together to test whether people could trust each other enough to insure each other.
+          </figcaption>
+        </figure>
+      </aside>
+
+      <p>
+        We created a prototype of Protect Together. Small groups of people with something in common (living in the same area in the same type of accommodation) could form a group and insure each other. Members would pay a regular contribution to a fund, and claims under a certain amount would come out of that fund. The group would decide what to do with any money left over (split between members or invest in their community to reduce the group’s risk), or what action to take if the fund ran low. We showed the prototype to six people who fit the requirements for our example group.
+      </p>
+    </section>
+
+
+    <section class="question-and-answer">
+    <figure>
+      <img src="Assets/Protect/image01.jpg" alt="A woman tests out the Protct Together prototype on a laptop guided by one of our team" />
+    </figure>
+      <h2 class="question">
+        Could we explain the concept?
+      </h2>
+
+      <section class="answer">
+        <h3 class="answer">A new model of insurance needs a new way to explain it</h3>
+        <p>
+          The Protect Together home page did a poor job of explaining what the service was at a glance. While all respondents recognised it was something to do with insurance, none were entirely clear how it worked.
+        </p>
+
+        <blockquote>
+          <p>
+            I don’t know if it’s insurance for a group or if you’re putting money aside in case you need it - it’s a bit ambiguous.
+          </p>
+          <footer>-
+            <cite>
+              R, female, 26-35 year old, owns a laptop, tablet, phone, jewellery, TV
+            </cite>
+          </footer>
+        </blockquote>
+
+        <p>
+          Having started to sign up and clicked through a few of the screens, respondents then understood more clearly what Protect Together was. They all felt it aligned with the Co-op’s overall values.
+        </p>
+
+        <blockquote>
+          <p>
+            I think it’s a lot cheaper, it’s nice that your neighbours are going to be involved, and I’d trust it more being Co-op.
+          </p>
+          <footer>-
+            <cite>
+              A, female, 26-35 year old, owns a phone
+            </cite>
+          </footer>
+
+        </blockquote>
+
+        <p>
+          Respondents saw the difference from traditional insurance.
+        </p>
+
+        <blockquote>
+          <p>
+            It’s along the lines of a group insurance scheme. But the money you’re investing you can get back which is completely different to any other kind of insurance scheme.
+          </p>
+          <footer>-
+            <cite>
+              P, male, 36-45 year old, owns a phone
+            </cite>
+          </footer>
+
+        </blockquote>
+
+      </section>
+    </section>
+
+    <section class="question-and-answer">
+      <h2 class="question">
+        Could we create trust? How do we define communities and groups?
+      </h2>
+      <section class="answer">
+
+        <h3 class="answer">Living close to someone isn’t a strong enough reason to trust them</h3>
+
+        <blockquote class="pull-quote">
+          <p>
+            <span>
+              Despite living in the same area, none of the respondents felt a particular affinity with our example group
+            </span>
+          </p>
+        </blockquote>
+
+        <p>
+          Despite living in the same area, none of the respondents felt a particular affinity with our example group (people renting flats in the Green Quarter, Manchester). They either felt that they didn’t know their neighbours, or that the age group wasn’t right for them.
+        </p>
+
+        <blockquote>
+          <p>
+            I wouldn’t trust my neighbours because I don’t know them.
+          </p>
+          <footer>-
+            <cite>
+              R, female, 26-35 year old, owns a laptop, tablet, phone, jewellery, TV
+            </cite>
+          </footer>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            I’m too old - my son is 21! If there was an age group 33+ I’d have much more in common. Some 21 year olds are very focused, but some are not!
+          </p>
+          <footer>-
+            <cite>
+              C, female, 36-45 year old, owns a laptop, tablet, bike, jewellery, TV
+            </cite>
+          </footer>
+
+        </blockquote>
+      </section>
+    </section>
+
+    <section class="question-and-answer">
+      <h2 class="question">
+        Is there a need for this type of insurance?
+      </h2>
+      <section class="answer">
+
+        <h3 class="answer">Renters don’t feel that they have a lot that’s worth insuring</h3>
+
+        <p>
+          We focussed on people renting property for the test because of the complexities involved with building insurance claims but we learnt that several of the people we interviewed did not see a need to insure their contents in a furnished flat.
+        </p>
+
+        <blockquote>
+          <p>
+            TVs, laptops,  I don’t insure anything like that, I’ve no contents insurance either.
+          </p>
+          <footer>-
+            <cite>
+              A, female, 26-35 year old, owns a phone
+            </cite>
+          </footer>
+        </blockquote>
+
+      </section>
+    </section>
+
+    <section class="question-and-answer">
+      <h2 class="question">
+        Should members of the group be visible to each other? Is transparency better than anonymity?
+      </h2>
+      <section class="answer">
+
+        <h3 class="answer">People felt they’d need to talk to the group</h3>
+
+        <p>
+          When presented with the emails explaining a vote or action was required, four respondents weren’t comfortable with voting. They indicated they’d want to sound out the group in advance, or talk to people before making a decision. They seemed to assume the group was about 10 - 15 people strong.
+        </p>
+
+        <blockquote>
+          <p>
+            You’d almost want to get the email and then have a group meeting, everyone could vote independently but before that have a discussion.
+          </p>
+          <footer>-
+            <cite>
+              C, female, 36-45 year old, owns a laptop, tablet, bike, jewellery, TV
+            </cite>
+          </footer>
+        </blockquote>
+
+        <h3 class="answer">The perceived effort of participating in a group can be off putting</h3>
+
+        <blockquote class="pull-quote">
+          <p>
+            <span>
+              One participant was concerned that there might be a significant overhead in managing a group&hellip;
+            </span>
+          </p>
+        </blockquote>
+
+        <p>
+          One participant was concerned that there might be a significant overhead in managing a group, and that it might involve meeting up or other commitments.
+        </p>
+
+        <blockquote>
+          <p>
+            For me to receive a report, it sounds like you’re committing to something you don’t have time to do. This seems like a community or a steering group for your own bills, not something I’ve seen before. It feels like you might have to meet up, that’s a time commitment.
+          </p>
+          <footer>-
+            <cite>
+              C, female, 18-25 year old, owns a phone, TV
+            </cite>
+          </footer>
+        </blockquote>
+      </section>
+    </section>
+
+    <section class="next-steps">
+      <h2>Things we'd like to try next</h2>
+
+      <p>
+        Experiment with other ways of communicating the concept. A short 1 minute animation explaining Protect Together might be more effective at communicating the various parts to it. For a good example, see https://vimeo.com/62806565
+      </p>
+
+      <p>
+        Explore different types of groups that people might associate with. We should experiment with whether individuals associate and trust other people based on age, salary, job, interests. We could also look at whether it makes a difference if the group already know each other in another context or come together specifically to take part in the scheme.
+      </p>
+
+      <p>
+        Explore different sizes of groups that people might join. We didn’t explicitly show the size of the Green Quarter group. A future design sprint might present respondents with different size groups to better understand how they feel about this and how they might communicate.
+      </p>
+    </section>
+  </section>
+</article>
+
+      </a>
+    </div>
+    <div class="project" id="project-terms-reviewers">
+      <a href="terms" title="Read about our experiment into the terms and conditions behind connected devices">
+        <article>
   <section>
 
     <header class="project-title">
@@ -1218,25 +1673,25 @@
       <p>
         We showed five journalists and reviewers a prototype of Legalease, a community-driven terms and conditions analysis site where contributors annotate legal terms and leave questions for manufacturers to answer.
       </p>
-      <aside class="experiment-live desktop-embed">
-        <figure>
-          <div>
-            <iframe width="100%" height="600" frameborder="0" src="https://coopdigital.github.io/legalease/"></iframe>
-          </div>
-          <figcaption>
-            We built Legalease to test whether we could get journalists to talk about how secure products are when they review them.
-          </figcaption>
-        </figure>
-      </aside>
     </section>
 
+    <aside class="experiment-live desktop-embed">
+      <figure>
+        <div>
+          <iframe width="100%" height="600" frameborder="0" src="https://coopdigital.github.io/legalease/"></iframe>
+        </div>
+        <figcaption>
+          We built Legalease to test whether we could get journalists to talk about how secure products are when they review them.
+        </figcaption>
+      </figure>
+    </aside>
 
     <section class="question">
       <h2>How do journalists write stories?</h2>
     </section>
 
     <section class="answer">
-      <h2>Somewhere on the scale between objectivity and subjectivity</h2>
+      <h3>Somewhere on the scale between objectivity and subjectivity</h3>
       <p>
         Different publications have different approaches. One of the journalists we spoke to carried out repeatable, objective experiments to decide which product was best. Another wrote for a site where personal and political opinions are encouraged, and was able to bring his own views into his reviews.
       </p>
@@ -1258,7 +1713,7 @@
 
 
 
-      <h2>Using personal and professional relationships to understand complex issues</h2>
+      <h3>Using personal and professional relationships to understand complex issues</h3>
 
       <p>
         The journalists we spoke to used different sources for their stories: PR agencies, manufacturers, their own research, awareness of trends through personal contacts and online communities (Reddit). Some were happy to be contacted by PR companies and manufacturers. Others deliberately avoided them, only contacting them to give them a chance to respond to a negative story.
@@ -1412,8 +1867,8 @@
         No - not like this. It was clear what Legalease was for. However, participants’ reactions were mixed as to whether it was something they’d use during their writing process. They wanted to see stronger expert opinions and summaries (as opposed to commentary and questions) and worried about how qualified the contributors were.
       </p>
     </section>
-    <figure class="img-wide">
-      <img src="Assets/Legalease/guardian-story.png" alt="Screenshot of a story on the Guardian website with the headline Children in England sign over digital rights regularly and unknowingly" />
+    <figure>
+      <img src="Assets/Legalease/guardian-story.png" alt="Screenshot of Guardian headline: Children in England sign over digital rights regularly and unknowingly" />
       <figcaption>
         Data privacy does make the headlines, but not often
       </figcaption>
@@ -1440,7 +1895,7 @@
 
     </section>
     <figure>
-      <img src="Assets/Legalease/performance-art.png" alt="Screenshot of a tweet showing a live reading of terms and conditions by the Norweigan Consumer Council" />
+      <img src="Assets/Legalease/performance-art.png" alt="Tweet with photo of woman reading some terms and conditions" />
       <figcaption>
         The Norwegian Consumer Council stage a live reading of terms and conditions
       </figcaption>
@@ -1448,11 +1903,378 @@
   </section>
 </article>
 
-    </a>
-  </div>
-  <div class="project" id="project-locally">
-    <a href="locally" class="scroll-container">
-      <article>
+      </a>
+    </div>
+    <div class="project" id="project-connected-devices">
+      <a href="connected" title="Read about our experiment into connected devices">
+        <article>
+  <section>
+
+    <header class="project-title">
+      <h1><span>Everything is connected</span></h1>
+      <time>November 2016</time>
+    </header>
+
+    <section class="situation">
+      <p>
+        Many of the things in our homes connect to the internet, allowing us to control them with our phones via an app, to be part of an online community or to access content online.
+      </p>
+      <figure class="img-wide">
+        <img src="Assets/Scout/100-connected.jpg" alt="LG&amp;#8217s announcemnet at CES that all of their devices will now be connected to the internet" />
+        <figcaption>
+          LG's announcement at CES, photo by Karissa Bell
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="complication">
+      <h2>Everything's sharing everything</h2>
+      <p>
+        Many of these devices have cameras and microphones, capturing highly personal information inside the home.
+      </p>
+
+      <p>
+      It's not always clear that data is being captured, how that information
+      is used, or  who has access to it. This is often hidden inside
+      complicated terms and
+      conditions.
+      </p>
+      <aside>
+        <figure class="alt">
+          <img src="Assets/Scout/image02.jpg" alt="A smart television with a Google terms and conditions dialog box" />
+          <figcaption>
+            Google terms and conditions dialog box
+          </figcaption>
+        </figure>
+      </aside>
+
+      <p>
+      For some devices, the manufacturer's business model is selling personal information on to others
+
+       <em>"If you're not the customer, you're the product"</em>
+      </p>
+
+      <p>
+        Finally, many of these devices have security vulnerabilities, opening them up to attackers on the internet.
+      </p>
+    </section>
+
+    <section class="what-we-did">
+      <h2>We showed people problems in their home</h2>
+
+
+      <p>
+        We prototyped Scout, a service that monitors devices connected to a home wifi
+        network, and showed it to four people who use these kinds of devices in
+        their homes.
+      </p>
+
+      <figure class="img-wide">
+        <img src="Assets/Scout/image01.png" alt="A fridge magnet that we imagined could alert the homeowner to new vulnerabilities on their network" />
+        <figcaption>
+          A fridge magnet could alert the homeowner to new vulnerabilities on their network
+        </figcaption>
+      </figure>
+
+      <p>
+        We showed them some potential vulnerabilities in a home network that was similar to their own. They saw how personal information was transferred to a third party company, allowed via a clause buried deep within a product’s terms and conditions.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="question">
+          How much do people understand about the risks of connected devices?
+        </h2>
+      <section class="answer">
+        <p>
+          Most of our participants had not thought about how secure or private the connection between their devices and the internet was.
+        </p>
+
+        <blockquote>
+          <p>
+            No I didn’t realise. It’s quite scary actually.
+          </p>
+          <footer>-
+            <cite>
+              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
+          </cite>
+          </footer>
+        </blockquote>
+
+        <p>
+          Some knew there were risks, but not the specifics.
+        </p>
+
+        <blockquote>
+          <p>
+            More things are becoming connected to the internet. You hear more stories of people hacking into things, the more secure you can be the better.
+          </p>
+          <footer>-
+            <cite>
+              D, male, 26-35 year old, owns LG Smart TV, Playstation 3, Hive 2
+            </cite>
+          </footer>
+        </blockquote>
+
+      </section>
+    </section>
+
+      <figure class="img-wide alt">
+        <img src="Assets/Scout/image06.png" alt="The digital product research team reviewing the research observations" />
+        <figcaption>
+          The team reviewing the research findings
+        </figcaption>
+      </figure>
+
+    <section>
+      <h2 class="question">Can we make security exploits visible and understandable?</h2>
+
+      <aside class="experiment-live">
+        <figure class="mobile-frame">
+          <h2>Try our experiment:</h2>
+          <div class="frame">
+            <div class="embed">
+              <iframe width="375" height="667" frameborder="0" src="https://scout-dashboard.herokuapp.com/1.html"></iframe>
+            </div>
+          </div>
+          <figcaption>
+            We built Scout to test whether we could help people understand security exploits.
+          </figcaption>
+        </figure>
+
+      </aside>
+
+      <section class="answer">
+        <p>
+        When we showed them the Scout prototype, our participants immediately
+        understood the implications for their individual situation.
+        </p>
+
+        <blockquote>
+          <p>
+            It sounds like, when you’re sitting in a room with a smart TV, it could potentially be sent to a third party.
+          </p>
+          <footer>-
+            <cite>
+              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
+          </cite>
+          </footer>
+
+        </blockquote>
+
+        <blockquote>
+          <p>
+          You could be buying something over the phone, doing your insurance, giving your credit card information to pay for your insurance. If someone has intercepted that, they could commit fraud on my account.
+          </p>
+          <footer>-
+            <cite>
+              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
+          </cite>
+          </footer>
+
+        </blockquote>
+
+      </section>
+    </section>
+
+    <section>
+      <h2 class="question">
+          Would people "downgrade" their devices to make them more private?
+      </h2>
+
+      <section class="answer">
+
+        <p>
+          Despite our participants obvious discomfort at learning about the flaws
+          in devices they had bought, they weighed up their options and broadly
+          decided to take no action.
+        </p>
+
+        <p>
+          Cost was a factor; smart devices had been a significant outlay, and the
+          idea of reducing their functionality was not appealling.
+        </p>
+
+        <blockquote class="pull-quote">
+          <p>
+            <span>
+              &hellip;they weighed up their options and broadly
+              decided to take no action
+            </span>
+          </p>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            But again, if I’ve spent a lot of money on it. I don’t know if I would. I don’t know. Just stick to it and take the risk, potentially.
+          </p>
+          <footer>-
+            <cite>
+              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
+          </cite>
+          </footer>
+
+        </blockquote>
+
+        <p>
+          Once informed, people were very good at balancing the risks against the
+          benefits they get from their devices.
+        </p>
+
+        <blockquote>
+          <p>
+            I wouldn’t take it back for a refund because he likes it too much. It’s like big brother. He feels safer with it.
+          </p>
+          <footer>-
+            <cite>
+              W, female, 26-36 year old, owns Samsung smart TV, Playstation 4, Hikvision security camera
+            </cite>
+          </footer>
+        </blockquote>
+
+
+      </section>
+    </section>
+
+    <section>
+      <h2 class="question">
+        Can we help people work together to influence
+        manufacturers?
+      </h2>
+
+      <section class="answer">
+        <p>
+        People were interested in the idea of lobbying manufacturers to change their practices through the service. We thought this might be a good way to link in with membership and the wider Co-op campaigning work.
+        </p>
+
+        <blockquote>
+          <p>
+            I would assume that the team behind Scout would contact British Gas that people aren’t happy about them sharing their data. I’d click on the join option.
+          </p>
+          <footer>-
+            <cite>
+              D, male, 26-35 year old, owns LG Smart TV, Playstation 3, Hive 2
+            </cite>
+          </footer>
+        </blockquote>
+
+        <blockquote>
+          <p>
+            I would join 3865 people asking Samsung to change this.
+          </p>
+          <footer>-
+            <cite>
+              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
+          </cite>
+          </footer>
+
+        </blockquote>
+      </section>
+    </section>
+
+    <section>
+
+      <section class="learning">
+
+        <h2>
+          There was a mistrust of companies
+        </h2>
+
+        <blockquote>
+          <p>
+            You don’t know who to believe. Samsung are saying they’re not breaking laws, this article is saying that it is.
+          </p>
+          <footer>-
+            <cite>
+              M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
+          </cite>
+          </footer>
+
+        </blockquote>
+        <blockquote>
+          <p>
+            But deep down they would probably do that [share data with third parties] anyway without asking permission.
+          </p>
+          <footer>-
+            <cite>
+              D, male, 26-35 year old, owns LG Smart TV, Playstation 3, Hive 2
+            </cite>
+          </footer>
+        </blockquote>
+
+      </section>
+
+      <section class="learning">
+
+        <h2>There was a clear difference between inside and outside the home</h2>
+
+          <blockquote>
+            <p>
+              My sister doesn’t use it all, she doesn’t like the idea of having cameras in the house.
+            </p>
+            <footer>-
+              <cite>
+                M, male, 26-35 year old, owns Samsung smart tv, Tenvis security cameras, PlayStation
+            </cite>
+            </footer>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              If it’s purely that they can look at what’s on the CCTV, that’s only outside the house so that’s OK.
+            </p>
+            <footer>-
+              <cite>
+                W, female, 26-36 year old, owns Samsung smart TV, Playstation 4, Hikvision security camera
+              </cite>
+            </footer>
+          </blockquote>
+
+      </section>
+      <section class="learning">
+
+        <h2>People have a very individual view of what is private</h2>
+
+        <blockquote>
+          <p>
+            If you read out credit card details it would be a problem but normal conversations, not that bothered.
+          </p>
+          <footer>-
+            <cite>
+              D, male, 26-35 year old, owns LG Smart TV, Playstation 3, Hive 2
+            </cite>
+          </footer>
+        </blockquote>
+        <blockquote>
+          <p>
+            I did hear about this, smart TVs recording private conversations. It’s a bit Orwellian.
+          </p>
+          <p>
+            In principle I don’t think this is OK, even if they don’t do anything with it.
+          </p>
+          <p>
+            It doesn’t matter that much if people can see my photos.
+          </p>
+          <p>
+            If the government wanted to use it for a purpose that might make me think it’s ok but not just corporates.
+          </p>
+          <footer>-
+            <cite>
+              A, female, 26-35 year old, owns LG smart TV, Playstation 4 and XBox, BabyMoov wifi monitor
+            </cite>
+          </footer>
+        </blockquote>
+      </section>
+
+    </section>
+  </section>
+</article>
+
+      </a>
+    </div>
+    <div class="project" id="project-locally">
+      <a href="locally" title="Read about our experiment into keeping money in the local economy">
+        <article>
   <section>
 
     <header class="project-title">
@@ -1476,7 +2298,7 @@
         We showed six independent retailers in Chorlton a prototype of Locally, a scheme that earns shoppers ‘perks’, redeemable in any participating business, when they shop with local independent retailers.
       </p>
       <figure class="img-wide">
-        <img src="Assets/Locally/using-the-app.png" alt="Close of a person using the Locally app to enter an amount" />
+        <img src="Assets/Locally/using-the-app.png" alt="Close up of a person using the Locally app to enter an amount" />
         <figcaption>
           Money spent in local shops earns perks that can be redeemed in any participating business
         </figcaption>
@@ -1550,7 +2372,7 @@
         <p>Retailers were worried about how they and their staff would use the app. Some were worried about it being time consuming and fiddly, and others thought it would be wrong to ask staff to use their own data whilst using the app in the shop. We also heard that not all their customers had smartphones, and would therefore miss out.
         </p>
 
-        <aside>
+        <aside class="live-experiment">
           <figure class="mobile-frame">
             <h2>Try our experiment:</h2>
             <div class="frame">
@@ -1849,9 +2671,200 @@
   </section>
 </article>
 
-    </a>
-  </div>
-</div>
+      </a>
+    </div>
+    <div class="project" id="project-washing-service">
+      <a href="washing-service" title="Read about our experiment into a washing subscription service">
+        <article>
+  <section>
+    <header class="project-title">
+      <h1><span>Washing as a service</span></h1>
+      <time>October 2016</time>
+    </header>
 
+    <section class="situation">
+      <p>
+        Good washing machines are expensive, and cheaper ones aren’t always reliable and prove expensive in the long term.
+      </p>
+    </section>
+
+    <section class="complication">
+      <h2>Pay weekly on the high street</h2>
+      <p>
+        The alternative, especially for people on low incomes, is to buy a washing machine using finance, often at a high rate of interest.
+      </p>
+      <h2>Rent or buy</h2>
+      <p>
+        People’s attitudes to ownership are changing. We believe that renting will be more popular in the future. However domestic appliance rental companies have disappeared from the high street.
+      </p>
+    </section>
+
+    <section class="question">
+      <h2>
+        Would people sign up for a subscription service for their washing?
+      </h2>
+    </section>
+
+    <aside class="experiment-live">
+      <figure class="mobile-frame">
+        <h2>Try our experiment:</h2>
+        <div class="frame">
+          <div class="embed">
+            <iframe width="375" height="667" frameborder="0" src="http://washify.co.uk/how-it-works"></iframe>
+          </div>
+        </div>
+        <figcaption>
+          We built a website to promote our washing service offer.
+        </figcaption>
+      </figure>
+    </aside>
+
+    <section class="what-we-did">
+      <h2>We promoted a washing subscription service to see how people responded</h2>
+      <p>
+        We prototyped Washify - a subscription washing machine service that included a 48hr repair or replace service and a regular delivery of laundry liquid. We tested the concept with 5 landlords and 12 potential customers.
+      </p>
+
+      <figure>
+        <img src="Assets/Washify/lab-testing.jpg" alt="One of our team testing our prototype with a landlord and another observing remotely" />
+        <figcaption>
+          We set up a basic user testing lab.
+        </figcaption>
+      </figure>
+
+    <section class="question">
+      <p>
+        We thought there was something interesting in the often painful relationship between landlords and tenants. So we wondered how we might make that relationship better.
+      </p>
+      <h2>
+        Would landlords use a service like this to provide a washing service for their tenants?
+      </h2>
+    </section>
+
+    <section class="learning">
+      <h3>Landlords were not interested in renting</h3>
+      <p>
+        We learned that Washify was not attractive to landlords. They preferred to use local people to maintain their properties and saw our proposition as expensive. However tenants were interested in the subscription model, due to the low cost and ease of maintenance.
+      </p>
+
+    </section>
+
+          <aside>
+          <figure>
+            <img src="Assets/Washify/google-ad.png" alt="An image of a google ad targeting tenants that directs people to the Washify website" />
+            <figcaption>
+              An example ad promoting the Washify offer.
+            </figcaption>
+          </figure>
+        </aside>
+
+      <h2>People with a job to be done</h2>
+      <p>
+        Through Google advertising we were able to reach people at the point where they were looking for a solution to a problem: they had a broken washing machine and a pile of dirty washing on the floor. This was the perfect time to talk to them about our offer and we learned that it compared very well against the alternative options available.
+      </p>
+
+            <blockquote>
+              <p>
+                This way seems cheaper and more convenient than the laundrette even though the laundrette is only a 1 minute walk away.
+              </p>
+              <footer>-
+                <cite>
+                  Tenant who wanted to rent a washing machine as their landlord would not replace a broken one
+              </cite>
+              </footer>
+            </blockquote>
+
+      </section>
+
+      <section class="next-steps">
+
+        <h2>Where we want to go next</h2>
+
+        <p>
+          We think that understanding in more detail how tenants could use Washify would be a useful next step. The best way to do this might be a small scale pilot in a local area.
+        </p>
+
+      </section>
+  </section>
+</article>
+
+      </a>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        //cache our items and containers
+        var items = $(".project");
+        var scrollContainer = $("#projects");
+
+
+        /**
+         * Fetches the next or previous item from items
+         *
+         * @param conntainer {JQueryElement} scroll-container in which the items can be found
+         * @param items {Array} items to be searched through
+         * @param isNext {boolean} set to true (default) if you want the next item, to false if you want the previous one
+         * @returns {*}
+         */
+        function fetchItem(container, items, isNext) {
+            var i,
+                scrollLeft = container.scrollLeft();
+
+            //set isNext default to true if not set
+            if (isNext === undefined) {
+                isNext = true;
+            }
+
+            if (isNext && container[0].scrollWidth - container.scrollLeft() <= container.outerWidth()) {
+                //we reached the last one so return the first one for looping:
+                return $(items[0]);
+            }
+
+            //loop through items
+            for (i = 0; i < items.length; i++) {
+
+                if (isNext && $(items[i]).position().left > 0) {
+                    //this item is our next item as it's the first one with non-negative "left" position
+                    return $(items[i]);
+                } else if (!isNext && $(items[i]).position().left >= 0) {
+                    //this is our previous item as it's the one with the smallest negative "left" position
+                    //if we're at item 0 just return the last item instead for looping
+                    return i == 0 ? $(items[items.length - 1]) : $(items[i-1]);
+                }
+            }
+
+            //nothing found
+            return null;
+        }
+
+        /**
+         * Moves the scrollcontainer to the next/previous item (depending on event.data.direction).
+         *
+         * @param event
+         */
+        function moveToItem(event) {
+            //fetch the next/previous item:
+            var isNext = event.data.direction == "next";
+            var item = isNext ? fetchItem(scrollContainer, items, true) : fetchItem(scrollContainer, items, false);
+
+            if (item) {
+                //scroll to item
+                scrollContainer.animate({"scrollLeft": item.position().left + scrollContainer.scrollLeft()}, 400);
+            }
+        }
+
+        //bind events
+        $(".arrow-left").click({direction: "prev"}, moveToItem);
+        $(".arrow-right").click({direction: "next"}, moveToItem);
+
+
+    });
+
+</script>
+
+    <div id="wip">This is a work in progress: <a href="https://docs.google.com/a/coopdigital.co.uk/forms/d/e/1FAIpQLSeD4Fbz0-RI8ltn_cuP7Xrcce4gr5hAEn0saGV_ELoAvL3oQw/viewform?usp=sf_link" target="_blank">Give feedback</a></div>
   </body>
 </html>

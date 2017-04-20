@@ -27,25 +27,25 @@
       <p>
         We showed five journalists and reviewers a prototype of Legalease, a community-driven terms and conditions analysis site where contributors annotate legal terms and leave questions for manufacturers to answer.
       </p>
-      <aside class="experiment-live desktop-embed">
-        <figure>
-          <div>
-            <iframe width="100%" height="600" frameborder="0" src="https://coopdigital.github.io/legalease/"></iframe>
-          </div>
-          <figcaption>
-            We built Legalease to test whether we could get journalists to talk about how secure products are when they review them.
-          </figcaption>
-        </figure>
-      </aside>
     </section>
 
+    <aside class="experiment-live desktop-embed">
+      <figure>
+        <div>
+          <iframe width="100%" height="600" frameborder="0" src="https://coopdigital.github.io/legalease/"></iframe>
+        </div>
+        <figcaption>
+          We built Legalease to test whether we could get journalists to talk about how secure products are when they review them.
+        </figcaption>
+      </figure>
+    </aside>
 
     <section class="question">
       <h2>How do journalists write stories?</h2>
     </section>
 
     <section class="answer">
-      <h2>Somewhere on the scale between objectivity and subjectivity</h2>
+      <h3>Somewhere on the scale between objectivity and subjectivity</h3>
       <p>
         Different publications have different approaches. One of the journalists we spoke to carried out repeatable, objective experiments to decide which product was best. Another wrote for a site where personal and political opinions are encouraged, and was able to bring his own views into his reviews.
       </p>
@@ -67,7 +67,7 @@
 
 
 
-      <h2>Using personal and professional relationships to understand complex issues</h2>
+      <h3>Using personal and professional relationships to understand complex issues</h3>
 
       <p>
         The journalists we spoke to used different sources for their stories: PR agencies, manufacturers, their own research, awareness of trends through personal contacts and online communities (Reddit). Some were happy to be contacted by PR companies and manufacturers. Others deliberately avoided them, only contacting them to give them a chance to respond to a negative story.
@@ -221,8 +221,8 @@
         No - not like this. It was clear what Legalease was for. However, participants’ reactions were mixed as to whether it was something they’d use during their writing process. They wanted to see stronger expert opinions and summaries (as opposed to commentary and questions) and worried about how qualified the contributors were.
       </p>
     </section>
-    <figure class="img-wide">
-      <img src="/Assets/Legalease/guardian-story.png" alt="Screenshot of a story on the Guardian website with the headline Children in England sign over digital rights regularly and unknowingly" />
+    <figure>
+      <img src="/Assets/Legalease/guardian-story.png" alt="Screenshot of Guardian headline: Children in England sign over digital rights regularly and unknowingly" />
       <figcaption>
         Data privacy does make the headlines, but not often
       </figcaption>
@@ -249,7 +249,7 @@
 
     </section>
     <figure>
-      <img src="/Assets/Legalease/performance-art.png" alt="Screenshot of a tweet showing a live reading of terms and conditions by the Norweigan Consumer Council" />
+      <img src="/Assets/Legalease/performance-art.png" alt="Tweet with photo of woman reading some terms and conditions" />
       <figcaption>
         The Norwegian Consumer Council stage a live reading of terms and conditions
       </figcaption>
