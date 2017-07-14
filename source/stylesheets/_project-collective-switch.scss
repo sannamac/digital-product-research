@@ -1,0 +1,75 @@
+$colour-project-safer-emails: $base-kashmir;
+
+body {
+  &.index {
+    #project-collective-switch {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-safer-emails,0), $colour-project-safer-emails, $colour-project-safer-emails);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-safer-emails, 4%),0), darken($colour-project-safer-emails, 4%), darken($colour-project-safer-emails, 4%));
+            }
+              > article {
+                background: darken($colour-project-safer-emails, 4%);
+              }
+          }
+        }
+      }
+      > a > article {
+        background: $colour-project-safer-emails;
+        header.project-title {
+          h1 {
+            span {
+              background: darken($colour-project-safer-emails, 15%);
+            }
+          }
+        }
+        > section > section {
+          &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+            &:after {
+              color: darken($colour-project-safer-emails, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.safer-emails_index {
+    background: darken($colour-project-safer-emails, 4%);
+    header#topnav {
+      background: darken($colour-project-safer-emails, 10%);
+    }
+    header.project-title {
+      h1 {
+        span {
+          background: darken($colour-project-safer-emails, 15%);
+        }
+      }
+    }
+    > article {
+      > section > section {
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+          &:after {
+            color: darken($colour-project-safer-emails, 10%);
+          }
+        }
+      }
+    }
+    > article, > section > div {
+      background: $colour-project-safer-emails;
+    }
+    > section {
+      &.what-next {
+        background: darken($colour-project-safer-emails, 15%);
+      }
+    }
+    blockquote.pull-quote {
+      span {
+        background: darken($colour-project-safer-emails, 10%);
+      }
+    }
+  }
+}
