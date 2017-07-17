@@ -2,7 +2,7 @@
 @import "normalize";
 
 $serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-$sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$sans-serif: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
 $base-black: #282828;
@@ -28,7 +28,7 @@ $base-tan: #610F1A;
 @import "project-washing-service";
 @import "project-safer-emails";
 @import "project-collective-switch";
-
+@import "fonts";
 
 /* general
 --------------------------------------------------*/
@@ -44,11 +44,10 @@ body {
   font-size: 16px;
   line-height: 1.4;
   font-family: $sans-serif;
-  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-family: "AvenirNextLTW01-Demi";
 }
 
 header#topnav {
@@ -57,7 +56,6 @@ header#topnav {
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
   box-sizing: border-box;
   line-height: 55px;
   padding: 0.2rem 1.2rem;
@@ -70,7 +68,7 @@ header#topnav {
   }
   a, a:active, a:visited {
     color: inherit;
-    font-weight: 500;
+    font-family: "AvenirNextLTW01-Medium";
     text-decoration: none;
     &:nth-of-type(1) {
       margin-right: 1rem;
@@ -225,7 +223,7 @@ body.about_index {
         section {
           &.situation {
             font-size: 1.2rem;
-            font-weight: 500;
+            font-weight: "AvenirNextLTW01-Medium";
           }
         }
         @media screen and (max-width: 767px) {
@@ -428,7 +426,7 @@ body:not(.index):not(.about_index) {
         &.situation {
           @media screen and (min-width: 767px) {
             font-size: 2.2rem;
-            font-weight: 400;
+            font-family: "AvenirNextLTW01-Medium";
             margin-bottom: 4rem;
           }
         }
