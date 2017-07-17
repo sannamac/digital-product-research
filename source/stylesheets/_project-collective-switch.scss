@@ -1,4 +1,4 @@
-$colour-project-collective-switch: $base-surfie;
+$colour-project-collective-switch: $base-oregon;
 
 body {
   &.index {
@@ -37,7 +37,7 @@ body {
       }
     }
   }
-  &.safer-emails_index {
+  &.collective-switch_index {
     background: darken($colour-project-collective-switch, 4%);
     header#topnav {
       background: darken($colour-project-collective-switch, 10%);
