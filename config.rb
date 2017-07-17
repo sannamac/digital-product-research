@@ -40,6 +40,8 @@ activate :directory_indexes
 #   end
 # end
 
+set :font_path, 'fonts/'
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
