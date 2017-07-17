@@ -125,11 +125,11 @@
           <h2>Try our experiment:</h2>
           <div class="frame">
             <div class="embed">
-              <iframe width="375" height="667" frameborder="0" src="https://scout-dashboard.herokuapp.com/1.html"></iframe>
+              <iframe width="375" height="667" frameborder="0" src="https://scout-dashboard.digitalproductresearch.org.uk/1.html"></iframe>
             </div>
           </div>
           <figcaption>
-            We built Scout to test whether we could help people understand security exploits.
+            We built Scout to test whether we could help people understand security exploits
           </figcaption>
         </figure>
 
