@@ -1,4 +1,4 @@
-$colour-project-safer-emails: $base-kashmir;
+$colour-project-collective-switch: $base-surfie;
 
 body {
   &.index {
@@ -6,31 +6,31 @@ body {
       > a {
         @media screen and (min-width: 767px) {
           &:after {
-            background: linear-gradient( 180deg, rgba($colour-project-safer-emails,0), $colour-project-safer-emails, $colour-project-safer-emails);
+            background: linear-gradient( 180deg, rgba($colour-project-collective-switch,0), $colour-project-collective-switch, $colour-project-collective-switch);
           }
           &:hover {
             &:after {
-              background: linear-gradient( 180deg, rgba(darken($colour-project-safer-emails, 4%),0), darken($colour-project-safer-emails, 4%), darken($colour-project-safer-emails, 4%));
+              background: linear-gradient( 180deg, rgba(darken($colour-project-collective-switch, 4%),0), darken($colour-project-collective-switch, 4%), darken($colour-project-collective-switch, 4%));
             }
               > article {
-                background: darken($colour-project-safer-emails, 4%);
+                background: darken($colour-project-collective-switch, 4%);
               }
           }
         }
       }
       > a > article {
-        background: $colour-project-safer-emails;
+        background: $colour-project-collective-switch;
         header.project-title {
           h1 {
             span {
-              background: darken($colour-project-safer-emails, 15%);
+              background: darken($colour-project-collective-switch, 15%);
             }
           }
         }
         > section > section {
           &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
             &:after {
-              color: darken($colour-project-safer-emails, 10%);
+              color: darken($colour-project-collective-switch, 10%);
             }
           }
         }
@@ -38,14 +38,14 @@ body {
     }
   }
   &.safer-emails_index {
-    background: darken($colour-project-safer-emails, 4%);
+    background: darken($colour-project-collective-switch, 4%);
     header#topnav {
-      background: darken($colour-project-safer-emails, 10%);
+      background: darken($colour-project-collective-switch, 10%);
     }
     header.project-title {
       h1 {
         span {
-          background: darken($colour-project-safer-emails, 15%);
+          background: darken($colour-project-collective-switch, 15%);
         }
       }
     }
@@ -53,22 +53,22 @@ body {
       > section > section {
         &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
           &:after {
-            color: darken($colour-project-safer-emails, 10%);
+            color: darken($colour-project-collective-switch, 10%);
           }
         }
       }
     }
     > article, > section > div {
-      background: $colour-project-safer-emails;
+      background: $colour-project-collective-switch;
     }
     > section {
       &.what-next {
-        background: darken($colour-project-safer-emails, 15%);
+        background: darken($colour-project-collective-switch, 15%);
       }
     }
     blockquote.pull-quote {
       span {
-        background: darken($colour-project-safer-emails, 10%);
+        background: darken($colour-project-collective-switch, 10%);
       }
     }
   }
