@@ -2,7 +2,7 @@
 @import "normalize";
 
 $serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-$sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
 $base-black: #282828;
@@ -27,6 +27,7 @@ $base-tan: #610F1A;
 @import "project-locally";
 @import "project-washing-service";
 @import "project-safer-emails";
+@import "project-lighthouse";
 
 /* general
 --------------------------------------------------*/
@@ -41,7 +42,7 @@ body {
   overflow: auto;
   font-size: 16px;
   line-height: 1.4;
-  font-family: $sans-serif; 
+  font-family: $sans-serif;
   font-weight: 400;
 }
 
@@ -420,7 +421,7 @@ body:not(.index):not(.about_index) {
               padding: 2rem 0;
             }
           }
-          
+
         }
 
         &.situation {
@@ -457,7 +458,7 @@ body:not(.index):not(.about_index) {
         color: white;
       }
     }
-    
+
   }
 
   aside, blockquote.pull-quote {
@@ -587,7 +588,7 @@ body:not(.index):not(.about_index) {
 }
 
 
-// Feedback 
+// Feedback
 
 div#wip {
   position: fixed;
