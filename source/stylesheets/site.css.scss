@@ -62,7 +62,7 @@ header#topnav {
   font-variant: normal;
   box-sizing: border-box;
   line-height: 55px;
-  padding: 0.2rem 1.2rem;
+  padding: 0.2rem 1rem;
   @media screen and (min-width: 766px) {
     position: fixed;
     top: 0;
@@ -112,6 +112,11 @@ header#topnav {
         color: white;
       }
     }
+  }
+  svg#coop-logo {
+    width: 32px;
+    vertical-align: middle;
+    margin: 0 1rem 0 0;
   }
 }
 
