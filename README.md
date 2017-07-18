@@ -1,6 +1,6 @@
 # Digital Product Research showcase
 
-https://coopdigital.github.io/digital-product-research
+https://dpr.coop.co.uk
 
 ## Develop
 
