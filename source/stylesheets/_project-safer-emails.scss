@@ -41,6 +41,11 @@ body {
     background: darken($colour-project-safer-emails, 4%);
     header#topnav {
       background: darken($colour-project-safer-emails, 10%);
+      svg#coop-logo {
+        g#coop-logo-shape {
+          fill: lighten($colour-project-safer-emails, 10%);
+        }
+      }
     }
     header.project-title {
       h1 {
