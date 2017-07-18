@@ -1,0 +1,75 @@
+$colour-project-lighthouse: $base-tan;
+
+body {
+  &.index {
+    #project-lighthouse {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-lighthouse,0), $colour-project-lighthouse, $colour-project-lighthouse);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-lighthouse, 4%),0), darken($colour-project-lighthouse, 4%), darken($colour-project-lighthouse, 4%));
+            }
+              > article {
+                background: darken($colour-project-lighthouse, 4%);
+              }
+          }
+        }
+      }
+      > a > article {
+        background: $colour-project-lighthouse;
+        header.project-title {
+          h1 {
+            span {
+              background: darken($colour-project-lighthouse, 15%);
+            }
+          }
+        }
+        > section > section {
+          &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+            &:after {
+              color: darken($colour-project-lighthouse, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.lighthouse_index {
+    background: darken($colour-project-lighthouse, 4%);
+    header#topnav {
+      background: darken($colour-project-lighthouse, 10%);
+    }
+    header.project-title {
+      h1 {
+        span {
+          background: darken($colour-project-lighthouse, 15%);
+        }
+      }
+    }
+    > article {
+      > section > section {
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+          &:after {
+            color: darken($colour-project-lighthouse, 10%);
+          }
+        }
+      }
+    }
+    > article, > section > div {
+      background: $colour-project-lighthouse;
+    }
+    > section {
+      &.what-next {
+        background: darken($colour-project-lighthouse, 15%);
+      }
+    }
+    blockquote.pull-quote {
+      span {
+        background: darken($colour-project-lighthouse, 10%);
+      }
+    }
+  }
+}
