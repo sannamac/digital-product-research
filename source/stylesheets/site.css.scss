@@ -62,7 +62,7 @@ header#topnav {
   font-variant: normal;
   box-sizing: border-box;
   line-height: 55px;
-  padding: 0.2rem 1.2rem;
+  padding: 0.2rem 1rem;
   @media screen and (min-width: 766px) {
     position: fixed;
     top: 0;
@@ -75,7 +75,7 @@ header#topnav {
     font-family: "AvenirNextLTW01-Medium";
     text-decoration: none;
     &:nth-of-type(1) {
-      margin-right: 1rem;
+      margin-right: 0.3rem;
     }
     &:nth-of-type(2) {
       float: right;
@@ -111,6 +111,14 @@ header#topnav {
         background: $base-black;
         color: white;
       }
+    }
+  }
+  svg#coop-logo {
+    width: 32px;
+    vertical-align: middle;
+    margin: 0 1rem 0 0;
+    g#coop-logo-shape {
+      fill: $base-black;
     }
   }
 }

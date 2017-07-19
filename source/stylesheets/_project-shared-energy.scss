@@ -41,6 +41,11 @@ body {
     background: darken($colour-project-shared-energy, 4%);
     header#topnav {
       background: darken($colour-project-shared-energy, 10%);
+      svg#coop-logo {
+        g#coop-logo-shape {
+          fill: lighten($colour-project-shared-energy, 10%);
+        }
+      }
     }
     header.project-title {
       h1 {
