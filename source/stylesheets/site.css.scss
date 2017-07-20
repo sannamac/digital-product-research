@@ -621,6 +621,12 @@ body:not(.index):not(.about_index) {
         }
       }
     }
+    section.further-reading {
+      margin-bottom: 4rem;
+      @media screen and (min-width: 767px) {
+        margin-bottom: 6rem;
+      }
+    }
   }
 }
 
