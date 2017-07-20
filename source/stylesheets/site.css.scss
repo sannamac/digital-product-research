@@ -611,6 +611,7 @@ body:not(.index):not(.about_index) {
 
   section.what-next {
     padding: 4rem 0 10rem 0;
+    section.resources,
     section.further-reading,
     section.related-project,
     section.view-experiment {
@@ -621,18 +622,14 @@ body:not(.index):not(.about_index) {
       }
       width: 90%;
       margin: 0 auto;
+      margin-bottom: 4rem;
       @media screen and (min-width: 767px) {
         width: 50%;
+        margin-bottom: 6rem;
       }
       ul {
         li {
         }
-      }
-    }
-    section.further-reading {
-      margin-bottom: 4rem;
-      @media screen and (min-width: 767px) {
-        margin-bottom: 6rem;
       }
     }
   }
