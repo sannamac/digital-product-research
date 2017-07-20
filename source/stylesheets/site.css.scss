@@ -49,10 +49,36 @@ body {
   font-weight: normal;
 }
 
+/* typography
+--------------------------------------------------*/
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "AvenirNextLTW01-Demi";
   font-weight: normal;
+  em {
+    font-family: 'AvenirNextLTW01-DemiIta';
+    font-weight: normal;
+  }
 }
+
+h2, h3 {
+  margin: 1.8rem 0 0 0;
+  @media screen and (min-width: 766px) {
+    margin: 3.2rem 0 0 0;
+  }
+}
+
+em {
+  font-family: 'AvenirNextLTW01-Italic';
+  font-weight: normal;
+}
+
+strong {
+  font-family:"AvenirNextLTW01-Medium";
+  font-weight: normal;
+}
+
+
 
 header#topnav {
   width: 100%;
@@ -166,6 +192,14 @@ body.about_index {
 // Index layout
 
 #projects {
+
+  h2, h3 {
+    margin: 1.8rem 0 0 0;
+    @media screen and (min-width: 766px) {
+      margin: 1.8rem 0 0 0;
+    }
+  }
+
   overflow: visible;
   height: auto;
   @media screen and (min-width: 767px) {
@@ -235,7 +269,7 @@ body.about_index {
         section {
           &.situation {
             font-size: 1.2rem;
-            font-weight: "AvenirNextLTW01-Medium";
+            font-family: "AvenirNextLTW01-Medium";
           }
         }
         @media screen and (max-width: 767px) {
@@ -593,6 +627,12 @@ body:not(.index):not(.about_index) {
       ul {
         li {
         }
+      }
+    }
+    section.further-reading {
+      margin-bottom: 4rem;
+      @media screen and (min-width: 767px) {
+        margin-bottom: 6rem;
       }
     }
   }

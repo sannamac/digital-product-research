@@ -34,7 +34,7 @@ Take a look at an existing experiment page, eg. `source/locally.html.erb` and it
 
 ### Narrative format for experiment pages
 
-You'll notice a format that goes like this:
+You’ll notice a format that goes like this:
 
 1. `<header class="project-title"> ...` Put your title here
 2. `<section class="situation"> ...` Outline the situation
@@ -48,7 +48,7 @@ You'll notice a format that goes like this:
 
 ### BEWARE!
 
-Currently adding links to a content partial will break the page! This is because on the index page we wrap each experiments' content inside an anchor tag and therefore there'd be an anchor inside an anchor.
+Currently adding links to a content partial will break the page! This is because on the index page we wrap each experiments’ content inside an anchor tag and therefore there’d be an anchor inside an anchor.
 
 ### Image display options
 
@@ -132,7 +132,7 @@ The `iframe` URL needs to be given to the server admin to allow the page to disp
 
 ### Blockquotes
 
-Don't use quote marks as they are added for you in the styles.
+Don’t use quote marks as they are added for you in the styles.
 
 ```
 <blockquote>
@@ -141,7 +141,7 @@ Don't use quote marks as they are added for you in the styles.
   </p>
   <footer>-
     <cite>
-      C, person's role, person's involvement
+      C, person’s role, person’s involvement
     </cite>
   </footer>
 </blockquote>
@@ -161,11 +161,11 @@ Don't use quote marks as they are added for you in the styles.
 
 ## Styles
 
-Once you've created a new experiment page you'll need to:
+Once you’ve created a new experiment page you’ll need to:
 
 * duplicate an existing experiment stylesheet, eg. `source/stylesheets/_project-safer-emails.scss`
 * name your new stylesheet reflecting your new experiment
 * find and replace all existing colour variables. Notice eg. `$colour-project-safer-emails`
 * rename the `ID` on line 5 to match the experiment on the index page
 * rename the `class` on line 40 to match the slug of your experiment page, eg. `.safer-emails_index`
-* use a new colour for line 1. You'll find the palette in `source/stylesheets/site.css.scss`, eg. `$base-biscay`
+* use a new colour for line 1. You’ll find the palette in `source/stylesheets/site.css.scss`, eg. `$base-biscay`
