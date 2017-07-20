@@ -192,6 +192,14 @@ body.about_index {
 // Index layout
 
 #projects {
+
+  h2, h3 {
+    margin: 1.8rem 0 0 0;
+    @media screen and (min-width: 766px) {
+      margin: 1.8rem 0 0 0;
+    }
+  }
+
   overflow: visible;
   height: auto;
   @media screen and (min-width: 767px) {
