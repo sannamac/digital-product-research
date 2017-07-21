@@ -170,7 +170,6 @@ header#topnav {
 // About index
 
 body.about_index {
-  margin-top: 2rem;
   header#topnav {
     a {
       color: $base-black;
@@ -180,7 +179,7 @@ body.about_index {
     padding: 1rem;
     @media screen and (min-width: 767px) {
       font-size: 24px;
-      padding: 2rem 1.2rem;
+      padding: 4rem 1rem;
       max-width: 600px;
     }
     a {
