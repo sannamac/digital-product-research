@@ -171,6 +171,7 @@ header#topnav {
 
 body.about_index {
   header#topnav {
+    position: relative;
     a {
       color: $base-black;
     }
@@ -179,7 +180,7 @@ body.about_index {
     padding: 1rem;
     @media screen and (min-width: 767px) {
       font-size: 24px;
-      padding: 4rem 1rem;
+      padding: 0rem 1rem;
       max-width: 600px;
     }
     a {
