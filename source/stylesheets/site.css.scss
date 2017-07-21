@@ -112,10 +112,13 @@ header#topnav {
       }
     }
   }
-  span {
+  > span {
     @media screen and (max-width: 766px) {
       display: inline-block;
       line-height: 1.4rem;
+    }
+    @media screen and (min-width: 766px) {
+      margin: 0 0.8rem;
     }
   }
   nav {
