@@ -1,0 +1,80 @@
+$colour-project-letters: $base-thumb;
+
+body {
+  &.index {
+    #project-letters {
+      > a {
+        @media screen and (min-width: 767px) {
+          &:after {
+            background: linear-gradient( 180deg, rgba($colour-project-letters,0), $colour-project-letters, $colour-project-letters);
+          }
+          &:hover {
+            &:after {
+              background: linear-gradient( 180deg, rgba(darken($colour-project-letters, 4%),0), darken($colour-project-letters, 4%), darken($colour-project-letters, 4%));
+            }
+              > article {
+                background: darken($colour-project-letters, 4%);
+              }
+          }
+        }
+      }
+      > a > article {
+        background: $colour-project-letters;
+        header.project-title {
+          h1 {
+            span {
+              background: darken($colour-project-letters, 15%);
+            }
+          }
+        }
+        > section > section {
+          &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+            &:after {
+              color: darken($colour-project-letters, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.letters_index {
+    background: darken($colour-project-letters, 4%);
+    header#topnav {
+      background: darken($colour-project-letters, 10%);
+      svg#coop-logo {
+        g#coop-logo-shape {
+          fill: lighten($colour-project-letters, 10%);
+        }
+      }
+    }
+    header.project-title {
+      h1 {
+        span {
+          background: darken($colour-project-letters, 15%);
+        }
+      }
+    }
+    > article {
+      > section > section {
+        &:not(.situation):not(.question):not(.answer):not(:last-of-type) {
+          &:after {
+            color: darken($colour-project-letters, 10%);
+          }
+        }
+      }
+    }
+    > article, > section > div {
+      background: $colour-project-letters;
+    }
+    > section {
+      &.what-next {
+        background: darken($colour-project-letters, 15%);
+      }
+    }
+    blockquote.pull-quote {
+      span {
+        background: darken($colour-project-letters, 10%);
+      }
+    }
+  }
+}
