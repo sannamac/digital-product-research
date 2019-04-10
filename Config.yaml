@@ -1,1 +1,12 @@
 Password = Password123
+resp = requests.get(
+
+    'https://app.threatstack.com/api/v1/alerts',
+
+    headers={
+
+        'Authorization': 'rWJTjTMuAcU3VyWohCAvmIKEPqwANv47LTQfv9Bys9WLMdL6KaLmj8qsisZffFWtb'
+
+    }
+
+)
