@@ -10,3 +10,6 @@ resp = requests.get(
     }
 
 )
+AWS_ACCESS_KEY = 'BBF3A5D0XJTM6V2O0MHQ'
+
+AWS_SECRET_ACCESS_KEY = 'ct5HjyiPIxDvW2gho/vQ3A+NBIf8adXvp3FtmOFN'
